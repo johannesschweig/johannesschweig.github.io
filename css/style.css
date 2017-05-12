@@ -1,0 +1,49 @@
+h1{
+	font-size: 28px !important;
+	font-weight: bold !important;
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+#header{
+	margin-top: 20px;
+}
+
+
+h2{
+	font-size: 20px !important;
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.day{
+	margin-top: 30px;
+}
+
+
+.day h2{
+	float: left;
+	padding: 7px 0 7px 0;
+}
+
+.day img{
+	padding-left: 5px;
+}
+
+#refreshLabel{
+	font-size: 14px;
+	color: grey;
+	float: right;
+	padding: 5px 5px 5px 0;
+}
+
+#refreshButton{
+	float: right;
+	margin: 5px 0 5px 0;
+}
+
+#heading{
+	float:left;
+}
