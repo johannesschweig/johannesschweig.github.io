@@ -130,6 +130,7 @@ $(window).resize(function(){
 });
 
 $(document).ready(function(){
+	console.log("document ready");
 	//load google charts
 	google.charts.load('current', {'packages':['corechart']});
 	//register event handler
@@ -142,6 +143,7 @@ $(document).ready(function(){
 	//load weather data and draw charts
 	getWeather().always(function(dat){
 		loadData(dat);
+		console.log("data loaded");
 		drawCharts();
 	});
 });
