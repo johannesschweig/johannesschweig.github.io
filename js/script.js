@@ -3,8 +3,7 @@ window.store = {update: 0, data: [], conditions: []}
 		
 //send request to openweathermap
 function getWeather(){
-	//let weatherURL = "http://api.openweathermap.org/data/2.5/forecast?id=6545310&APPID=4166380e507fe432b44c61d209829202&units=metric";
-	let weatherURL = "http://api.apixu.com/v1/forecast.json?key=64dc2cdaa4134ccc8f8155504170704&q=Berlin&days=7";
+	let weatherURL = "https://api.apixu.com/v1/forecast.json?key=64dc2cdaa4134ccc8f8155504170704&q=Berlin&days=7";
 
 	return $.getJSON(weatherURL, function(d){
 	});
@@ -130,7 +129,6 @@ $(window).resize(function(){
 });
 
 $(document).ready(function(){
-	console.log("document ready");
 	//load google charts
 	google.charts.load('current', {'packages':['corechart']});
 	//register event handler
@@ -143,7 +141,6 @@ $(document).ready(function(){
 	//load weather data and draw charts
 	getWeather().always(function(dat){
 		loadData(dat);
-		console.log("data loaded");
 		drawCharts();
 	});
 });
