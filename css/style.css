@@ -1,49 +1,244 @@
-h1{
-	font-size: 28px !important;
-	font-weight: bold !important;
-	margin-top: 0 !important;
-	margin-right: 0 !important;
-	margin-bottom: 0 !important;
+:root{
+	--dark: #777777;
+	--light: #999999;
+	--font: "Lato", sans-serif;
 }
 
-#header{
-	margin-top: 20px;
-}
-
-
-h2{
-	font-size: 20px !important;
-	margin-top: 0 !important;
-	margin-right: 0 !important;
-	margin-bottom: 0 !important;
-}
-
-.day{
-	margin-top: 30px;
+body{
+	font-family: var(--font);
+	font-weight: 300;
 }
 
 
-.day h2{
-	float: left;
-	padding: 7px 0 7px 0;
+#menubar{
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: var(--dark);
+	height: 50px;
+
+	position: fixed;
+	z-index: 999;
+	padding: 0 30px 0 30px;
+	background-color: white;
 }
 
-.day img{
+
+#name{
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--dark);
+	padding: 0;
+	line-height: 50px;
+}
+
+#links{
+	line-height: 50px;
+}
+
+#links a{
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--dark);
+}
+
+#mail{
+	cursor: pointer;
+}
+
+#mailimg{
 	padding-left: 5px;
 }
 
-#refreshLabel{
-	font-size: 14px;
-	color: grey;
-	float: right;
-	padding: 5px 5px 5px 0;
+/*noscript*/
+#noscript{
+	text-align: center;
+	font-size: 24px;
 }
 
-#refreshButton{
-	float: right;
-	margin: 5px 0 5px 0;
+/*footer*/
+#footer{
+	font-size: 18.6px;
+	color: var(--dark);
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: var(--dark);
+	padding-top: 2px;
+	padding-bottom: 4px;
+	background-color: white;
 }
 
-#heading{
-	float:left;
+#footer *{
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#footer h1{
+	font-size: 18.6px;
+	font-weight: 500;
+}
+
+#footer h2{
+	font-weight: 500;
+}
+
+#content{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+
+/* Landing page */
+#welcome{
+	color: var(--dark);
+	margin-bottom: 30px;
+}
+#welcome p{
+	font-size: 21.3px;
+	font-weight: 300;
+}
+
+.tile{
+	margin: 0;
+}
+
+.preview-image{
+	padding: 0;
+}
+
+.preview-text{
+	margin-top: 3%;
+}
+
+.preview-text:hover, .preview-image:hover, #name:hover{
+	cursor: pointer;
+}
+
+.preview-heading{
+	font-weight: 500;
+	color: black;
+	font-size: 30px;
+	margin: 0 0 4px 37px;
+}
+
+.preview-subheading{
+	color: var(--dark);
+	font-size: 21.3px;
+	font-weight: 300;
+	margin-bottom: 3px;
+}
+
+.preview-tags, .preview-date{
+	color: var(--light);
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.preview-divider{
+	padding-top: 50px;
+}
+
+.preview-logo{
+	width: 32px;
+	padding: 5px 0 5px 0;
+}
+
+/*Bio*/
+.bio{
+	background-color: grey;
+}
+
+.bio div{
+	color: white;
+}
+
+.bio-links{
+	margin-bottom: 30px;
+}
+
+.bio-heading{
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.bio-image{
+	padding: 3% 6% 0 6%;
+}
+
+.bio-text{
+	margin-top: 3%;
+}
+
+.bio-text p{
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+.bio-text a{
+	display: inline-block;
+	margin: 0 5px 0 5px;
+	width: 32px;
+	height: 32px;
+	background-size: 32px 32px;
+}
+
+.test{
+	border: solid 1px red;
+}
+
+#bio-linkedin{
+	background-image: url("../img/linkedin.png");
+}
+
+#bio-linkedin:hover{
+	background-image: url("../img/linkedin_hover.png");
+}
+
+#bio-github{
+	background-image: url("../img/github.png");
+}
+
+#bio-github:hover{
+	background-image: url("../img/github_hover.png");
+}
+
+#bio-mail{
+	background-image: url("../img/mail.png");
+	cursor: pointer;
+}
+
+#bio-mail:hover{
+	background-image: url("../img/mail_hover.png");
+}
+
+
+/*Entries*/
+h1{
+	padding: 3px 0 3px 0;
+	font-size: 24px;
+	font-weight: 800;
+}
+h2{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+p, li{
+	line-height: 180%;
+	font-size: 16px;
+}
+a{
+	color: var(--dark);
+	font-weight: 300;
+}
+a:hover{
+	color: var(--dark);
+}
+.entry-img{
+	padding-bottom: 15px;
+}
+.entry-h1{
+	margin-left: 37px;
 }

@@ -1,0 +1,77 @@
+<div id="phoenix">
+	<div class="row">
+		<div class="col-xs-12 col-sm-5"></div>
+		<div class="col-xs-12 col-sm-7">
+			<div>
+				<img class="pull-left" src="img/phoenix.png" alt="" width="32"></img>
+				<h1 class="entry-h1">Phoenix</h1>
+			</div>
+			<h2>TLDR</h2>
+			<p>In my free time I programmed a music player and expanded on it over the years. I learnt a lot about User-Centered Design, software engineering and making use of stackoverflow.</p>
+			<h2>Problem</h2>
+			<p>The popularity of musicplayers for desktops has dropped dramatically as streaming services have taken over their role. The development of applications like iTunes, Mediamonkey or Winamp is limited; their functionality and design stuck in the '90s. So I decided to built a desktop music player by myself.</p>
+			<h2>1st minimalistic version</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-5">
+			<img class="entry-img col-xs-6 col-xs-offset-3" src="img/IntuitMP3.jpg" alt="Screenshot of the first version of the music player"></img>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<p>I tried to make the first version as minimalistic as possible. It features a search bar, Play/Pause and two skip-buttons: Play the next song in the queue or play a random other song.</p>
+			<h2>2nd JavaFX Desktop Client</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-5">
+			<img class="entry-img col-xs-12" src="img/mockup.jpg" alt="Photoshop mockup of the application"></img>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<p>I created a mockup in Photoshop, which featured all the functionality I wanted to include (and a visual design I never implemented). I defined functionalities that had to be implemented in the application and reflected what I could realize with limited knowledge and time. Afterwards, I started programming, adding UI elements and functionality until I had a usable version ready for testing. At first, I spent hours on individual features, only to find out that they were not useful or required too much effort. As the development process continued my work turned more sustainable and more efficient. Apart from the challenge of the technical implementation, I identified several key questions that followed me during the process:</p>
+			<ul>
+				<li>How do I provide a visual design that is consistent in colors, icons, animations, hover/interaction effects, element sizes, state of ui elements and affordances?</li>
+				<li>What is the "product identity" (aka corporate indentity) of Phoenix?</li>
+				<li>How do I provide meaningfull and appropriate (error) feedback?</li>
+				<li>What are the needs of the user and what implications do they have on the functionality of the software?</li>
+				<li>How do I identify core use cases and choose the suitable interaction paradigm (e.g. search, buttons)?</li>
+			</ul>
+			<h2>Design features</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-5">
+			<video id="phoenix-loop" class="entry-img col-xs-12" autoplay muted loop>
+				<source src="img/coverflow.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<p>Over the development process I implemented three core design features:</p>
+			<ol>
+				<li>Auto-Dj: It is similar to the AutoPlay functionality by services such as Youtube and Souncloud, but more advanced. It provides four modes of operation which allow for continuous audio playback that can be altered easily to the user's liking:</li>
+				<ul>
+					<li>Off: Play track list. Stop when it is depleted.</li>
+					<li>+1 random: After the track list is depleted, add an unknown track that is similar to the last one.</li>
+					<li>+1 favourite: After the track list is depleted, add a favourite track of the user that is similar to the last one.</li>
+					<li>Album/Artist: After the track list is depleted, add a track from the same artist or album like the previous track.</li>
+				</ul>
+				<li>Info about current track: On keypress a short overlay is shown containing infos about the currently played track in the top right corner. This overlay appears on top of all other visible windows.</li>
+				<li>Search: Fast and easy search is vital for the ease of use of all applications. I realized this with SQL which allows for very fast and compley queries even with large music databases.</li>
+			</ol>
+			<h2>Reflection</h2>
+            <p> During the iterations of prototyping-implementation-testing I learnt how to get more efficient in my own workflow and how to counterbalance design and functionality. The experience from my university courses and the job at UseTree about usability, UX and user-centered design guided me through this process. Furthermore, I learnt how to prioritze features and realize only the ones that were important, sustainable and time-efficient. Apart from that my software development skills improved dramatically as I got more proficient in the JAVA language, the JAVAFX Frontend, different libraries and SQL.</p>
+			<p><a target="_blank" href="https://github.com/johannesschweig/Phoenix">View project on GitHub</a></p>
+			<h2>Outlook: PhoenixJS</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-5">
+			<img class="entry-img col-xs-12" src="img/wireframe2.png" alt="Wireframe of the Javascript application"></img>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<p>Currently I am porting Phoenix to JavaScript with Electron+React+Redux. Stay tuned!</p>
+			<p><a target="_blank" href="https://github.com/johannesschweig/PhoenixJS">View PhoenixJS on GitHub</a></p>
+		</div>
+	</div>
+</div>
