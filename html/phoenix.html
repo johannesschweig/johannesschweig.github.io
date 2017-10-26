@@ -3,32 +3,44 @@
 		<div class="col-xs-12 col-sm-5"></div>
 		<div class="col-xs-12 col-sm-7">
 			<div>
-				<img class="pull-left" src="img/phoenix.png" alt="" width="32"></img>
+				<img class="pull-left" src="img/phoenix/phoenix.png" alt="" width="32"></img>
 				<h1 class="entry-h1">Phoenix</h1>
 			</div>
 			<h2>TLDR</h2>
 			<p>In my free time I programmed a music player and expanded on it over the years. I learnt a lot about User-Centered Design, software engineering and making use of stackoverflow.</p>
 			<h2>Problem</h2>
-			<p>The popularity of musicplayers for desktops has dropped dramatically as streaming services have taken over their role. The development of applications like iTunes, Mediamonkey or Winamp is limited; their functionality and design stuck in the '90s. So I decided to built a desktop music player by myself.</p>
-			<h2>1st minimalistic version</h2>
+			<p>The popularity of musicplayers for desktops has dropped dramatically as streaming services have taken over their role. The development of applications like iTunes, Mediamonkey or Winamp is limited; their user interfaces cluttered with functionality. So I decided to built a desktop music player by myself.</p>
+            <h2>Research</h2>
+            <p><i>User Research: </i>In a user research phase I tried to find out what the context of use and the general requirements are for a music playing application for my needs. I found out that it needed to provide continous playback of music with suggestions, a fast search, good overall performance and it needed to be optimized for the use with large musiccollections. </p> 
+            <p><i>Design Research: </i>In a design research phase I studied competing products: iTunes, Winamp, MediaMonkey and Windows Media Player. In what way did they succeed at their goals? What are their shortcomings? All of these applications provide a lot of functionality (playlists, file management, tag writing, equalizer and additional settings) and the user is generally expected to actively cue in his/her songs (except Genius-playlists by iTunes). A lot of space in the user interfaces of these applications is taken up by toolbars, menus, cover previews and large context menus. Also, old UI concepts are still in use such as the tree view navigation. Colors and style are mainly aimed to transport the corporate identity of the affiliation of the product (WMP by windows, iTunes by apple).</p>
+            <h2>Prototyping</h2>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-5">
-			<img class="entry-img col-xs-6 col-xs-offset-3" src="img/IntuitMP3.jpg" alt="Screenshot of the first version of the music player"></img>
+			<img class="entry-img col-xs-12" src="img/phoenix/paper_prototype.jpg" alt="UI concept on paper"></img>
 		</div>
 		<div class="col-xs-12 col-sm-7">
-			<p>I tried to make the first version as minimalistic as possible. It features a search bar, Play/Pause and two skip-buttons: Play the next song in the queue or play a random other song.</p>
-			<h2>2nd JavaFX Desktop Client</h2>
+            <p>I transitioned from a low fidelity prototype on paper to a photoshop mockup to a fully-functioning Java prototype.</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-5">
-			<img class="entry-img col-xs-12" src="img/mockup.jpg" alt="Photoshop mockup of the application"></img>
+			<img class="entry-img col-xs-12" src="img/phoenix/mockup_ps.jpg" alt="Photoshop mockup of the application"></img>
 		</div>
 		<div class="col-xs-12 col-sm-7">
-			<p>I created a mockup in Photoshop, which featured all the functionality I wanted to include (and a visual design I never implemented). I defined functionalities that had to be implemented in the application and reflected what I could realize with limited knowledge and time. Afterwards, I started programming, adding UI elements and functionality until I had a usable version ready for testing. At first, I spent hours on individual features, only to find out that they were not useful or required too much effort. As the development process continued my work turned more sustainable and more efficient. Apart from the challenge of the technical implementation, I identified several key questions that followed me during the process:</p>
+            <h2>Evaluation</h2>
+            <p>During the use of the application I documented design flaws, bugs and possible improvements. These were then incorporated in the next version of the application. This iterative process of use and improvement led to a constant development cycle. At first, I made changes and added functionality in rapid succession, but often found out that the change did not integrate very well with the rest of the application, was too time-consuming or of too little value added. Later in the project I elaborated more on possible changes which made my work more sustainable and time-efficient.</p>
+            <p>I identified five key questions that followed me during the process:</p>
+        </div>
+    </div>
+    <div class="row">
+		<div class="col-xs-12 col-sm-5">
+			<img class="entry-img center-block" src="img/phoenix/shuffle.png" alt="Mouseover effects of shuffle button"></img>
+			<img class="entry-img center-block" src="img/phoenix/tooltip.png" alt="Tooltip for a uncommon icon"></img>
+        </div>
+        <div class="col-xs-12 col-sm-7">
 			<ul>
 				<li>How do I provide a visual design that is consistent in colors, icons, animations, hover/interaction effects, element sizes, state of ui elements and affordances?</li>
 				<li>What is the "product identity" (aka corporate indentity) of Phoenix?</li>
@@ -42,14 +54,14 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-5">
 			<video id="phoenix-loop" class="entry-img col-xs-12" autoplay muted loop>
-				<source src="img/coverflow.mp4" type="video/mp4">
+				<source src="img/phoenix/coverflow.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
 		</div>
 		<div class="col-xs-12 col-sm-7">
 			<p>Over the development process I implemented three core design features:</p>
 			<ol>
-				<li>Auto-Dj: It is similar to the AutoPlay functionality by services such as Youtube and Souncloud, but more advanced. It provides four modes of operation which allow for continuous audio playback that can be altered easily to the user's liking:</li>
+				<li>Auto-Dj: A content-based recommender system that uses mp3 tag information to generate music recommendations. It is similar to the AutoPlay functionality by services such as Youtube and Souncloud, but allows for more user interaction. It provides four modes of operation which allow for continuous audio playback.</li>
 				<ul>
 					<li>Off: Play track list. Stop when it is depleted.</li>
 					<li>+1 random: After the track list is depleted, add an unknown track that is similar to the last one.</li>
@@ -60,14 +72,14 @@
 				<li>Search: Fast and easy search is vital for the ease of use of all applications. I realized this with SQL which allows for very fast and compley queries even with large music databases.</li>
 			</ol>
 			<h2>Reflection</h2>
-            <p> During the iterations of prototyping-implementation-testing I learnt how to get more efficient in my own workflow and how to counterbalance design and functionality. The experience from my university courses and the job at UseTree about usability, UX and user-centered design guided me through this process. Furthermore, I learnt how to prioritze features and realize only the ones that were important, sustainable and time-efficient. Apart from that my software development skills improved dramatically as I got more proficient in the JAVA language, the JAVAFX Frontend, different libraries and SQL.</p>
+            <p> During the iterations of implementation-testing I learnt how to get more efficient in my own workflow and how to counterbalance design and functionality. The experience from my university courses and the job at UseTree about usability, UX and user-centered design guided me through this process. Furthermore, I learnt how to prioritze features and realize only the ones that were important, sustainable and time-efficient. Apart from that my software development skills improved dramatically as I got more proficient in the JAVA language, the JAVAFX Frontend, different libraries and SQL.</p>
 			<p><a target="_blank" href="https://github.com/johannesschweig/Phoenix">View project on GitHub</a></p>
 			<h2>Outlook: PhoenixJS</h2>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-5">
-			<img class="entry-img col-xs-12" src="img/wireframe2.png" alt="Wireframe of the Javascript application"></img>
+			<img class="entry-img col-xs-12" src="img/phoenix/wireframe_ps_js.png" alt="Wireframe of the Javascript application"></img>
 		</div>
 		<div class="col-xs-12 col-sm-7">
 			<p>Currently I am porting Phoenix to JavaScript with Electron+React+Redux. Stay tuned!</p>
