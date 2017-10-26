@@ -187,28 +187,28 @@ body{
 }
 
 #bio-linkedin{
-	background-image: url("../img/linkedin.png");
+	background-image: url("../img/bio/linkedin.png");
 }
 
 #bio-linkedin:hover{
-	background-image: url("../img/linkedin_hover.png");
+	background-image: url("../img/bio/linkedin_hover.png");
 }
 
 #bio-github{
-	background-image: url("../img/github.png");
+	background-image: url("../img/bio/github.png");
 }
 
 #bio-github:hover{
-	background-image: url("../img/github_hover.png");
+	background-image: url("../img/bio/github_hover.png");
 }
 
 #bio-mail{
-	background-image: url("../img/mail.png");
+	background-image: url("../img/bio/mail.png");
 	cursor: pointer;
 }
 
 #bio-mail:hover{
-	background-image: url("../img/mail_hover.png");
+	background-image: url("../img/bio/mail_hover.png");
 }
 
 
