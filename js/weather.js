@@ -5,8 +5,8 @@
 /// location key: http://dataservice.accuweather.com/locations/v1/cities/search?q=Berlin&apikey=PZNgCByqDj6mg3jw9pYmTEWhiMzXeaG2
 //update: time when data was last updated, conditions: weather window.store.conditions, data: time, temp, rain
 window.store = {data: []}
-let owmURL = 'http://api.openweathermap.org/data/2.5/forecast?id=6545310&units=metric&APPID=4166380e507fe432b44c61d209829202'
-let awURL = 'http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/178087?metric=true&details=true&apikey=PZNgCByqDj6mg3jw9pYmTEWhiMzXeaG2'
+let owmURL = '//api.openweathermap.org/data/2.5/forecast?id=6545310&units=metric&APPID=4166380e507fe432b44c61d209829202'
+let awURL = '//dataservice.accuweather.com/forecasts/v1/hourly/12hour/178087?metric=true&details=true&apikey=PZNgCByqDj6mg3jw9pYmTEWhiMzXeaG2'
 
 //returns date string for given utc
 function getDateString(utc) {
