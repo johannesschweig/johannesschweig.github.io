@@ -1,2 +1,2 @@
 # johannesschweig.github.io
-My portfolio website using html, css (Bootstrap), javascript (jquery)
+My portfolio website using vue.js
