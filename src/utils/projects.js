@@ -1,7 +1,7 @@
 // data for the projects
 export const projData = [
     {
-        id: 3,
+        id: 1,
         route: '/querybuilder',
         image: {src: 'querybuilder/querybuilder.png', alt: 'Graph representation of an SQL query'},
         logo: '',
@@ -11,7 +11,7 @@ export const projData = [
         date: '2018',
     },
     {
-        id: 4,
+        id: 2,
         route: '/codesnippets',
         image: {src: 'codesnippets/formulas04.jpg', alt: 'Screenshot of phoenix application'},
         logo: '',
@@ -21,7 +21,7 @@ export const projData = [
         date: '2017'
     },
     {
-        id: 1,
+        id: 3,
         route: '/phoenix',
         image: {src: 'phoenix/phoenix_mp.png', alt: 'Screenshot of phoenix application'},
         logo: 'phoenix/phoenix.png',
@@ -31,7 +31,7 @@ export const projData = [
         date: '2015-2017'
     },
     {
-        id: 2,
+        id: 4,
         route: '/greenbox',
         image: {src: 'greenbox/greenbox_app2.png', alt: 'Usability test of the greenbox app'},
         logo: 'greenbox/plant.png',

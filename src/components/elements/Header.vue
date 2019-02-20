@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import getProjectNameFromRoute from '../utils/index.js'
+import getProjectNameFromRoute from '../../utils/index.js'
 
 export default {
     data () {
@@ -42,7 +42,7 @@ export default {
     --pad: 12px;
     display: grid;
     /* 30px left padding, size of name, free growing space, size of right links + padding, right padding  */
-    grid-template-columns: 160px 1fr 200px;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 50px;
 }
 

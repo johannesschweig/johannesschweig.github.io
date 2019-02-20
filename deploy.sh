@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+yarn build
+
+# navigate into the build output directory
+cd dist
+# copy index.html for routes
+rm -r phoenix greenbox querybuilder codesnippets legal
+mkdir phoenix greenbox querybuilder codesnippets legal
+cp index.html phoenix
+cp index.html greenbox
+cp index.html querybuilder
+cp index.html codesnippets
+cp index.html legal
+
+git init
+git add -A
+git commit -m 'deploy'
+
+git push -f git@github.com:johannesschweig/johannesschweig.github.io.git master
+
+cd -

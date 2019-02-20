@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import ProjectPreview from './ProjectPreview.vue'
-import Bio from './Bio.vue'
-import { projData }  from '../utils/projects.js'
+import ProjectPreview from '../elements/ProjectPreview.vue'
+import Bio from '../content/Bio.vue'
+import { projData }  from '../../utils/projects.js'
 
 export default {
     components: {
@@ -41,9 +41,9 @@ export default {
 #welcome{
     color: var(--dark);
     padding-bottom: 72px;
-    background-image: url('../assets/pattern.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-image: url('../../assets/pattern.png');
+    background-position: -150px bottom;
+    background-repeat: repeat;
 }
 
 #welcome > div{

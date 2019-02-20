@@ -1,7 +1,7 @@
 <template>
     <div id='bio'>
         <div class='responsive'>
-            <img src='../assets/bio/bio-image.png' />
+            <img src='../../assets/bio/bio-image.png' />
             <div id='text'>
                 <div id='heading'>About me</div>
                 <div class='line'>
@@ -17,13 +17,13 @@
                 </div>
                 <div id='social-images'>
                     <a href='https://linkedin.com/in/jschweig'>
-                        <img id='linkedin' @mouseover='linkedin_hover = true' @mouseleave='linkedin_hover = false' :src='linkedin_hover == true ? require("../assets/bio/linkedin_hover.png") : require("../assets/bio/linkedin.png")'/>
+                        <img id='linkedin' @mouseover='linkedin_hover = true' @mouseleave='linkedin_hover = false' :src='linkedin_hover == true ? require("../../assets/bio/linkedin_hover.png") : require("../../assets/bio/linkedin.png")'/>
                     </a>
                     <a href='https://github.com/johannesschweig'>
-                    <img id='github' @mouseover='github_hover = true' @mouseleave='github_hover = false' :src='github_hover == true ? require("../assets/bio/github_hover.png") : require("../assets/bio/github.png")'/>
+                    <img id='github' @mouseover='github_hover = true' @mouseleave='github_hover = false' :src='github_hover == true ? require("../../assets/bio/github_hover.png") : require("../../assets/bio/github.png")'/>
                     </a>
-                    <img id='mail' @click='mail_activated = !mail_activated' @mouseover='mail_hover = true' @mouseleave='mail_hover = false' :src='mail_hover == true ? require("../assets/bio/mail_hover.png") : require("../assets/bio/mail.png")'/>
-                    <img id='mail-address' v-if='mail_activated' src='../assets/email.png' />
+                    <img id='mail' @click='mail_activated = !mail_activated' @mouseover='mail_hover = true' @mouseleave='mail_hover = false' :src='mail_hover == true ? require("../../assets/bio/mail_hover.png") : require("../../assets/bio/mail.png")'/>
+                    <img id='mail-address' v-if='mail_activated' src='../../assets/email.png' />
                 </div>
                 </div>
             </div>
@@ -48,9 +48,9 @@ export default {
 <style scoped>
 
 #bio {
-    background-image: url('../assets/pattern.png');
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-image: url('../../assets/pattern.png');
+    background-position: -150px top;
+    background-repeat: repeat;
     font-size: 18px;
 }
 
@@ -72,10 +72,7 @@ export default {
     max-width: 100%;
 }
 
-
 #linkedin, #github, #mail {
-    width: 48px;
-    height: 48px;
     margin-right: 18px;
     cursor: pointer;
 }

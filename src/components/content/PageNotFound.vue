@@ -7,7 +7,6 @@
 </template>
 
 <style scoped>
-
 #PageNotFound {
     padding-top: 50px;
 }

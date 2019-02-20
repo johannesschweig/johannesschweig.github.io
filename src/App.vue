@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/elements/Header.vue'
 
 export default {
     name: 'App',
@@ -20,14 +20,14 @@ export default {
 </script>
 
 <style>
-:root{
+:root {
 	--font: "Lato", sans-serif;
     --content-padding: 30px;
 	--dark: #212121;
 	--light: #666666;
 }
 
-body{
+body {
 	font-family: var(--font);
 	font-weight: 500;
     color: var(--dark);
@@ -39,17 +39,20 @@ a {
 	color: var(--light);
 }
 
-p {
+p, ul, ol {
+    max-width: 700px;
     font-size: 18px;
+}
+
+p {
     line-height: 28px;
 }
 
 ul {
-    font-size: 18px;
     margin: 0 0 24px 0;
 }
 
-ul li {
+ul li, ol li {
     line-height: 28px;
 }
 
@@ -58,21 +61,10 @@ ul li {
 .responsive {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media screen and (min-width: 1366px) {
-    .responsive {
-        padding-left: 12%;
-        padding-right: 12%;
-    }
-}
-
-@media screen and (min-width: 1680px) {
-    .responsive {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
-}
 #legal {
     font-size: 16px;
     text-decoration: unerline;

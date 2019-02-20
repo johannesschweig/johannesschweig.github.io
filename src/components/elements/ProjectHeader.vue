@@ -45,8 +45,8 @@ export default {
 
 #project-header {
     background-image: url('../../assets/pattern.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-position: -150px bottom;
+    background-repeat: repeat;
     margin-bottom: 50px
 }
 

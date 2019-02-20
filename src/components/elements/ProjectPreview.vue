@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import getProjectNameFromRoute from '../utils/index.js'
+import getProjectNameFromRoute from '../../utils/index.js'
 
 export default {
     props: {
@@ -37,7 +37,7 @@ export default {
             return getProjectNameFromRoute(this.projProps.route)
         },
         buildImgUrl(src) {
-            return require('../assets/' + src)
+            return require('../../assets/' + src)
         }
     }
 }
@@ -96,7 +96,8 @@ export default {
 
 @media screen and (min-width: 768px) {
     .tile {
-        margin: 150px 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
         display: grid;
         grid-template-columns: 4fr 48px 5fr;
     }

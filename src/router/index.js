@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LandingPage from '@/components/LandingPage.vue'
+import LandingPage from '@/components/content/LandingPage.vue'
 import Phoenix from '@/components/projects/Phoenix.vue'
 import Greenbox from '@/components/projects/Greenbox.vue'
 import QueryBuilder from '@/components/projects/QueryBuilder.vue'
 import CodeSnippets from '@/components/projects/CodeSnippets.vue'
-import Legal from '@/components/projects/Legal.vue'
-import PageNotFound from '@/components/projects/PageNotFound.vue'
+import Legal from '@/components/content/Legal.vue'
+import PageNotFound from '@/components/content/PageNotFound.vue'
 
 Vue.use(Router)
 
