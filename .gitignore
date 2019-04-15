@@ -16,7 +16,6 @@ yarn-error.log*
 # my edits
 old/
 old
-build/
 *.psd
 index_old.html
 TODO.txt

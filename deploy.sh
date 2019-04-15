@@ -16,6 +16,8 @@ cp index.html greenbox
 cp index.html querybuilder
 cp index.html codesnippets
 cp index.html legal
+# copy README.md over
+cp ../README.md ./
 
 git init
 git add -A
