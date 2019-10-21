@@ -52,7 +52,6 @@
 		</div>
 		<project-arrows :route='"/phoenix"'></project-arrows>
 	</div>
-</div>
 </template>
 
 <script>

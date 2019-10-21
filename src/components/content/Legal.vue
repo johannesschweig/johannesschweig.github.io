@@ -2,18 +2,19 @@
 	<div id="content" class='responsive'>
 		<h1>Legal Disclosure</h1>
 		<p>Information in accordance with section 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt=""></img></p>
+		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h2>Contact</h2>
-		<p>Telephone: <img src='../../assets/phone.png' alt=""></img></p>
-		<p>E-Mail: <img src='../../assets/email.png' alt=""></img></p>
+		<p>Telephone: <img src='../../assets/phone.png' alt="" /></p>
+		<p>E-Mail: <img src='../../assets/email.png' alt="" /></p>
 		<p>Internetadresse: <a href="http://www.johannesschweig.github.io">www.johannesschweig.github.io</a></p>
 		<h2>Person responsible for content in accordance with 55 Abs. 2 RStV</h2>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt=""></img></p>
+		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h2>Indication of source for images and graphics</h2>
 		<ul>
-			<li>artist by Gregor Crešnar from Symbols Vol. 2 Collection, license: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a href="https://thenounproject.com/term/artist/368426">link</a></li>
-			<li>phoenix by Design Rails, license: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a href="https://thenounproject.com/term/phoenix/85573">link</a></li>
+			<li>artist by Gregor Cresnar from Symbols Vol. 2 Collection from the Noun Project, license: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a href="https://thenounproject.com/term/artist/368426">link</a></li>
+			<li>phoenix by Design Rails from the Noun Project, license: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a href="https://thenounproject.com/term/phoenix/85573">link</a></li>
 			<li>QueryBuilder by jQuery, license: <a href='https://opensource.org/licenses/MIT'>MIT License</a>, source: <a href='https://querybuilder.js.org/'>link</a></li>
+      <li>think by Gregor Cresnar from the Noun Project, license: <a href='https://creativecommons.org/licenses/by/3.0/'>Creative Commons-BY 3.0</a>, source: <a href='https://thenounproject.com/grega.cresnar/collection/users-vol-1/?i=541709'>link</a></li>
 		</ul>
 		<h2>Disclaimer</h2>
 		<p><i>Accountability for content: </i> The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this context, please note that we are accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
@@ -22,18 +23,19 @@
 		<p><i>Quelle: </i><a href="http://www.muster-vorlagen.net">http://www.muster-vorlagen.net</a></p>
 		<h1>Impressum</h1>
 		<p>Angaben gemäß § 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt=""></img></p>
+		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h2>Kontakt</h2>
-		<p>Telefon: <img src='../../assets/phone.png' alt=""></img></p>
-		<p>E-Mail: <img src='../../assets/email.png' alt=""></img></p>
+		<p>Telefon: <img src='../../assets/phone.png' alt="" /></p>
+		<p>E-Mail: <img src='../../assets/email.png' alt="" /></p>
 		<p>Internetadresse: <a href="http://www.johannesschweig.github.io">www.johannesschweig.github.io</a></p>
 		<h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt=""></img></p>
+		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h2>Quellenangaben für die verwendeten Bilder und Grafiken</h2>
 		<ul>
-			<li>artist von Gregor Crešnar aus Symbols Vol. 2 Collection, Lizenz: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a href="https://thenounproject.com/term/artist/368426">Link</a></li>
-			<li>phoenix von Design Rails, Lizenz: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, Quelle: <a href="https://thenounproject.com/term/phoenix/85573">Link</a></li>
+			<li>artist von Gregor Cresnar aus Symbols Vol. 2 Collection von the Noun Project, Lizenz: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a href="https://thenounproject.com/term/artist/368426">Link</a></li>
+			<li>phoenix von Design Rails von the Noun Project, Lizenz: <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, Quelle: <a href="https://thenounproject.com/term/phoenix/85573">Link</a></li>
 			<li>QueryBuilder von jQuery, Lizenz: <a href='https://opensource.org/licenses/MIT'>MIT License</a>, Quelle: <a href='https://querybuilder.js.org/'>Link</a></li>
+      <li>think von Gregor Cresnar von the Noun Project, Lizenz: <a href='https://creativecommons.org/licenses/by/3.0/'>Creative Commons-BY 3.0</a>, Quelle: <a href='https://thenounproject.com/grega.cresnar/collection/users-vol-1/?i=541709'>Link</a></li>
 		</ul>
 		<h2>Haftungsausschluss</h2>
 		<p><i>Haftung für Inhalte: </i>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>

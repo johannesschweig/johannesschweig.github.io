@@ -1,13 +1,20 @@
 <template>
 	<div id='container'>
-		<img v-if='!isVideo()' class='img-md' :src='src' :alt='alt'></img>
-		<video v-if='isVideo()' class='img-md' autoplay muted loop>
-			<source :src='src' type='video/mp4'>
+		<img
+      v-if='!isVideo()'
+      :class='["img-md", { "shadow": shadow }]'
+      :src='src'
+      :alt='alt' />
+		<video
+      v-if='isVideo()'
+      :class='["img-md", { "shadow": shadow }]'
+      autoplay
+      muted
+      loop>
+			<source :src='src' type='video/mp4' />
 				Your browser does not support the video tag.
-			</source>
 		</video>
 		<div id='caption'>{{ alt }}</div>
-
 	</div>
 </template>
 
@@ -20,7 +27,11 @@ export default {
 		},
 		alt: {
 			type: String
-		}
+    },
+    shadow: {
+      type: Boolean,
+      default: true
+    }
 	},
 	methods: {
 		// returns true if the source is a video, false if it is something else (e.g. image)
@@ -71,16 +82,19 @@ export default {
 	.img-sm {
 		max-width: 50%;
 	}
+
 	.img-md {
 		max-width: 70%;
 	}
+
 	#container {
 		background-color: #F6F6F6;
 	}
 
-	img, video{
-		box-shadow: 0 1px 3px #ccc;
+	img.shadow,
+  video.shadow {
+		-webkit-filter: drop-shadow(0 1px 3px #ccc);
+		filter: drop-shadow(0 1px 3px #ccc);
 	}
-
 }
 </style>

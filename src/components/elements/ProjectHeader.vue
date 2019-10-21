@@ -19,7 +19,7 @@
 
 <script>
 import { projData } from '../../utils/projects.js'
-import getProjectNameFromRoute from '../../utils/index.js'
+import { getProjectNameFromRoute } from '../../utils/index.js'
 
 export default {
     data() {

@@ -8,7 +8,7 @@
                     After studing psychology and HCI I started a career in UX. I am very interested in programming and data science, but my passion belongs to tailoring digital products to user needs. For that I like to listen to the right people, ideate in all directions and deliver a product which is easy to use and visually appealing.
                 </div>
                 <div class='line'>
-                    Currently, I am working as a UX Designer at <a href='https://www.knime.com/'>KNIME</a>.
+                    Currently, I am working as a Product Designer at <a href='https://www.valsight.com/'>Valsight</a>.
                 </div>
                 <div>
 

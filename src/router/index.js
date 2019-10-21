@@ -5,6 +5,7 @@ import Phoenix from '@/components/projects/Phoenix.vue'
 import Greenbox from '@/components/projects/Greenbox.vue'
 import QueryBuilder from '@/components/projects/QueryBuilder.vue'
 import CodeSnippets from '@/components/projects/CodeSnippets.vue'
+import KnimeHub from '@/components/projects/KnimeHub.vue'
 import Legal from '@/components/content/Legal.vue'
 import PageNotFound from '@/components/content/PageNotFound.vue'
 
@@ -17,11 +18,12 @@ export default new Router({
         { path: '/greenbox', component: Greenbox },
         { path: '/querybuilder', component: QueryBuilder },
         { path: '/codesnippets', component: CodeSnippets },
+        { path: '/knimehub', component: KnimeHub },
         { path: '/legal', component: Legal},
         { path: '*', component: PageNotFound}
     ],
     mode: 'history',
-    scrollBehavior (to, from, savedPosition) {
+    scrollBehavior () {
         return { x: 0, y: 0 }
     }
 })

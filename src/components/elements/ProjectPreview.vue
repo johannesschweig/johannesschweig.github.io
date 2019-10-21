@@ -1,10 +1,10 @@
 <template>
-    <div class='tile responsive'>
-        <router-link class='preview-image' :to='projProps.route'>
-            <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt'></img>
-        </router-link>
-        <router-link class='preview-text':to='projProps.route'>
-            <div class='heading' v-html='getHeadingString()'></div>
+    <router-link class='tile responsive' :to='projProps.route'>
+        <div class='preview-image'>
+            <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
+        </div>
+        <div class='preview-text'>
+            <div class='heading'>{{ projProps.name }}</div>
             <div class='slogan'>{{ projProps.slogan}}</div>
             <div class='info'>
                 <span class='heading'>Client</span>
@@ -14,13 +14,11 @@
                 <span class='text'>{{ projProps.task }}</span>
                 <span class='text'>{{ projProps.date }}</span>
             </div>
-        </router-link>
-    </div>
+        </div>
+    </router-link>
 </template>
 
 <script>
-import getProjectNameFromRoute from '../../utils/index.js'
-
 export default {
     props: {
         projProps: {
@@ -33,9 +31,6 @@ export default {
         }
     },
     methods: {
-        getHeadingString() {
-            return getProjectNameFromRoute(this.projProps.route)
-        },
         buildImgUrl(src) {
             return require('../../assets/' + src)
         }
@@ -44,6 +39,10 @@ export default {
 </script>
 
 <style scoped>
+.tile {
+  display: block;
+}
+
 .preview-image img {
     max-width: 100%;
 }
@@ -103,7 +102,7 @@ export default {
     }
 
     .preview-image {
-    grid-column: 1 / span 1;
+        grid-column: 1 / span 1;
     }
 
     .preview-text{

@@ -17,7 +17,7 @@
 <script>
 import ProjectPreview from '../elements/ProjectPreview.vue'
 import Bio from '../content/Bio.vue'
-import { projData }  from '../../utils/projects.js'
+import { activeRoutes }  from '../../utils/projects.js'
 
 export default {
     components: {
@@ -29,7 +29,7 @@ export default {
             // whether the email img in the bio section is shown
             showEmail: false,
             // json with project data
-            projects: projData
+            projects: activeRoutes
         }
     }
 }
