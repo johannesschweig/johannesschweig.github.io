@@ -10,17 +10,17 @@ Clone this repository. There are three branches:
 
 ### Prerequisites
 
-You need `nodejs` and `npm`. `yarn` is optional.
+You need `nodejs` and `npm`.
 
 ### Running the dev setup
 
-Switch to branch `vueapp`. Run `yarn` to install the dependencies, then `yarn dev` to start a development server on `localhost:8080`. Open your browser at `localhost:8080`.
+Switch to branch `vueapp`. Run `npm i` to install the dependencies, then `npm run dev` to start a development server on `localhost:8080`. Open your browser at `localhost:8080`.
 
 Alternatively, you can also serve the deployed files from `master` branch. I use [http-server](https://www.npmjs.com/package/http-server) for that. Switch to branch `master`. Run `http-server` inside the directory. Visit `localhost:8080` with your webbrowser
 
-## Tests
+## Linting & Tests
 
-I was too lazy to write tests (I know). Maybe later.
+Linting is done with `npm run lint`. Tests are located in `tests/unit`. Run them with `npm run unit`.
 
 ## Deployment
 

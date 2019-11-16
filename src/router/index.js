@@ -6,6 +6,8 @@ import Greenbox from '@/components/projects/Greenbox.vue'
 import QueryBuilder from '@/components/projects/QueryBuilder.vue'
 import CodeSnippets from '@/components/projects/CodeSnippets.vue'
 import KnimeHub from '@/components/projects/KnimeHub.vue'
+import Mechanics from '@/components/projects/Mechanics.vue'
+import Thesis from '@/components/projects/Thesis.vue'
 import Legal from '@/components/content/Legal.vue'
 import PageNotFound from '@/components/content/PageNotFound.vue'
 
@@ -19,6 +21,8 @@ export default new Router({
         { path: '/querybuilder', component: QueryBuilder },
         { path: '/codesnippets', component: CodeSnippets },
         { path: '/knimehub', component: KnimeHub },
+        { path: '/mechanics', component: Mechanics },
+        { path: '/thesis', component: Thesis },
         { path: '/legal', component: Legal},
         { path: '*', component: PageNotFound}
     ],

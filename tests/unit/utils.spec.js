@@ -2,7 +2,7 @@ import { projData, namedRoutes, activeRoutes } from '@/utils/projects.js'
 import { getProjectNameFromRoute, getPreviousNextProjects } from '@/utils/index.js'
 
 // required props for projects
-const requiredProps = ['id', 'route', 'image', 'name', 'slogan', 'client', 'task', 'date', 'active' ]
+const requiredProps = ['route', 'image', 'name', 'slogan', 'client', 'task', 'date', 'active' ]
 
 describe('utils/index.js', () => {
   it('returns names to routes', () => {
