@@ -15,12 +15,12 @@
 			</ul>
 			<p>After that, I studied competing products: iTunes, Winamp, MediaMonkey and Windows Media Player. In what way did they fulfill their goals? What are their shortcomings? All of these applications provide a lot of functionality (playlists, file management, tag writing, equalizer and additional settings) and the user is generally expected to actively cue in his/her songs (except Genius-playlists by iTunes). A lot of space in the user interfaces of these applications is taken up by toolbars, menus, cover previews and large context menus. Also, old UI concepts are still in use such as the tree view navigation. Colors and style are mainly aimed to transport the corporate identity of the manufacturing company (WMP by windows, iTunes by apple).</p>
 			<h2>Prototyping</h2>
-			<styled-image :src='require("../../assets/phoenix/paper_prototype.jpg")' alt='UI concept on paper'></styled-image>
+			<styled-image :src='require("../../assets/phoenix/paper_prototype.jpg")' alt='UI concept on paper' />
 			<p>I transitioned from a low fidelity prototype on paper to a photoshop mockup to a fully-functioning Java prototype.</p>
-			<styled-image :src='require("../../assets/phoenix/mockup_ps.jpg")' alt='Photoshop mockup of the application'></styled-image>
+			<styled-image :src='require("../../assets/phoenix/mockup_ps.jpg")' alt='Photoshop mockup of the application' />
 			<h2>Evaluation</h2>
 			<p>During the use of the application I documented design flaws, bugs and possible improvements. These were then incorporated in the next version of the application. This iterative process of use and improvement led to a constant development cycle. At first, I made changes and added functionality in rapid succession, but often realized in hindsight that the change did not integrate very well with the rest of the application or provided too little value compard to its development costs. Later in the project I spend more time elaborating on possible features which made my work more sustainable and time-efficient.</p>
-			<styled-image :src='require("../../assets/phoenix/shuffle_tooltip.png")' alt='Left: Mouseover effects of the shuffle button: none, hover, active; Right: Photoshop mockup of the application'></styled-image>
+			<styled-image :src='require("../../assets/phoenix/shuffle_tooltip.png")' alt='Left: Mouseover effects of the shuffle button: none, hover, active; Right: Photoshop mockup of the application' />
 			<p>Five key questions followed me during that process:</p>
 			<ul>
 				<li>How do I provide a visual design that is consistent in colors, icons, animations, hover/interaction effects, element sizes, state of ui elements and affordances?</li>
@@ -30,7 +30,7 @@
 				<li>How do I identify core use cases and choose the suitable interaction paradigm (e.g. search, buttons)?</li>
 			</ul>
 			<h2>Design features</h2>
-			<styled-image :src='require("../../assets/phoenix/coverflow.mp4")' alt='Coverflow animation when changing tracks'></styled-image>
+			<styled-image :src='require("../../assets/phoenix/coverflow.mp4")' alt='Coverflow animation when changing tracks' />
 			<p>Apart from the common media control I implemented three core design features:</p>
 			<ol>
 				<li>Auto-Dj: This functionality uses mp3 tag information to generate music suggestions (similar to populat AutoPlay functionalities in YouTube or Souncloud). It provides three modes of operation which start up once the user reaches the end of the tracklist.</li>
@@ -46,7 +46,7 @@
 			<p>During the iterations of implementation-testing I learnt how to get more efficient in my own workflow and how to counterbalance design and functionality. The experience from my university courses and the job at UseTree about usability, UX and user-centered design guided me through this process. Furthermore, I learnt how to prioritze features and implement only the ones that were important, sustainable and time-efficient. Apart from that my software development skills improved dramatically as I got more proficient in the Java language, the JavaFX frontend framework, SQL and different libraries.</p>
 			<p><a href='https://github.com/johannesschweig/Phoenix'>View project on GitHub</a></p>
 			<h2>Successor: PhoenixJS</h2>
-			<styled-image :src='require("../../assets/phoenix/wireframe_ps_js.png")' alt='Wireframe of the Javascript application'></styled-image>
+			<styled-image :src='require("../../assets/phoenix/wireframe_ps_js.png")' alt='Wireframe of the Javascript application' />
 			<p>In the course of the project I often felt restrained by the limited capabilites of the JavaFX frontend framework. Also, even though I tried, I could never really separate functionality in Model-View-Controller resulting in a messy code base. And in the end I needed a good reason to learn JavaScript, so I decided to rewrite the application with React and Redux. I used nedb for the database part and deployed the whole application as a cross-platfrom compatible electron app.</p>
 			<p><a href='https://github.com/johannesschweig/PhoenixJS'>View PhoenixJS on GitHub</a></p>
 		</div>
