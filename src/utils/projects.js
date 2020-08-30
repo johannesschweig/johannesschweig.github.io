@@ -1,9 +1,22 @@
 // data for the projects
 export const projData = [
   {
+    route: '/scenariomanager',
+    image: {
+      src: 'scenariomanager/brainstorming-sideshot.jpg',
+      alt: 'Scenario Manager UI'
+    },
+    name: 'Scenario Manager',
+    slogan: 'Helping financial decision makers in stormy times',
+    client: 'Valsight',
+    task: 'UX Research',
+    date: 'Jan-Mar 2020',
+    active: true // active projects are shown on the landing page, inactive ones are only accessible by route
+  },
+  {
     route: '/knimehub',
     image: {
-      src: 'knimehub/front_page.png',
+      src: 'knimehub/front_page.jpg',
       alt: 'Screenshot of the landing page of KNIME hub'
     },
     name: 'KNIME Hub',
@@ -29,7 +42,7 @@ export const projData = [
   {
     route: '/phoenix',
     image: {
-      src: 'phoenix/phoenix_mp.png',
+      src: 'phoenix/phoenix_mp.jpg',
       alt: 'Screenshot of phoenix application'
     },
     name: 'Phoenix',

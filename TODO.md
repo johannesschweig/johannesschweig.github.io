@@ -1,13 +1,7 @@
-# Windows img work
-
 # Linux code work
 - make previous/nextProject more elegant
 - better image src inclusion
 - favicon in all formats
-- cards
-  - 3 projects look shitty in 2x2 format
-- about page
-  - copy
 
 
 # Ideas
@@ -16,25 +10,18 @@
 - unit tests
 - e2e tests
 - Drop shadow also for images in small viewports?
-- Hover link color too subtle
 - Dual image in styled-image look bad -> make styled-image dual compatible
 - Next project button on the bottom of the page
 - make the projects extensible
 - read more about accessibility of websites (and implement some features)
 - Include Google Analytics?
-- Moodboard as bio page?
-
-# DROPPED
-- PhoenixJS improvements: create PhoenixJS image, overlay screenshot, screenshot of the auto dj icons -> phoenixjs is about to be retired
-- 404 not working due to github pages crap
-- Thesis: Fix pdf download
-- Padding left of name looks weird compared to content on page -> images are centered (!)
-- Illustration for testimonials? Face of the client (too aggro),...?
-- Bio Icon (Stylize my face? mb also favicon?)
-- scenario manager project
-- insert PhoenixJS image -> will be deprecated soon
 
 # DONE
+## 2.1.0
+- scenario manager
+- cover images now in 16:10 format
+- cards
+  - 3 projects look shitty in 2x2 format
 ## 2.0.0
 - new color scheme
 - svg loading of icons
@@ -84,3 +71,12 @@
 - icon for artwork
 - check images for resolution (800x600 max)
 
+# DROPPED
+- PhoenixJS improvements: create PhoenixJS image, overlay screenshot, screenshot of the auto dj icons -> phoenixjs is about to be retired
+- 404 not working due to github pages crap
+- Thesis: Fix pdf download
+- Padding left of name looks weird compared to content on page -> images are centered (!)
+- Illustration for testimonials? Face of the client (too aggro),...?
+- Bio Icon (Stylize my face? mb also favicon?)
+- scenario manager project
+- insert PhoenixJS image -> will be deprecated soon

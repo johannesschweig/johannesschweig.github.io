@@ -4,7 +4,7 @@
       <img src='../../assets/bio/bio-image.jpg' />
       <div id='text'>
         <h1>About me</h1>
-        <p>I am a UX Designer with 4 years of experience in building digital products. I am always eager to learn new things and to educate my team on cool new methods I found. I love to code small projects (such as this website) in my free time and also enjoy to drill into data (e.g. google analytics) to gain user insights. Even though I have very broad interests, my passion belongs to tailoring digital products to user needs.</p>
+        <p>I am a UX Designer with 5 years of experience in building digital products. I am always eager to learn new things and to educate my team on cool new methods I found. I love to code small projects (such as this website) in my free time and also enjoy to drill into data (e.g. google analytics) to gain user insights. Even though I have very broad interests, my passion belongs to tailoring digital products to user needs.</p>
         <h2>Things I believe in</h2>
         <p><b>💎 Rigorous prioritization</b><br>There will always be more to do than you have time for. Prioritization makes sure that you will have the maximum impact for the limited resources you are provided.</p>
         <p><b>⚙️ Incremental changes</b><br>You can learn faster what works and what does not which is crucial in fast moving environments.</p>

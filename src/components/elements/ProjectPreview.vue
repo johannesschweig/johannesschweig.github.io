@@ -1,5 +1,7 @@
 <template>
-    <router-link class='tile' :to='projProps.route'>
+    <router-link
+      class='tile'
+      :to='projProps.route'>
         <div class='img-container'>
           <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
         </div>
@@ -30,7 +32,6 @@ export default {
 .tile {
   background-color: white;
   border-radius: var(--radius);
-  display: block;
   box-shadow: var(--shadow);
   --anim-dur: .1s;
   -webkit-transition: var(--anim-dur) ease;
@@ -46,19 +47,33 @@ export default {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-img {
+.img-container {
+  display: inline-block;
+  position: relative;
   width: 100%;
-  object-fit: contain;
+}
+
+/* ensures 16:10 ratio of cover images */
+.img-container:after {
+  padding-top: 62.5%;
+  display: block;
+  content: '';
+}
+
+img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--radius) var(--radius) 0px 0px;
 }
 
-.img-container {
-  /* width: 100vw; */
-  /* height: 56.25vw; */
-}
-
 .title {
-  margin: 24px;
+  margin: 24px 24px 48px 24px;
 }
 
 .slogan {
@@ -70,7 +85,7 @@ img {
 .task {
   color: var(--blue);
   font-size: 14px;
-  padding: 4px;
+  padding: 4px 8px;
   border-radius: var(--radius);
   border: 1px solid var(--blue);
   display: inline-block;

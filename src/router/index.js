@@ -7,6 +7,7 @@ import QueryBuilder from '@/components/projects/QueryBuilder.vue'
 import CodeSnippets from '@/components/projects/CodeSnippets.vue'
 import KnimeHub from '@/components/projects/KnimeHub.vue'
 import Mechanics from '@/components/projects/Mechanics.vue'
+import ScenarioManager from '@/components/projects/ScenarioManager.vue'
 import Thesis from '@/components/projects/Thesis.vue'
 import About from '@/components/content/About.vue'
 import Legal from '@/components/content/Legal.vue'
@@ -23,6 +24,7 @@ export default new Router({
         { path: '/codesnippets', component: CodeSnippets },
         { path: '/knimehub', component: KnimeHub },
         { path: '/mechanics', component: Mechanics },
+        { path: '/scenariomanager', component: ScenarioManager },
         { path: '/thesis', component: Thesis },
         { path: '/about', component: About },
         { path: '/legal', component: Legal},
