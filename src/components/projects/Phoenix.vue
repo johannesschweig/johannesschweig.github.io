@@ -44,11 +44,11 @@
 			</ol>
 			<h2>Reflection</h2>
 			<p>During the iterations of implementation-testing I learnt how to get more efficient in my own workflow and how to counterbalance design and functionality. The experience from my university courses and the job at UseTree about usability, UX and user-centered design guided me through this process. Furthermore, I learnt how to prioritze features and implement only the ones that were important, sustainable and time-efficient. Apart from that my software development skills improved dramatically as I got more proficient in the Java language, the JavaFX frontend framework, SQL and different libraries.</p>
-			<p><a href='https://github.com/johannesschweig/Phoenix'>View project on GitHub</a></p>
+			<p><a class='link' href='https://github.com/johannesschweig/Phoenix'>View project on GitHub</a></p>
 			<h2>Successor: PhoenixJS</h2>
 			<styled-image :src='require("../../assets/phoenix/wireframe_ps_js.png")' alt='Wireframe of the Javascript application' />
 			<p>In the course of the project I often felt restrained by the limited capabilites of the JavaFX frontend framework. Also, even though I tried, I could never really separate functionality in Model-View-Controller resulting in a messy code base. And in the end I needed a good reason to learn JavaScript, so I decided to rewrite the application with React and Redux. I used nedb for the database part and deployed the whole application as a cross-platfrom compatible electron app.</p>
-			<p><a href='https://github.com/johannesschweig/PhoenixJS'>View PhoenixJS on GitHub</a></p>
+			<p><a class='link' href='https://github.com/johannesschweig/PhoenixJS'>View PhoenixJS on GitHub</a></p>
 		</div>
 		<project-arrows :route='"/phoenix"'></project-arrows>
 	</div>

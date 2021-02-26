@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Bio from '@/components/content/Bio'
+import About from '@/components/content/About'
 
-describe('Bio.vue', () => {
+describe('About.vue', () => {
   it('renders', () => {
-    const wrapper = mount(Bio)
+    const wrapper = mount(About)
     
-    expect(wrapper.find('#bio').exists()).toBeTruthy()
+    expect(wrapper.find('#about').exists()).toBeTruthy()
     expect(wrapper.find('#mail-address').exists()).toBeFalsy()
     wrapper.setData({ mail_activated: true })
     expect(wrapper.find('#mail-address').exists()).toBeTruthy()

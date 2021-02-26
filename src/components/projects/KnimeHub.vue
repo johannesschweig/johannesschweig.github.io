@@ -41,7 +41,7 @@
       <p>The final visual design was done by an external designer. I supported the development team during the building process and contributed by taking over small frontend tasks.</p>
       <h2>Launch</h2>
       <p>The KNIME Hub was released and opened to the public during the KNIME Summit in March 2019. Since then it has received great interest and a growing community of active users. From March until October I assisted in the further development of features such as a deeper integration to the desktop application.</p>
-      <p>Check it out at <a href="https://hub.knime.com">hub.knime.com</a>.</p>
+      <p>Check it out at <a class='link' href="https://hub.knime.com">hub.knime.com</a>.</p>
 			<styled-image
         :src='require("../../assets/knimehub/screens-11-19.png")'
         alt="Screens of the application as of Nov. 19" />

@@ -3,10 +3,16 @@
 # Linux code work
 - make previous/nextProject more elegant
 - better image src inclusion
-- insert PhoenixJS image
-- scenario manager project
+- favicon in all formats
+- cards
+  - 3 projects look shitty in 2x2 format
+- about page
+  - copy
 
-# BACKLOG
+
+# Ideas
+- popup to show images fullscreen
+
 - unit tests
 - e2e tests
 - Drop shadow also for images in small viewports?
@@ -14,10 +20,8 @@
 - Dual image in styled-image look bad -> make styled-image dual compatible
 - Next project button on the bottom of the page
 - make the projects extensible
-- improve performance with low res previews of images? run everthing through kraken.io
 - read more about accessibility of websites (and implement some features)
 - Include Google Analytics?
-- investigate new color scheme
 - Moodboard as bio page?
 
 # DROPPED
@@ -27,8 +31,13 @@
 - Padding left of name looks weird compared to content on page -> images are centered (!)
 - Illustration for testimonials? Face of the client (too aggro),...?
 - Bio Icon (Stylize my face? mb also favicon?)
+- scenario manager project
+- insert PhoenixJS image -> will be deprecated soon
 
 # DONE
+## 2.0.0
+- new color scheme
+- svg loading of icons
 ## 1.3.0
 - CV on website
 - repair favicon

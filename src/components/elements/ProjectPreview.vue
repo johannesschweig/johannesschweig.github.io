@@ -1,19 +1,11 @@
 <template>
-    <router-link class='tile responsive' :to='projProps.route'>
-        <div class='preview-image'>
-            <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
+    <router-link class='tile' :to='projProps.route'>
+        <div class='img-container'>
+          <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
         </div>
-        <div class='preview-text'>
-            <div class='heading'>{{ projProps.name }}</div>
-            <div class='slogan'>{{ projProps.slogan}}</div>
-            <div class='info'>
-                <span class='heading'>Client</span>
-                <span class='heading'>Task</span>
-                <span class='heading'>Timeline</span>
-                <span class='text'>{{ projProps.client }}</span>
-                <span class='text'>{{ projProps.task }}</span>
-                <span class='text'>{{ projProps.date }}</span>
-            </div>
+        <div class='title'>
+          <div class='slogan'>{{ projProps.slogan}}</div>
+          <div class='task'>{{ projProps.task }}</div>
         </div>
     </router-link>
 </template>
@@ -26,10 +18,6 @@ export default {
             required: true
         }
     },
-    data () {
-        return {
-        }
-    },
     methods: {
         buildImgUrl(src) {
             return require('../../assets/' + src)
@@ -40,77 +28,52 @@ export default {
 
 <style scoped>
 .tile {
+  background-color: white;
+  border-radius: var(--radius);
   display: block;
+  box-shadow: var(--shadow);
+  --anim-dur: .1s;
+  -webkit-transition: var(--anim-dur) ease;
+  -moz-transition: var(--anim-dur) ease;
+  -o-transition: var(--anim-dur) ease;
+  /* transition: var(--anim-dur) ease; */
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.preview-image img {
-    max-width: 100%;
+.tile:hover {
+  /* transform: translateY(-20px); */
+  transform: scale(1.03);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.heading {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--light);
+img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--radius) var(--radius) 0px 0px;
+}
+
+.img-container {
+  /* width: 100vw; */
+  /* height: 56.25vw; */
+}
+
+.title {
+  margin: 24px;
 }
 
 .slogan {
-    font-size: 48px;
-    color: var(--dark);
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 12px;
 }
 
-.text {
-    font-size: 20px;
-    color: var(--dark);
+.task {
+  color: var(--blue);
+  font-size: 14px;
+  padding: 4px;
+  border-radius: var(--radius);
+  border: 1px solid var(--blue);
+  display: inline-block;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
-}
-
-@media screen and (max-width: 768px) {
-    .preview-text {
-        padding-top: 24px;
-        display: block;
-    }
-
-    .slogan {
-        font-size: 36px;
-        margin-bottom: 18px;
-    }
-
-    .tile {
-        margin: 100px 0;
-    }
-
-    .heading {
-        font-size: 16px;
-    }
-
-    .text {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .tile {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        display: grid;
-        grid-template-columns: 4fr 48px 5fr;
-    }
-
-    .preview-image {
-        grid-column: 1 / span 1;
-    }
-
-    .preview-text{
-        grid-column: 3 / span 1;
-    }
-
-    .slogan {
-        margin-bottom: 50px;
-    }
-}
 </style>

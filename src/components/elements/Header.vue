@@ -1,36 +1,46 @@
 <template>
     <div id="header">
-        <div id='grid' class='responsive'>
-            <router-link id='name' to='/'>Johannes Schweig</router-link>
-            <span id='project' v-html='getProjectName()'/>
+        <div
+          id='grid'
+          class='responsive'>
+            <router-link
+              id='name'
+              to='/'>
+              Johannes Schweig
+            </router-link>
+            <router-link
+              id='work'
+              to='/'
+              :class='{"active": projectRoutes.indexOf($route.path) != -1 }'>
+              Work
+            </router-link>
+            <router-link
+              id='about'
+              to='/about'
+              :class='{"active": $route.path === "/about"}'>
+              About
+            </router-link>
         </div>
     </div>
 </template>
 
 <script>
-import { getProjectNameFromRoute } from '../../utils/index.js'
+import { projectRoutes } from '../../utils/projects'
 
 export default {
-    data () {
-        return {
-            //whether the email is shown
-            showEmail: false
-        }
-    },
-    methods: {
-        getProjectName() {
-            return getProjectNameFromRoute(this.$route.path)
-        }
+  data() {
+    return {
+      projectRoutes
     }
+  }
 }
 </script>
 
 <style scoped>
-
 #header {
-  height: 50px;
+  height: 64px;
   width: 100%;
-  box-shadow: 0 3px 2px -2px #cccccc;
+  box-shadow: var(--shadow);
 	z-index: 999;
 	background-color: white;
 }
@@ -40,28 +50,43 @@ export default {
   --pad: 12px;
   display: grid;
   /* 30px left padding, size of name, free growing space, size of right links + padding, right padding  */
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: 50px;
+  grid-template-columns: 200px 1fr 100px 100px;
+}
+
+a {
+	font-size: 20px;
 }
 
 #name {
-  grid-column: 1 / 1;
+  grid-column: 1 / 2;
   color: var(--dark);
-	font-size: 20px;
-	line-height: 50px;
+	line-height: 64px;
 }
 
-#project {
-	font-size: 20px;
-	line-height: 50px;
+#work {
   grid-column: 3 / 4;
-	color: var(--light);
-  text-align: right;
 }
 
-@media screen and (max-width: 768px) {
-    #project {
-        display: none;
-    }
+#work,
+#about {
+  color: var(--light);
+  text-align: center;
+	line-height: 62px;
+  background: linear-gradient(to bottom, white 50%, var(--light-blue) 50%);
+  background-size: 100% 200%;
+  background-position:left top;
+  transition:all .15s ease;
+}
+
+#work:hover,
+#about:hover {
+  color: var(--blue);
+  background-position:left bottom;
+}
+
+#work.active,
+#about.active {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
 }
 </style>

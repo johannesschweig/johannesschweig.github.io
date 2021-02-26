@@ -6,8 +6,8 @@ describe('Actions', () => {
     cy.get('#welcome').contains('I am Johannes, a UX Designer based in Berlin, and this is my work.')
     // find three projects
     cy.get('.tile.responsive').its('length').should('eq', 3)
-    // find bio
-    cy.get('#bio')
+    // find about
+    cy.get('#about')
     // find legal link
     cy.get('#legal')
   })

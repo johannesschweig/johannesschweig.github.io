@@ -87,10 +87,6 @@ export default {
 		max-width: 70%;
 	}
 
-	#container {
-		background-color: #F6F6F6;
-	}
-
 	img.shadow,
   video.shadow {
 		-webkit-filter: drop-shadow(0 1px 3px #ccc);

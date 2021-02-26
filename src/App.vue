@@ -1,42 +1,58 @@
 <template>
     <div id="app">
-        <app-header></app-header>
-        <div id="content">
-            <router-view/>
-        </div>
-        <router-link to='/legal' id='legal'>Legal / Impressum</router-link>
+      <Header />
+      <div id="content">
+        <router-view/>
+      </div>
+      <Footer />
     </div>
 </template>
 
 <script>
 import Header from './components/elements/Header.vue'
+import Footer from './components/content/Footer'
 
 export default {
     name: 'App',
     components: {
-        'app-header': Header
+      Footer,
+      Header
     }
 }
 </script>
 
 <style>
 :root {
-	--font: "Lato", sans-serif;
-    --content-padding: 30px;
+	--font-sans: "Lato", sans-serif;
+	--font-serif: "Lora", serif;
+  --content-padding: 30px;
 	--dark: #212121;
 	--light: #666666;
+  --blue: #355DAE;
+  --light-blue: #E6ECF2;
+  --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --grad: linear-gradient(180deg, var(--light-blue) 0%, #EBF2F2 100%);
+  --radius: 2px;
 }
 
 body {
-	font-family: var(--font);
+	font-family: var(--font-sans);
 	font-weight: 500;
-    color: var(--dark);
-    margin: 0;
+  color: var(--dark);
+  margin: 0;
+  height: 100%;
+  background: var(--grad);
+}
+
+#app {
+  display: grid;
+  grid-template-rows: 64px 1fr auto;
+  height: 100%;
 }
 
 a {
-    text-decoration: none;
-	color: var(--light);
+  text-decoration: none;
+  color: var(--dark);
 }
 
 p, ul, ol {
@@ -56,6 +72,14 @@ ul li, ol li {
     line-height: 28px;
 }
 
+/* custom classes */
+.link {
+  border-bottom: 2px solid rgba(53, 93, 174, 0.5);
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--blue);
+}
 
 /* responsive content*/
 .responsive {
@@ -63,16 +87,5 @@ ul li, ol li {
     padding-right: var(--content-padding);
     max-width: 1200px;
     margin: 0 auto;
-}
-
-#legal {
-    font-size: 16px;
-    text-decoration: unerline;
-    padding: 4px;
-    display: block;
-    text-align: right;
-    border-width: 1px 0 0 0;
-    border-style: solid;
-    border-color: #ccc;
 }
 </style>

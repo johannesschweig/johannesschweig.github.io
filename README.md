@@ -3,7 +3,7 @@ This is my portfolio website using Vue.js and GridCSS, deployed on github pages.
 
 ## Getting Started
 Clone this repository. There are three branches:
-- master: the deployed files for github pages
+- main: the deployed files for github pages
 - vueapp: the vue source code of the latest version of the website
 - old_app: an old version of the website written in pure HTML, CSS, JavaScript, jQuery and Bootstrap.
 
@@ -16,7 +16,7 @@ You need `nodejs` and `npm`.
 
 Switch to branch `vueapp`. Run `npm i` to install the dependencies, then `npm run dev` to start a development server on `localhost:8080`. Open your browser at `localhost:8080`.
 
-Alternatively, you can also serve the deployed files from `master` branch. I use [http-server](https://www.npmjs.com/package/http-server) for that. Switch to branch `master`. Run `http-server` inside the directory. Visit `localhost:8080` with your webbrowser
+Alternatively, you can also serve the deployed files from `main` branch. I use [http-server](https://www.npmjs.com/package/http-server) for that. Switch to branch `main`. Run `http-server` inside the directory. Visit `localhost:8080` with your webbrowser
 
 ## Linting & Tests
 
@@ -24,7 +24,7 @@ Linting is done with `npm run lint`. Tests are located in `tests/unit`. Run them
 
 ## Deployment
 
-If you want to build the files necessary for github pages, run `deploy.sh` in the branch `vueapp`. It will build the project, copy the `index.html` to each routes folder to allow for routes with double slashes (e.g. johannesschweig.github.io/phoenix/) and force push the changes to master.
+If you want to build the files necessary for github pages, run `deploy.sh` in the branch `vueapp`. It will build the project, copy the `index.html` to each routes folder to allow for routes with double slashes (e.g. johannesschweig.github.io/phoenix/) and force push the changes to main.
 
 ## Credits
 

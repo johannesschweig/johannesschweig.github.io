@@ -93,18 +93,8 @@ export const projData = [
   },
 ]
 
-export const namedRoutes = projData.map(obj => ({
-  route: obj.route,
-  name: obj.name
-})).concat([{
-    route: '/',
-    name: 'Portfolio'
-  },
-  {
-    route: '/legal',
-    name: 'Legal'
-  }
-])
-
 // only active routes (shown on landing page)
 export const activeRoutes = projData.filter(e => e.active)
+
+// projectRoutes (all project routes with landing page)
+export const projectRoutes = projData.map(e => e.route).concat(['/'])
