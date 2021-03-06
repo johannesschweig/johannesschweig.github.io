@@ -24,6 +24,7 @@ cp index.html legal
 cp ../README.md ./
 
 git init
+git checkout -b main
 git add -A
 git commit -m 'deploy'
 git push -f git@github.com:johannesschweig/johannesschweig.github.io.git main
