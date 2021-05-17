@@ -55,13 +55,22 @@
 				</ul>
 			</p>
 			<h2>Implementations</h2>
-			<p></p>
+			<p>
+				<ul>
+					<li>X Scenario Manager Suche</li>
+					<li>X Worksheet colors</li>
+					<li>0 alternative data input (Prototyp)</li>
+					<li>0 Variants</li>
+					<li>/ Freeze panes</li>
+					<li>/ Jump to SM</li>
+					<li>X Workspace header/tile redesign</li>
+				</ul>
+			</p>
 			<p>TODO Screenshots/gifs</p>
 			<h2>Learnings</h2>
 			<p>Depending on the amount of accuracy of the transcription it took me around 3-4 times the duration of the interview. I highly underestimated the amount of time that went into that. But in the end it payed off to be able to better interpret the saying in the context of what was said and sometimes I still go back to search for a topic that I remembered appearing in one of the interviews to see what a participant said about it. Also good quotes stick easier in your head than interpretations that are not salient enough.</p>
 			<p>I also included the positive feedback I gathered in the interviews and gave it back to the development team because I think it is important to not only focus on the bad stuff but also on the good work that one has done.</p>
 			<p>Ideas that are not really tangible quickly fade away in the minds of the others.</p>
-			<styled-image :src='require("../../assets/codesnippets/3vs1.png")' alt='Combine three nodes into one'></styled-image>
 		</div>
 		<project-arrows :route='"/scenariomanager"'></project-arrows>
 	</div>
