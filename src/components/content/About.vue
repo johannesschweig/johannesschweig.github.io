@@ -9,7 +9,7 @@
         <p><b>💎 Rigorous prioritization</b><br>There will always be more to do than you have time for. Prioritization makes sure that you will have the maximum impact for the limited resources you are provided.</p>
         <p><b>⚙️ Incremental changes</b><br>You can learn faster what works and what does not which is crucial in fast moving environments.</p>
         <p><b>💬 Strong feedback cultures</b><br>Everyone makes mistakes and to acknowledge them means to grow in your role and as a person.</p>
-        <p><p>Currently, I am a Product Designer at <a class='link' href='https://www.valsight.com/'>Valsight</a>.<p>
+        <!--<p>Currently, I am a Product Designer at <a class='link' href='https://www.valsight.com/'>Valsight</a>.<p>-->
         <div class='icons'>
           <!-- CV -->
           <Icon
