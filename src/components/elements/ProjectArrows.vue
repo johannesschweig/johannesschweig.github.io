@@ -51,7 +51,7 @@ export default {
 }
 
 #projectArrows > a {
-  font-size: 20px;
+  font-size: var(--size-h6);
   color: var(--blue);
   border-radius: var(--radius);
   border: 1px solid var(--blue);

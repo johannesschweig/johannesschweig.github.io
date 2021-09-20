@@ -5,9 +5,9 @@
         <div class='img-container'>
           <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
         </div>
-        <div class='title'>
-          <div class='slogan'>{{ projProps.slogan}}</div>
-          <div class='task'>{{ projProps.task }}</div>
+        <div class='text'>
+          <div class='h5sans'>{{ projProps.slogan}}</div>
+          <div class='body1'>{{ projProps.task }}</div>
         </div>
     </router-link>
 </template>
@@ -37,12 +37,10 @@ export default {
   -webkit-transition: var(--anim-dur) ease;
   -moz-transition: var(--anim-dur) ease;
   -o-transition: var(--anim-dur) ease;
-  /* transition: var(--anim-dur) ease; */
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .tile:hover {
-  /* transform: translateY(-20px); */
   transform: scale(1.03);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -72,23 +70,30 @@ img {
   border-radius: var(--radius) var(--radius) 0px 0px;
 }
 
-.title {
+.text {
   margin: 24px 24px 48px 24px;
 }
 
-.slogan {
-  font-size: 20px;
-  color: var(--dark);
+.h5sans {
   margin-bottom: 12px;
 }
 
-.task {
+.text > .body1 {
   color: var(--blue);
-  font-size: 14px;
   padding: 4px 8px;
   border-radius: var(--radius);
   border: 1px solid var(--blue);
   display: inline-block;
 }
 
+
+@media screen and (max-width: 768px) {
+  .h5sans {
+    font-size: var(--size-h6);
+  }
+
+  .text > .body1 {
+    font-size: var(--size-sub2);
+  }
+}
 </style>

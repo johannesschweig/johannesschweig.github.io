@@ -2,15 +2,15 @@
   <footer>
     <div id='contact'>
       <div class='container'>
-        <div class='title'>Get in touch</div>
+        <h3>Get in touch</h3>
         <Icon
           href='https://linkedin.com/in/jschweig'
-          size='48'>
+          :size='windowWidth > 768 ? "48" : "40"'>
           <LinkedInIcon />
         </Icon>
         <Icon
           href='mailto:hello@johannesschweig.de'
-          size='48'>
+          :size='windowWidth > 768 ? "48" : "40"'>
           <MailIcon />
         </Icon>
       </div>
@@ -19,7 +19,7 @@
       <router-link
         to='/legal'
         id='legal'
-        class='link'>
+        class='link body1'>
         Legal / Impressum
       </router-link>
     </div>
@@ -36,6 +36,26 @@ export default {
     Icon,
     LinkedInIcon,
     MailIcon
+  },
+  data() {
+    return {
+      windowWidth: window.innerWidth
+    }
+  },
+  mounted() {
+      this.$nextTick(() => {
+          window.addEventListener('resize', this.onResize);
+      })
+  },
+
+  beforeDestroy() { 
+      window.removeEventListener('resize', this.onResize); 
+  },
+
+  methods: {  
+      onResize() {
+          this.windowWidth = window.innerWidth
+      }
   }
 }
 </script>
@@ -43,8 +63,6 @@ export default {
 <style scoped>
 #contact {
   background-color: var(--dark);
-  color: white;
-  font-size: 48px;
   font-family: var(--font-serif);
   padding-left: var(--content-padding);
   padding-right: var(--content-padding);
@@ -58,8 +76,9 @@ export default {
   margin: 0 auto;
 }
 
-.title {
-  margin-bottom: 18px;
+h3 {
+  color: white;
+  margin: 0 0 18px 0;
 }
 
 a:nth-child(2) {
@@ -72,7 +91,14 @@ a:nth-child(2) {
   color: var(--light);
 }
 
-#legal > a {
 
+@media screen and (max-width: 768px) {
+  #contact {
+    height: 170px;
+  }
+
+  h3 {
+    font-size: var(--size-h4);
+  }
 }
 </style>

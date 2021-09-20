@@ -1,12 +1,14 @@
 <template>
 	<div>
 		<project-header :route='"/knimehub"'></project-header>
-		<div id="knimehub" class='responsive'>
-      <h2>TL;DR</h2>
+		<div
+      id='knimehub'
+      class='responsive body1'>
+      <h4>TL;DR</h4>
       <p>I helped to build a website where data scientists can read up on existing functionality of the desktop application. This website also enables them to share and collaborate on data analysis projects.</p>
-			<h2>Introduction</h2>
+			<h4>Introduction</h4>
 			<p>KNIME develops a data science software which lets users create data analysis workflows with small blocks called "nodes" in a graphical programming paradigm. The community is big and vibrant and we wanted to give users a platform where they can help each other out and work together on general purpose solutions for common data science problems (e.g. churn prediction, anomaly detection). As the UX Designer on the team I was given the task to create a first prototype for the information architecture and the interaction design.</p>
-      <h2>User and task analysis</h2>
+      <h4>User and task analysis</h4>
       <p>At first I wanted to find out users shared and collaborated with already existing tools. I interviewed 9 internal data scientists on their usage of similar products. I was especially interested in how they make their own work understandable to others and what helps them to understand other people's work (e.g. text descriptions, screenshots, oral explanations, visual cues).</p>
 			<styled-image
         :src='require("../../assets/knimehub/quotes.png")'
@@ -24,7 +26,7 @@
         <li>Install nodes: When users have found the right node, they can install it easily by drag-n-dropping it into the desktop application.</li>
         <li>Link nodes/workflows: Users can share links of node and workflow pages to provide other users with a nice way of referencing functionality in the desktop application.</li>
       </ul>
-      <h2>Screen design</h2>
+      <h4>Screen design</h4>
       <p>In this phase I ranked the content in importance and separated it onto different screens. I drew inspiration from online-communities where users share their content with others (node-red, chefkoch, youtube, soundcloud).</p>
 			<styled-image
         :src='require("../../assets/knimehub/communities.png")'
@@ -37,9 +39,9 @@
 			<styled-image
         :src='require("../../assets/knimehub/wireframes-refined.png")'
         alt="Second, more refined wireframes" />
-      <h2>Final visual design and building</h2>
+      <h4>Final visual design and building</h4>
       <p>The final visual design was done by an external designer. I supported the development team during the building process and contributed by taking over small frontend tasks.</p>
-      <h2>Launch</h2>
+      <h4>Launch</h4>
       <p>The KNIME Hub was released and opened to the public during the KNIME Summit in March 2019. Since then it has received great interest and a growing community of active users. From March until October I assisted in the further development of features such as a deeper integration to the desktop application.</p>
       <p>Check it out at <a class='link' href="https://hub.knime.com">hub.knime.com</a>.</p>
 			<styled-image
@@ -63,23 +65,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-h2 {
-	font-size: 14px;
-	font-weight: bold;
-	color: var(--light);
-	margin: 0 0 4px 0;
-}
-
-h3 {
-	font-size: 14px;
-  font-weight: 500;
-	color: var(--light);
-	margin: 0 0 4px 0;
-}
-
-p {
-	margin: 0 0 24px 0;
-}
-</style>

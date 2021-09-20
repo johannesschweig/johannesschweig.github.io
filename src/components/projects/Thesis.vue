@@ -2,7 +2,7 @@
 	<div>
 		<project-header :route='"/thesis"' />
 		<div class='responsive'>
-			<h2>TLDR</h2>
+			<h2>TL;DR</h2>
 			<p>In my master thesis I examined the effects of wearing eyeglasses on eye tracking. I used methods from statistics and machine learning to correct for eyeglass-induced errors.</p>
 			<styled-image
         :src='require("../../assets/thesis/foveated-rendering.png")'

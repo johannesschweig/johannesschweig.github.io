@@ -5,19 +5,20 @@
           class='responsive'>
             <router-link
               id='name'
+              class='h6sans'
               to='/'>
               Johannes Schweig
             </router-link>
             <router-link
               id='work'
               to='/'
-              :class='{"active": projectRoutes.indexOf($route.path) != -1 }'>
+              :class='["h6sans", {"active": projectRoutes.indexOf($route.path) != -1 }]'>
               Work
             </router-link>
             <router-link
               id='about'
               to='/about'
-              :class='{"active": $route.path === "/about"}'>
+              :class='["h6sans", {"active": $route.path === "/about"}]'>
               About
             </router-link>
         </div>
@@ -41,7 +42,6 @@ export default {
   height: 64px;
   width: 100%;
   box-shadow: var(--shadow);
-	z-index: 999;
 	background-color: white;
 }
 
@@ -53,9 +53,6 @@ export default {
   grid-template-columns: 200px 1fr 100px 100px;
 }
 
-a {
-	font-size: 20px;
-}
 
 #name {
   grid-column: 1 / 2;
@@ -88,5 +85,9 @@ a {
 #about.active {
   color: var(--blue);
   border-bottom: 2px solid var(--blue);
+}
+
+.h6sans {
+  margin: 0;
 }
 </style>

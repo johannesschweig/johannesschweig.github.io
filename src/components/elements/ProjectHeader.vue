@@ -1,18 +1,18 @@
 <template>
-  <div id='project-header'>
-    <div class='responsive'>
-      <div id='name-container'>
-        <div id='name'>{{ project.name }}</div>
-        <div id='slogan'>{{ project.slogan }}</div>
-      </div>
-      <div id='heading-container'>
-        <div class='heading'> Client </div>
-        <div id='client'>{{ project.client }}</div>
-        <div class='heading'> Task </div>
-        <div id='task'>{{ project.task }}</div>
-        <div class='heading'> Timeline </div>
-        <div id='date'>{{ project.date }}</div>
-      </div>
+  <div
+    id='project-header'
+    class='responsive'>
+    <div id='name-container'>
+      <div class='subtitle1'>{{ project.name }}</div>
+      <h2>{{ project.slogan }}</h2>
+    </div>
+    <div id='heading-container'>
+      <div class='subtitle1'> Client </div>
+      <h5 id='client'>{{ project.client }}</h5>
+      <div class='subtitle1'> Task </div>
+      <h5 id='task'>{{ project.task }}</h5>
+      <div class='subtitle1'> Timeline </div>
+      <h5 id='date'>{{ project.date }}</h5>
     </div>
   </div>
 </template>
@@ -41,75 +41,44 @@ export default {
 
 <style scoped>
 
-#project-header {
-  margin-bottom: 50px
-}
-
 .responsive {
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+h2, h5 {
+  margin: 0;
+}
+
+#name-container {
+  margin-bottom: 32px;
+}
+
+#heading-container {
   display: grid;
+  grid-template-rows: 1fr 2fr;
+  row-gap: 4px;
+  grid-auto-flow: column;
+  max-width: 700px;
+  justify-content: space-between;
 }
 
-
-
-#name, .heading {
-  color: var(--light);
-  font-weight: bold;
-}
-
-
-
-
-
-@media screen and (min-width: 768px) {
-  #slogan {
-    font-size: 48px;
-  }
-  .responsive {
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 24px;
-    display: grid;
-  }
-
-  #name-container {
-    grid-column: 1 / 2;
-  }
-
-  #heading-container {
-    grid-column: 2 / 3;
-  }
-
-  #client, #task, #date {
-    font-size: 20px;
-  }
-
-  #name, .heading {
-    font-size: 18px;
-  }
-
-  #client, #task {
-    padding-bottom: 8px;
-  }
-}
 
 @media screen and (max-width: 768px) {
-  #slogan {
-    font-size: 36px;
-  }
-
-  #client, #task, #date {
-    font-size: 18px;
-  }
-
-  #name, .heading {
-    font-size: 16px;
-  }
   #heading-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
-    padding-top: 24px;
+    row-gap: 0px;
+  }
+
+  h2 {
+    font-size: var(--size-h3);
+  }
+
+  h5 {
+    font-size: var(--size-h6)
+  }
+
+  .subtitle1 {
+    font-size: var(--size-sub2);
   }
 }
 </style>

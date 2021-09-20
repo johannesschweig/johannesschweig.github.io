@@ -14,7 +14,7 @@
 			<source :src='src' type='video/mp4' />
 				Your browser does not support the video tag.
 		</video>
-		<div id='caption'>{{ alt }}</div>
+		<div class='body2'>{{ alt }}</div>
 	</div>
 </template>
 
@@ -54,8 +54,7 @@ export default {
 	margin-bottom: 24px;
 }
 
-#caption {
-	font-size: 14px;
+.body2 {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: center;

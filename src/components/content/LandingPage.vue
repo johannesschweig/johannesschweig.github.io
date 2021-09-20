@@ -1,6 +1,6 @@
 <template>
   <div>
-    <WelcomeBanner class='responsive'/>
+    <WelcomeBanner />
     <div
       id='projects'
       class='responsive'>
@@ -39,11 +39,9 @@ export default {
   margin-bottom: 100px;
 }
 
-
 @media screen and (min-width: 768px) {
   #projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 </style>

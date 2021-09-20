@@ -3,20 +3,19 @@
 - better image src inclusion
 - favicon in all formats
 
-
 # Ideas
 - popup to show images fullscreen
-
 - unit tests
 - e2e tests
 - Drop shadow also for images in small viewports?
-- Dual image in styled-image look bad -> make styled-image dual compatible
-- Next project button on the bottom of the page
 - make the projects extensible
 - read more about accessibility of websites (and implement some features)
 - Include Google Analytics?
 
 # DONE
+## 2.2.0
+- website-wide styles with responsive scaling
+- updated packages
 ## 2.1.0
 - scenario manager
 - cover images now in 16:10 format
