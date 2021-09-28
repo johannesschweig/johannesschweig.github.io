@@ -23,6 +23,9 @@ cp index.html about
 cp index.html legal
 # copy README.md over
 cp ../README.md ./
+# create CNAME file to prevent overwritten custom domain on deploy
+# see https://github.com/tschaub/gh-pages/issues/213
+echo "johannesschweig.de" >> CNAME
 
 git init
 git checkout -b main
