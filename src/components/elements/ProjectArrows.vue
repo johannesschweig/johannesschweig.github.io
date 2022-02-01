@@ -6,6 +6,7 @@
       <Arrow />
       <span>Previous project: {{ previousProject.name }}</span>
     </router-link>
+    <div class='flex-grow'></div>
     <router-link
       class='next'
       :to='nextProject.route'>
@@ -48,6 +49,7 @@ export default {
 #projectArrows {
   margin-top: 64px;
   margin-bottom: 64px;
+  display: flex;
 }
 
 #projectArrows > a {
@@ -103,6 +105,10 @@ svg path{
 
 a:hover svg path{
   fill: white;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 </style>
