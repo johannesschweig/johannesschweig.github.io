@@ -8,11 +8,17 @@
     </div>
     <div id='heading-container'>
       <div class='subtitle1'> Client </div>
-      <h5 id='client'>{{ project.client }}</h5>
+      <h5>
+        <div
+        :key='c'
+        v-for='c in project.clients'>
+        {{ c }}
+        </div>
+      </h5>
       <div class='subtitle1'> Task </div>
-      <h5 id='task'>{{ project.task }}</h5>
+      <h5>{{ project.task }}</h5>
       <div class='subtitle1'> Timeline </div>
-      <h5 id='date'>{{ project.date }}</h5>
+      <h5>{{ project.date }}</h5>
     </div>
   </div>
 </template>
@@ -56,7 +62,7 @@ h2, h5 {
 
 #heading-container {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
   row-gap: 4px;
   grid-auto-flow: column;
   max-width: 700px;

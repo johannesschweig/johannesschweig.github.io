@@ -13,6 +13,9 @@
 - Include Google Analytics?
 
 # DONE
+## 2.3.0
+- egl project
+- updated packages
 ## 2.2.0
 - website-wide styles with responsive scaling
 - updated packages

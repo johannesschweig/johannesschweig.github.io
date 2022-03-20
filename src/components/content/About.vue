@@ -14,7 +14,7 @@
         <p>You can learn faster what works and what does not which is crucial in fast moving environments.</p>
         <h6>💬 Strong feedback cultures</h6>
         <p>Everyone makes mistakes and to acknowledge them means to grow in your role and as a person.</p>
-        <!--<p>Currently, I am a Product Designer at <a class='link' href='https://www.valsight.com/'>Valsight</a>.<p>-->
+        <p>Currently, I am a Digital Designer at <a class='link' href='https://www.maibornwolff.de/'>MaibornWolff</a>.<p>
         <div class='icons'>
           <Icon
             size='32'
