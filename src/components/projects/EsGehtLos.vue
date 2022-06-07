@@ -5,12 +5,12 @@
 			<h4>TL;DR</h4>
 			<p>I helped to build a product that helps a NGO to organize their citizen councils. One of the big features was a feedback flow for citizens to respond to an invitation for a council and mention their needs.</p>
 			<h4>Problem statement</h4>
-			<p>Es geht los organizes citizen councils and has to manage all the candidates that they reached out to and and their special needs (e.g. child care, mobility impairments). As there are many people involved it is hard to keep track of all the candidates without a proper tool. Our goal was to build such a tool to help them with keeping track of the candidates, perform statistically sound drawings, organize their agents and collect feedback from their candidates online.</p>
+			<p>Es geht los organizes citizen councils and has to manage all the candidates that they reached out to and their special needs (e.g. child care, mobility impairments). As there are many people involved it is hard to keep track of all the candidates without a proper tool. Our goal was to build such a tool to help them with keeping track of the candidates, perform statistically sound drawings, organize their agents and collect feedback from their candidates online.</p>
 			<h4>Visual identity</h4>
 			<styled-image
 				:src='require("../../assets/esgehtlos/colors.png")'
 				alt='Color palette. New colors are highlighted.' />
-			<p>I expanded the existing visual identity ("Es geht los Giulia") to address all the needs of a web application. I expanded the color palette, set up a system for typography based on their existing typefaces and created the first components (buttons, checkboxes, textfields). I tailored the system to the CSS framework <a class='link' href='https://tailwindcss.com/'>Tailwind</a> which we used in development.</p>
+			<p>I expanded the existing visual identity (called "Giulia") to address all the needs of a web application. I expanded the color palette, set up a system for typography based on their existing typefaces and created the first components (buttons, checkboxes, textfields). I tailored the system to the CSS framework <a class='link' href='https://tailwindcss.com/'>Tailwind</a> which we used in development.</p>
 			<styled-image
 				:shadow='false'
 				:src='require("../../assets/esgehtlos/typo.png")'
