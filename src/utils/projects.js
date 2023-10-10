@@ -1,6 +1,19 @@
 // data for the projects
 export const projData = [
   {
+    route: '/trafficticket',
+    image: {
+      src: 'trafficticket/ticket1.jpeg',
+      alt: 'A parking ticket on a windshield'
+    },
+    name: 'Traffic ticket',
+    slogan: 'Processing traffic tickets for a car rental',
+    clients: ['MaibornWolff', 'Car rental company'],
+    task: 'Project lead',
+    date: 'Feb 2022-Jan 2023',
+    active: true
+  },
+  {
     route: '/esgehtlos',
     image: {
       src: 'esgehtlos/demo.png',
@@ -50,7 +63,7 @@ export const projData = [
     clients: ['Greenbox'],
     task: 'Usability evaluation',
     date: '2015',
-    active: true
+    active: false
   },
   {
     route: '/phoenix',
