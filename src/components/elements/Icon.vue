@@ -45,14 +45,14 @@ a {
   transition: all .2s ease;
 }
 
-svg {
+:deep(svg) {
   display: inline-block;
   height: var(--size);
   width: var(--size);
   vertical-align: top;
 }
 
-svg path {
+:deep(svg path) {
   transition: all .2s ease;
 }
 
@@ -68,15 +68,15 @@ svg path {
   background-color: var(--blue);
 }
 
-.with-text svg {
+.with-text :deep(svg) {
   margin-right: 8px;
 }
 
-.with-text svg path {
+.with-text :deep(svg path) {
   fill: var(--dark);
 }
 
-.with-text:hover svg path {
+.with-text:hover :deep(svg path) {
   fill: white;
 }
 
@@ -88,12 +88,12 @@ svg path {
 
 /* Icon without text */
 
-a:not(.with-text) svg path {
+a:not(.with-text) :deep(svg path) {
   fill: white;
   opacity: .8;
 }
 
-a:not(.with-text):hover svg path {
+a:not(.with-text):hover :deep(svg path) {
   opacity: 1;
 }
 </style>

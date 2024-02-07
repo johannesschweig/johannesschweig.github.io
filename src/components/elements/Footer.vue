@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Icon from '../elements/Icon'
+import Icon from './Icon.vue'
 import LinkedInIcon from '@/assets/bio/linkedin.svg'
 import MailIcon from '@/assets/bio/mail.svg'
 

@@ -4,8 +4,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url('../public/fonts/lato-v23-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/lato-v23-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/lato-v23-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/fonts/lato-v23-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lato-regular - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url('../public/fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lato-700 - latin */
 @font-face {
@@ -22,8 +22,8 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url('../public/fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lora-regular - latin */
 @font-face {
@@ -31,8 +31,8 @@
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  src: url('../public/fonts/lora-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/lora-v32-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/lora-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/fonts/lora-v32-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lora-700 - latin */
 @font-face {
@@ -40,8 +40,8 @@
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
-  src: url('../public/fonts/lora-v32-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../public/fonts/lora-v32-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/lora-v32-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/fonts/lora-v32-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
@@ -53,7 +53,6 @@
   --blue: #355DAE;
   --light-blue: #E6ECF2;
   --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  --grad: linear-gradient(180deg, var(--light-blue) 0%, #EBF2F2 100%);
   --radius: 2px;
   /* Font sizes */
   --size-h1: 96px;
@@ -70,8 +69,7 @@ body {
 	font-family: var(--font-sans);
   color: var(--dark);
   margin: 0;
-  height: 100%;
-  background: var(--grad);
+  background: var(--light-blue);
 }
 
 #app {

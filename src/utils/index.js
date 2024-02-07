@@ -34,10 +34,15 @@ export function getPreviousNextProjects(route) {
   }
   let previous = getMod(found - 1, activeRoutes.length)
   let next = getMod(found + 1, activeRoutes.length)
-  
+
   return {
     previous: activeRoutes[previous],
     next: activeRoutes[next]
   }
+}
+
+// returns a URL for static assets, e.g. images or pdfs
+export function buildURL(src) {
+  return new URL(`/src/assets/${src}`, import.meta.url).href;
 }
 

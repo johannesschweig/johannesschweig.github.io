@@ -1,5 +1,14 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+// export default new Router({
+//     routes: [
+
+//     ],
+//     mode: 'history',
+//     scrollBehavior () {
+//         return { x: 0, y: 0 }
+//     }
+// })
+
+import { createRouter, createWebHistory } from 'vue-router'
 import About from '@/components/content/About.vue'
 import CodeSnippets from '@/components/projects/CodeSnippets.vue'
 import EsGehtLos from '@/components/projects/EsGehtLos.vue'
@@ -15,10 +24,9 @@ import ScenarioManager from '@/components/projects/ScenarioManager.vue'
 import Thesis from '@/components/projects/Thesis.vue'
 import TrafficTicket from '@/components/projects/TrafficTicket.vue'
 
-Vue.use(Router)
-
-export default new Router({
-    routes: [
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
         { path: '/', component: LandingPage },
         { path: '/about', component: About },
         { path: '/codesnippets', component: CodeSnippets },
@@ -32,10 +40,8 @@ export default new Router({
         { path: '/scenariomanager', component: ScenarioManager },
         { path: '/thesis', component: Thesis },
         { path: '/trafficticket', component: TrafficTicket },
-        { path: '*', component: PageNotFound}
-    ],
-    mode: 'history',
-    scrollBehavior () {
-        return { x: 0, y: 0 }
-    }
+        // { path: '*', component: PageNotFound}
+  ]
 })
+
+export default router

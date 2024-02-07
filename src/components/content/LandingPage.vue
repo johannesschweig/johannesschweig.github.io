@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import ProjectPreview from '../elements/ProjectPreview'
-import { activeRoutes }  from '../../utils/projects'
-import WelcomeBanner from './WelcomeBanner'
+import ProjectPreview from '@/components/elements/ProjectPreview.vue'
+import { activeRoutes }  from '../../utils/projects.js'
+import WelcomeBanner from './WelcomeBanner.vue'
 
 export default {
   components: {

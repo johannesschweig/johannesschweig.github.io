@@ -3,7 +3,7 @@
       class='tile'
       :to='projProps.route'>
         <div class='img-container'>
-          <img :src='buildImgUrl(projProps.image.src)' :alt='projProps.image.alt' />
+          <img :src='buildURL(projProps.image.src)' :alt='projProps.image.alt' />
         </div>
         <div class='text'>
           <div class='h5sans'>{{ projProps.slogan}}</div>
@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import { buildURL } from '@/utils';
+
 export default {
     props: {
         projProps: {
@@ -21,8 +23,8 @@ export default {
         }
     },
     methods: {
-        buildImgUrl(src) {
-            return require('../../assets/' + src)
+        buildURL(src) {
+          return buildURL(src)
         }
     }
 }

@@ -1,7 +1,7 @@
 <template>
   <div id='about'>
     <div class='responsive'>
-      <img src='../../assets/bio/portrait.jpg' />
+      <img :src="buildURL('bio/portrait.jpg')" />
       <div
         id='text'
         class='body1'>
@@ -14,12 +14,12 @@
         <p>You can learn faster what works and what does not which is crucial in fast moving environments.</p>
         <h6>💬 Strong feedback cultures</h6>
         <p>Everyone makes mistakes and to acknowledge them means to grow in your role and as a person.</p>
-        <p>Currently, I am working as a Senior IT Consultant for <a class='link' href='https://www.maibornwolff.de/'>MaibornWolff</a>.<p>
+        <p>Currently, I am working as a Senior IT Consultant for <a class='link' href='https://www.maibornwolff.de/'>MaibornWolff</a>.</p>
         <div class='icons'>
           <Icon
             size='32'
             text='Resume'
-            :href='require("../../assets/bio/CV.pdf")' >
+            :href='buildURL("bio/CV.pdf")' >
             <CvIcon />
           </Icon>
           <Icon
@@ -42,10 +42,11 @@
 
 
 <script>
-import Icon from '@/components/elements/Icon'
+import Icon from '@/components/elements/Icon.vue'
 import UxIcon from '@/assets/bio/ux.svg'
 import CvIcon from '@/assets/bio/cv.svg'
 import GhIcon from '@/assets/bio/github.svg'
+import { buildURL } from '@/utils'
 
 export default {
   components: {
@@ -53,6 +54,11 @@ export default {
     GhIcon,
     Icon,
     UxIcon
+  },
+  methods: {
+    buildURL(src) {
+      return buildURL(src)
+    }
   }
 }
 </script>

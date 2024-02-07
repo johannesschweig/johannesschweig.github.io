@@ -70,7 +70,7 @@ export default {
   color: white;
 }
 
-svg path{
+svg >>> path{
   fill: var(--blue);
   transition: all .15s ease;
 }
@@ -103,7 +103,7 @@ svg path{
   color: white;
 }
 
-a:hover svg path{
+a:hover svg >>> path{
   fill: white;
 }
 

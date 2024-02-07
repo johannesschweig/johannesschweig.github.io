@@ -8,16 +8,16 @@
 			<p>Es geht los organizes citizen councils and has to manage all the candidates that they reached out to and their special needs (e.g. child care, mobility impairments). As there are many people involved it is hard to keep track of all the candidates without a proper tool. Our goal was to build such a tool to help them with keeping track of the candidates, perform statistically sound drawings, organize their agents and collect feedback from their candidates online.</p>
 			<h4>Visual identity</h4>
 			<styled-image
-				:src='require("../../assets/esgehtlos/colors.png")'
+				:src='buildURL("esgehtlos/colors.png")'
 				alt='Color palette. New colors are highlighted.' />
 			<p>I expanded the existing visual identity (called "Giulia") to address all the needs of a web application. I expanded the color palette, set up a system for typography based on their existing typefaces and created the first components (buttons, checkboxes, textfields). I tailored the system to the CSS framework <a class='link' href='https://tailwindcss.com/'>Tailwind</a> which we used in development.</p>
 			<styled-image
 				:shadow='false'
-				:src='require("../../assets/esgehtlos/typo.png")'
+				:src='buildURL("esgehtlos/typo.png")'
 				alt='Typography scale' />
 			<styled-image
 				:shadow='false'
-				:src='require("../../assets/esgehtlos/components.png")'
+				:src='buildURL("esgehtlos/components.png")'
 				alt='Components in different states' />
 			<h4>Prototype "Feedback flow"</h4>
 			<p>In this click prototype (German only) you can see the screens that a candidate goes through after being chosen for a citizen council. The candidate can tick special needs, accept or decline the invitation and give feedback to Es geht los.</p>
@@ -37,12 +37,18 @@
 import ProjectHeader from '../elements/ProjectHeader.vue'
 import StyledImage from '../elements/StyledImage.vue'
 import projectArrows from '../elements/ProjectArrows.vue'
+import { buildURL } from '@/utils'
 
 export default {
 	components: {
 		'project-header': ProjectHeader,
 		'styled-image': StyledImage,
 		'project-arrows': projectArrows
+	},
+	methods: {
+		buildURL(src) {
+			return buildURL(src)
+		}
 	}
 }
 </script>
