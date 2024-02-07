@@ -1,12 +1,12 @@
 <template>
   <div id='about'>
     <div class='responsive'>
-      <img src='../../assets/bio/bio-image.jpg' />
+      <img src='../../assets/bio/portrait.jpg' />
       <div
         id='text'
         class='body1'>
         <h4>About me</h4>
-        <p>I am a UX Designer with 6 years of experience in building digital products. I am always eager to learn new things and to educate my team on cool new methods I found. I love to code small projects (such as this website) in my free time and also enjoy to drill into data (e.g. google analytics) to gain user insights. Even though I have very broad interests, my passion belongs to tailoring digital products to user needs.</p>
+        <p>I am a UX & Product Consultant with 6 years of experience in building digital products. I am always eager to learn new things and to educate my team on cool new methods I found. I love to code small projects (such as this website) in my free time and also enjoy to drill into data (e.g. google analytics) to gain user insights. Even though I have very broad interests, my passion belongs to tailoring digital products to user needs.</p>
         <h5>Things I believe in</h5>
         <h6>💎 Rigorous prioritization</h6>
         <p>There will always be more to do than you have time for. Prioritization makes sure that you will have the maximum impact for the limited resources you are provided.</p>

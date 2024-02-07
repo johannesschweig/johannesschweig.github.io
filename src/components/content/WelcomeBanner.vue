@@ -1,7 +1,7 @@
 <template>
   <h3 class='responsive'>
     Hi,<br>
-    I am Johannes, a UX Designer based in Berlin, and this is my work.
+    I am Johannes, a UX & Product Consultant based in Berlin, and this is my work.
   </h3>
 </template>
 
