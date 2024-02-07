@@ -13,8 +13,13 @@
 		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h6>Indication of source for images and graphics</h6>
 		<ul>
-			<li>artist by Gregor Cresnar from Symbols Vol. 2 Collection from the Noun Project, license: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a class='link' href="https://thenounproject.com/term/artist/368426">link</a></li>
-			<li>phoenix by Design Rails from the Noun Project, license: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, source: <a class='link' href="https://thenounproject.com/term/phoenix/85573">link</a></li> <li>QueryBuilder by jQuery, license: <a class='link' href='https://opensource.org/licenses/MIT'>MIT License</a>, source: <a class='link' href='https://querybuilder.js.org/'>link</a></li> <li>think by Gregor Cresnar from the Noun Project, license: <a class='link' href='https://creativecommons.org/licenses/by/3.0/'>Creative Commons-BY 3.0</a>, source: <a class='link' href='https://thenounproject.com/grega.cresnar/collection/users-vol-1/?i=541709'>link</a></li>
+			<li
+				:key='s.title'
+				v-for='s in sources'>
+				{{s.title}} by {{s.author}} from {{s.platform}},
+				license: <a class='link' :href='s.licenseLink'>{{s.licenseName}}</a>,
+				source: <a class='link' :href='s.sourceLink'>link</a>
+			</li>
 		</ul>
 		<h6>Disclaimer</h6>
 		<p><i>Accountability for content: </i> The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this context, please note that we are accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
@@ -31,11 +36,15 @@
 		<h6>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h6>
 		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
 		<h6>Quellenangaben für die verwendeten Bilder und Grafiken</h6>
+			<!-- <li>artist von Gregor Cresnar aus Symbols Vol. 2 Collection von the Noun Project, Lizenz: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a class='link' href="https://thenounproject.com/term/artist/368426">Link</a></li> -->
 		<ul>
-			<li>artist von Gregor Cresnar aus Symbols Vol. 2 Collection von the Noun Project, Lizenz: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a class='link' href="https://thenounproject.com/term/artist/368426">Link</a></li>
-			<li>phoenix von Design Rails von the Noun Project, Lizenz: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a>, Quelle: <a class='link' href="https://thenounproject.com/term/phoenix/85573">Link</a></li>
-			<li>QueryBuilder von jQuery, Lizenz: <a class='link' href='https://opensource.org/licenses/MIT'>MIT License</a>, Quelle: <a class='link' href='https://querybuilder.js.org/'>Link</a></li>
-      <li>think von Gregor Cresnar von the Noun Project, Lizenz: <a class='link' href='https://creativecommons.org/licenses/by/3.0/'>Creative Commons-BY 3.0</a>, Quelle: <a class='link' href='https://thenounproject.com/grega.cresnar/collection/users-vol-1/?i=541709'>Link</a></li>
+			<li
+				:key='s.title'
+				v-for='s in sources'>
+				{{s.title}} von {{s.author}} von {{s.platform}},
+				Lizenz: <a class='link' :href='s.licenseLink'>{{s.licenseName}}</a>,
+				Quelle: <a class='link' :href='s.sourceLink'>Link</a>
+			</li>
 		</ul>
 		<h6>Haftungsausschluss</h6>
 		<p><i>Haftung für Inhalte: </i>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
@@ -44,6 +53,81 @@
 		<p><i>Quelle:  </i><a class='link' href="http://www.muster-vorlagen.net">http://www.muster-vorlagen.net</a></p>
 	</div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			sources: [
+				{
+					title: 'artist',
+					author: 'Gregor Cresnar',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/term/artist/368426'
+				},
+				{
+					title: 'phoenix',
+					author: 'Design Rails',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/term/phoenix/85573'
+				},
+				{
+					title: 'QueryBuilder',
+					author: 'jQuery',
+					platform: '',
+					licenseName: 'MIT License',
+					licenseLink: 'https://opensource.org/licenses/MIT',
+					sourceLink: 'https://querybuilder.js.org/'
+				},
+				{
+					title: 'think',
+					author: 'Gregor Cresnar',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/grega.cresnar/collection/users-vol-1/?i=541709'
+				},
+				{
+					title: 'Happy news',
+					author: 'Katerina Limpitsouni',
+					platform: 'unDraw',
+					licenseName: 'open-source license',
+					licenseLink: 'https://undraw.co/license',
+					sourceLink: 'https://undraw.co/search'
+				},
+				{
+					title: 'Feeling blue',
+					author: 'Katerina Limpitsouni',
+					platform: 'unDraw',
+					licenseName: 'open-source license',
+					licenseLink: 'https://undraw.co/license',
+					sourceLink: 'https://undraw.co/search'
+				},
+				{
+					title: 'Ideas',
+					author: 'Katerina Limpitsouni',
+					platform: 'unDraw',
+					licenseName: 'open-source license',
+					licenseLink: 'https://undraw.co/license',
+					sourceLink: 'https://undraw.co/search'
+				},
+				{
+					title: 'Lottie Completed Animation',
+					author: 'Bhola Record',
+					platform: 'lottiefiles',
+					licenseName: 'Lottie Simple License',
+					licenseLink: 'https://lottiefiles.com/page/license',
+					sourceLink: 'https://lottiefiles.com/70295-lottie-completed-animation'
+				}
+			]
+		}
+	}
+}
+</script>
 
 <style scoped>
 #content {

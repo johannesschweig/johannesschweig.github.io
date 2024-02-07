@@ -5,6 +5,7 @@ This is my portfolio website using Vue.js and GridCSS, deployed on github pages.
 Clone this repository. There are three branches:
 - main: the deployed files for github pages
 - vueapp: the vue source code of the latest version of the website
+- develop: branch for new features, eventually merged into vueapp
 - old_app: an old version of the website written in pure HTML, CSS, JavaScript, jQuery and Bootstrap.
 
 
@@ -31,13 +32,6 @@ If you want to build the files necessary for github pages, run `deploy.sh` in th
 **Built with:**
 * [GridCSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - like Bootstrap only newer, more versatile and features less css styles you don't necessarily need
 * [Vue.js](https://vuejs.org/) - a JavaScript Framework similar to React or Angular
-
-**Versioning** is done with Git.
-
-**Thanks to**
-
-* [FreeCodeCamp](https://www.freecodecamp.org/) for their great free vue course.
-* [The Net Ninja](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) for his great youtube vue video tutorials.
 
 ## License
 
