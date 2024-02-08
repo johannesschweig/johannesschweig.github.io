@@ -45,11 +45,15 @@ a {
   transition: all .2s ease;
 }
 
-:deep(svg) {
+:deep(svg), :deep(img) {
   display: inline-block;
-  height: var(--size);
-  width: var(--size);
+  max-width: var(--size);
+  max-height: var(--size);
   vertical-align: top;
+}
+
+:deep(svg) {
+  width: var(--size);
 }
 
 :deep(svg path) {
@@ -60,6 +64,7 @@ a {
 .with-text {
   border-radius: var(--radius);
   padding: 6px 12px;
+  min-width: 100px;
 }
 
 .with-text:hover,
@@ -68,7 +73,8 @@ a {
   background-color: var(--blue);
 }
 
-.with-text :deep(svg) {
+.with-text :deep(svg),
+.with-text :deep(img) {
   margin-right: 8px;
 }
 

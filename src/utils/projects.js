@@ -1,5 +1,18 @@
 // data for the projects
 export const projData = [
+{
+    route: '/dubai',
+    image: {
+      src: 'dubai/venice-showcase.png',
+      alt: 'Website for a real estate project'
+    },
+    name: 'Dubai',
+    slogan: 'Real estate website for Dubai',
+    clients: ['Gravitas Property Ventures'],
+    task: 'UI Design',
+    date: 'Jan 2024',
+    active: true
+  },
   {
     route: '/trafficticket',
     image: {
@@ -9,7 +22,7 @@ export const projData = [
     name: 'Traffic ticket',
     slogan: 'Processing traffic tickets for a car rental',
     clients: ['MaibornWolff', 'Car rental company'],
-    task: 'Project lead',
+    task: 'Product Mangement',
     date: 'Feb 2022-Jan 2023',
     active: true
   },

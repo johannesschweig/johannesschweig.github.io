@@ -36,7 +36,7 @@ export default {
 	methods: {
 		// returns true if the source is a video, false if it is something else (e.g. image)
 		isVideo() {
-			if (this.$props.src.endsWith('.mp4')) {
+			if (this.$props.src.endsWith('.mp4') | this.$props.src.endsWith('.webm')) {
 				return true
 			} else {
 				return false
