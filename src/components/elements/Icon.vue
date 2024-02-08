@@ -86,8 +86,11 @@ a {
   line-height: var(--size);
 }
 
-/* Icon without text */
+a.with-text {
+  border: 1px solid rgba(53, 93, 174, 0.5);
+}
 
+/* Icon without text */
 a:not(.with-text) :deep(svg path) {
   fill: white;
   opacity: .8;
