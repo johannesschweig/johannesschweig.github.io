@@ -1,18 +1,8 @@
-# Linux code work
-- make previous/nextProject more elegant
-- better image src inclusion
-- favicon in all formats
-
-# Ideas
-- popup to show images fullscreen
-- unit tests
-- e2e tests
-- Drop shadow also for images in small viewports?
-- make the projects extensible
-- read more about accessibility of websites (and implement some features)
-- Include Google Analytics?
 
 # DONE
+## 2.4.0
+- vue3 upgrade 
+- better image src inclusion
 ## 2.3.0
 - egl project
 - updated packages
