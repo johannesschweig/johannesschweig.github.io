@@ -50,7 +50,7 @@ export default {
   --pad: 12px;
   display: grid;
   /* 30px left padding, size of name, free growing space, size of right links + padding, right padding  */
-  grid-template-columns: 200px 1fr 100px 100px;
+  grid-template-columns: 170px 1fr 100px 100px;
 }
 
 
