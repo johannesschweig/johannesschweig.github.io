@@ -50,7 +50,7 @@ export const projData = [
     clients: ['Valsight'],
     task: 'UX Research',
     date: 'Jan-Mar 2020',
-    active: true // active projects are shown on the landing page, inactive ones are only accessible by route
+    active: false // active projects are shown on the landing page, inactive ones are only accessible by route
   },
   {
     route: '/knimehub',

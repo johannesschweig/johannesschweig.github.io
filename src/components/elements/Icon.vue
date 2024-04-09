@@ -63,8 +63,9 @@ a {
 /* Icon with text */
 .with-text {
   border-radius: var(--radius);
-  padding: 6px 12px;
+  padding: 8px 16px;
   min-width: 100px;
+  background-color: white;
 }
 
 .with-text:hover,
@@ -93,7 +94,7 @@ a {
 }
 
 a.with-text {
-  border: 1px solid rgba(53, 93, 174, 0.5);
+  border: 1px solid var(--blue);
 }
 
 /* Icon without text */

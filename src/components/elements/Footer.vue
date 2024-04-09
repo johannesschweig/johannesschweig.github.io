@@ -3,23 +3,16 @@
     <div id='contact'>
       <div class='container'>
         <h3>Get in touch</h3>
-        <Icon
-          href='https://linkedin.com/in/jschweig'
-          :size='windowWidth > 768 ? "48" : "40"'>
-          <LinkedInIcon />
-        </Icon>
-        <Icon
-          href='mailto:hello@johannesschweig.de'
-          :size='windowWidth > 768 ? "48" : "40"'>
+        <Icon href='mailto:hello@johannesschweig.de' :size='windowWidth > 768 ? "48" : "40"'>
           <MailIcon />
+        </Icon>
+        <Icon href='https://linkedin.com/in/jschweig' :size='windowWidth > 768 ? "48" : "40"'>
+          <LinkedinIcon />
         </Icon>
       </div>
     </div>
     <div id='legal'>
-      <router-link
-        to='/legal'
-        id='legal'
-        class='link body1'>
+      <router-link to='/legal' id='legal' class='link body1'>
         Legal / Impressum
       </router-link>
     </div>
@@ -28,13 +21,13 @@
 
 <script>
 import Icon from './Icon.vue'
-import LinkedInIcon from '@/assets/bio/linkedin.svg'
+import LinkedinIcon from '@/assets/bio/linkedin.svg'
 import MailIcon from '@/assets/bio/mail.svg'
 
 export default {
   components: {
     Icon,
-    LinkedInIcon,
+    LinkedinIcon,
     MailIcon
   },
   data() {
@@ -43,19 +36,19 @@ export default {
     }
   },
   mounted() {
-      this.$nextTick(() => {
-          window.addEventListener('resize', this.onResize);
-      })
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize);
+    })
   },
 
-  beforeDestroy() { 
-      window.removeEventListener('resize', this.onResize); 
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize);
   },
 
-  methods: {  
-      onResize() {
-          this.windowWidth = window.innerWidth
-      }
+  methods: {
+    onResize() {
+      this.windowWidth = window.innerWidth
+    }
   }
 }
 </script>

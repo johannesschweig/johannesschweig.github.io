@@ -14,7 +14,6 @@
         <p>You can learn faster what works and what does not which is crucial in fast moving environments.</p>
         <h6>💬 Strong feedback cultures</h6>
         <p>Everyone makes mistakes and to acknowledge them means to grow in your role and as a person.</p>
-        <p>Currently, I am working as a Senior IT Consultant for <a class='link' href='https://www.maibornwolff.de/'>MaibornWolff</a>.</p>
         <div class='icons'>
           <Icon
             size='32'
