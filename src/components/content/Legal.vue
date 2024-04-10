@@ -122,7 +122,31 @@ export default {
 					licenseName: 'Lottie Simple License',
 					licenseLink: 'https://lottiefiles.com/page/license',
 					sourceLink: 'https://lottiefiles.com/70295-lottie-completed-animation'
-				}
+				},
+				{
+					title: 'Agile',
+					author: 'muhamad afiffudin',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/browse/icons/term/agile/'
+				},
+				{
+					title: 'Network',
+					author: 'Saeful Gokil',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/browse/icons/term/network/'
+				},
+				{
+					title: 'Telescope',
+					author: 'ProSymbols',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/browse/icons/term/telescope/'
+				},
 			]
 		}
 	}

@@ -22,7 +22,7 @@ export const projData = [
     name: 'Traffic ticket',
     slogan: 'Processing traffic tickets for a car rental',
     clients: ['MaibornWolff', 'Car rental company'],
-    task: 'Product Mangement',
+    task: 'Product Management',
     date: 'Feb 2022-Jan 2023',
     active: true
   },

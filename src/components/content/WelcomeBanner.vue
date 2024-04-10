@@ -1,6 +1,6 @@
 <template>
   <div class='responsive'>
-    <img :src="buildURL('portrait.png')" />
+    <img :src="buildURL('landingpage/portrait.png')" />
     <div class="text">
       <h4>From Vision to Interface</h4>
       <p>As a <span>UX Designer</span> or <span>Product Manager</span> I help companies translate business needs into working
@@ -56,7 +56,7 @@ h4 {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 48px;
   margin-bottom: 72px;
-  gap: 32px;
+  gap: 24px;
 }
 
 .text {
