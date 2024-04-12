@@ -30,9 +30,9 @@
       <h4>Development</h4>
       <p>Nicolas Kopp from <a class="link" href="https://www.digitalessence.de/">digitalessence</a> developed the site
         with Wordpress DIVI.</p>
-      <Icon size='32' text='Visit the page' href='https://www.gravitas-dubai.com/'>
+      <Button type="primary" bg="light" size='sm' text='Visit the page' href='https://www.gravitas-dubai.com/'>
         <img :src="buildURL('dubai/Gravitas-Logo-Light.png')" />
-      </Icon>
+      </Button>
 			<styled-image :src="buildURL('dubai/eywa-2.webm')" alt='Project Heimat' />
     </div>
     <project-arrows :route='"/dubai"'></project-arrows>
@@ -44,7 +44,7 @@ import ProjectHeader from '../elements/ProjectHeader.vue'
 import StyledImage from '../elements/StyledImage.vue'
 import projectArrows from '../elements/ProjectArrows.vue'
 import { buildURL } from '@/utils'
-import Icon from '@/components/elements/Icon.vue'
+import Button from '@/components/elements/Button.vue'
 
 
 export default {
@@ -52,7 +52,7 @@ export default {
     'project-header': ProjectHeader,
     'styled-image': StyledImage,
     'project-arrows': projectArrows,
-    Icon,
+    Button,
   },
   methods: {
     buildURL(src) {

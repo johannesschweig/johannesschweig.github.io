@@ -54,9 +54,9 @@ export default {
 
 #projectArrows > a {
   font-size: var(--size-h6);
-  color: var(--blue);
+  color: var(--blue-200);
   border-radius: var(--radius);
-  border: 1px solid var(--blue);
+  border: 1px solid var(--blue-200);
   padding: 6px 16px;
   background-size: 200% 100%;
   transition: all .15s ease;
@@ -71,12 +71,12 @@ export default {
 }
 
 svg >>> path{
-  fill: var(--blue);
+  fill: var(--blue-200);
   transition: all .15s ease;
 }
 
 .previous {
-  background: linear-gradient(to right, transparent 50%, var(--blue) 50%);
+  background: linear-gradient(to right, transparent 50%, var(--blue-200) 50%);
   background-position: left top;
 }
 
@@ -85,7 +85,7 @@ svg >>> path{
 }
 
 .next {
-  background: linear-gradient(to left, transparent 50%, var(--blue) 50%);
+  background: linear-gradient(to left, transparent 50%, var(--blue-200) 50%);
   background-position: right top;
   float: right;
 }
@@ -99,7 +99,7 @@ svg >>> path{
 }
 
 #projectArrows > a:active {
-  background-color: var(--blue);
+  background-color: var(--blue-200);
   color: white;
 }
 

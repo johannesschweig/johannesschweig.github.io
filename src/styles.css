@@ -1,64 +1,67 @@
-/* lato-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-display: swap;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/lato-v23-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/fonts/lato-v23-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/Inter-Light.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/Inter-Light.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* lato-regular - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-display: swap;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/Inter-Regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* lato-700 - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lato';
+  font-display: swap;
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 500;
+  src: url('/fonts/Inter-Medium.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/Inter-Medium.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* lora-regular - latin */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
+  font-display: swap;
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/lora-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/fonts/lora-v32-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* lora-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/lora-v32-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/fonts/lora-v32-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 600;
+  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('/fonts/Inter-Bold.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 :root {
-	--font-sans: "Lato", sans-serif;
-	--font-serif: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
   --content-padding: 30px;
-	--dark: #212121;
-	--light: #666666;
-  --blue: #355DAE;
-  --light-blue: #E6ECF2;
-  --shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --blue-100: #2A4A8A;
+  --blue-200: #355DAE;
+  --blue-300: #4070D1;
+  --blue-400: #4B83F5;
+  --dark-100: #1A1C21;
+  --dark-200: #353942;
+  --dark-300: #525866;
+  --light-100: #E6EAF2;
+  --light-200: #C2C5CC;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --radius: 8px;
+  --radius-2: calc(8px * 2);
   /* Font sizes */
   --size-h1: 96px;
-  --size-h2: 60px;
+  --size-h2: 64px;
   --size-h3: 48px;
-  --size-h4: 34px;
+  --size-h4: 32px;
   --size-h5: 24px;
   --size-h6: 20px;
   --size-sub1: 16px;
@@ -66,10 +69,10 @@
 }
 
 body {
-	font-family: var(--font-sans);
-  color: var(--dark);
+  font-family: var(--font-sans);
+  color: var(--dark-100);
   margin: 0;
-  background: var(--light-blue);
+  background: var(--light-100);
 }
 
 #app {
@@ -79,64 +82,84 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-	font-family: var(--font-serif);
-  /* color: red; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: var(--dark-100);
+}
+
+.regular {
   font-weight: 400;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: var(--size-h1);
-	margin: 112px 0 48px 0;
+  margin: 112px 0 48px 0;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: var(--size-h2);
-	margin: 72px 0 32px 0;
+  margin: 72px 0 32px 0;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: var(--size-h3);
-	margin: 60px 0 24px 0;
+  margin: 60px 0 24px 0;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: var(--size-h4);
-	margin: 40px 0 16px 0;
+  margin: 40px 0 16px 0;
 }
 
-h5, .h5sans {
+h5,
+.h5 {
   font-size: var(--size-h5);
-	margin: 32px 0 12px 0;
+  margin: 32px 0 12px 0;
 }
 
-h6, .h6sans {
+h6,
+.h6 {
   font-size: var(--size-h6);
-	margin: 24px 0 8px 0;
+  margin: 24px 0 8px 0;
 }
 
-.h5sans, .h6sans, .subtitle1, .subtitle2, .body1, .body2 {
-	font-family: var(--font-sans);
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0
 }
 
 .subtitle1 {
   font-size: var(--size-sub1);
-  text-transform: uppercase;
-  color: var(--light);
+  color: var(--dark-300);
 }
 
 .subtitle2 {
   font-size: var(--size-sub2);
-  text-transform: uppercase;
-  color: var(--light);
+  color: var(--dark-300);
 }
 
 .body1 {
   font-size: var(--size-sub1);
+  line-height: 24px;
+  color: var(--dark-200);
 }
 
 .body2 {
   font-size: var(--size-sub2);
+  line-height: 28px;
 }
 
 .body1 p {
@@ -149,14 +172,30 @@ h6, .h6sans {
   line-height: 24px;
 }
 
+.button {
+  font-size: var(--size-sub1);
+}
+
+.button-lg {
+  font-size: var(--size-h6);
+}
+
+@media screen and (max-width: 768px) {
+  .button-lg {
+    font-size: var(--size-sub1);
+  }
+}
+
 
 /* General classes */
 a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--dark-100);
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   max-width: 700px;
 }
 
@@ -168,23 +207,25 @@ ul {
   margin: 0 0 24px 0;
 }
 
-ul li, ol li {
+ul li,
+ol li {
   line-height: 28px;
 }
 
 /* custom classes */
 .link {
-  border-bottom: 2px solid rgba(53, 93, 174, 0.5);
+  border-bottom: 2px solid var(--blue-300);
 }
 
-.link:hover {
-  border-bottom: 2px solid var(--blue);
+.link:hover,
+.link:active {
+  border-bottom: 2px solid var(--blue-100);
 }
 
 /* responsive content*/
 .responsive {
   padding-left: var(--content-padding);
   padding-right: var(--content-padding);
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }

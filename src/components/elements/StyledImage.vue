@@ -58,7 +58,7 @@ export default {
 	padding-top: 12px;
 	padding-bottom: 12px;
 	text-align: center;
-	color: var(--light);
+	color: var(--dark-300);
 }
 
 .img-sm, .img-md, .img-lg {

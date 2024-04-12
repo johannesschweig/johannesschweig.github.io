@@ -30,7 +30,3 @@ If you want to build the files necessary for github pages, run `deploy.sh` in th
 **Built with:**
 * [GridCSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - like Bootstrap only newer, more versatile and features less css styles you don't necessarily need
 * [Vue.js](https://vuejs.org/) - a JavaScript Framework similar to React or Angular
-
-## License
-
-You may reuse my code which is about the technical side of this project (e.g. page setup, build scripts, layout) without asking if you provide attribution somewhere. You may NOT reuse any of my images or copy (i.e. written text).

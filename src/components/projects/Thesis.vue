@@ -64,7 +64,7 @@ export default {
 h2 {
 	font-size: 14px;
 	font-weight: bold;
-	color: var(--light);
+	color: var(--dark-100);
 	margin: 0 0 4px 0;
 }
 

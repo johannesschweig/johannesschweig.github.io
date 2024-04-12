@@ -1,5 +1,11 @@
-
 # DONE
+## 3.0.0
+- Restyling of landing page
+- New colors, new button styles
+- All projects can now be shown by clicking on the projects headline 3 times
+- Bio Icon (Stylize my face? mb also favicon?)
+- 404 working with deployment
+- scenario manager project
 ## 2.4.0
 - vue3 upgrade 
 - better image src inclusion
@@ -65,10 +71,5 @@
 
 # DROPPED
 - PhoenixJS improvements: create PhoenixJS image, overlay screenshot, screenshot of the auto dj icons -> phoenixjs is about to be retired
-- 404 not working due to github pages crap
 - Thesis: Fix pdf download
-- Padding left of name looks weird compared to content on page -> images are centered (!)
-- Illustration for testimonials? Face of the client (too aggro),...?
-- Bio Icon (Stylize my face? mb also favicon?)
-- scenario manager project
 - insert PhoenixJS image -> will be deprecated soon

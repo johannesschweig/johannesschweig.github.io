@@ -4,13 +4,13 @@
     class='responsive body2'>
 		<h5>Legal Disclosure</h5>
 		<p>Information in accordance with section 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
+		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
 		<h6>Contact</h6>
 		<p>Telephone: <img src='../../assets/phone.png' alt="" /></p>
 		<p>E-Mail: <a class='link' href='mailto:hello@johannesschweig.de'>hello@johannesschweig.de</a> </p>
 		<p>Internetadresse: <a class='link' href="http://www.johannesschweig.de">www.johannesschweig.de</a></p>
 		<h6>Person responsible for content in accordance with 55 Abs. 2 RStV</h6>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
+		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
 		<h6>Indication of source for images and graphics</h6>
 		<ul>
 			<li
@@ -28,13 +28,13 @@
 		<p><i>Quelle: </i><a class='link' href="http://www.muster-vorlagen.net">http://www.muster-vorlagen.net</a></p>
 		<h5>Impressum</h5>
 		<p>Angaben gemäß § 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
+		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
 		<h6>Kontakt</h6>
 		<p>Telefon: <img src='../../assets/phone.png' alt="" /></p>
 		<p>E-Mail: <a class='link' href='mailto:hello@johannesschweig.de'>hello@johannesschweig.de</a> </p>
 		<p>Internetadresse: <a class='link' href="http://www.johannesschweig.de">www.johannesschweig.de</a></p>
 		<h6>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h6>
-		<p>Johannes Schweig, <img src='../../assets/address.png' alt="" /></p>
+		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
 		<h6>Quellenangaben für die verwendeten Bilder und Grafiken</h6>
 			<!-- <li>artist von Gregor Cresnar aus Symbols Vol. 2 Collection von the Noun Project, Lizenz: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a class='link' href="https://thenounproject.com/term/artist/368426">Link</a></li> -->
 		<ul>
@@ -146,6 +146,14 @@ export default {
 					licenseName: 'Creative Commons-BY 3.0',
 					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
 					sourceLink: 'https://thenounproject.com/browse/icons/term/telescope/'
+				},
+				{
+					title: 'Send',
+					author: 'Christine Chapman',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/icon/send-6776899/'
 				},
 			]
 		}

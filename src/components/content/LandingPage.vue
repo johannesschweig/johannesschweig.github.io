@@ -3,9 +3,12 @@
     <WelcomeBanner />
     <Believes />
     <div id='projects' class="responsive">
-      <h4>Projects</h4>
+      <h4 @click="clickProjects()">
+        {{ projectsClicked > 2 ? "All " : "" }}
+        Projects
+      </h4>
       <div class='grid'>
-        <ProjectPreview v-for='e in activeRoutes' :key='e.id' :projProps='e' />
+        <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />
       </div>
     </div>
   </div>
@@ -13,7 +16,7 @@
 
 <script>
 import ProjectPreview from '@/components/elements/ProjectPreview.vue'
-import { activeRoutes } from '../../utils/projects.js'
+import { activeRoutes, projData } from '../../utils/projects.js'
 import WelcomeBanner from './WelcomeBanner.vue'
 import Believes from './Believes.vue'
 
@@ -25,8 +28,19 @@ export default {
   },
   data() {
     return {
-      // json with project data
-      activeRoutes
+      // whether to display all projects
+      projectsClicked: 0
+    }
+  },
+  computed: {
+    // json with project data
+    routes() {
+      return this.projectsClicked > 2 ? projData : activeRoutes
+    }
+  },
+  methods: {
+    clickProjects() {
+      this.projectsClicked++
     }
   }
 }
@@ -34,13 +48,13 @@ export default {
 
 <style scoped>
 h4 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 32px;
   margin-bottom: 100px;
 }
 

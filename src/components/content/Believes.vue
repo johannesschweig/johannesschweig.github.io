@@ -1,27 +1,24 @@
 <template>
   <div class="wrapper">
     <div class='responsive'>
-      <h4>Believes</h4>
       <div class="grid">
         <div class="tile">
           <AgileIcon />
-          <h5>Agile Excellence</h5>
-          <p>In software projects, uncertainty is inevitable, and priorities often shift. It's the ability to adapt to
-            these
-            changes that makes good products great.</p>
+          <div class="h5">Agile Excellence</div>
+          <div class="body1">In software projects, uncertainty is inevitable, and priorities often shift. It's the
+            ability to adapt to these changes that makes good products great.</div>
         </div>
         <div class="tile">
           <TeamsIcon />
-          <h5>Empowered Teams</h5>
-          <p>Collaboration between business and development is essential to crafting software that not only adds value
-            but
-            is also technologically feasible.</p>
+          <div class="h5">Empowered Teams</div>
+          <div class="body1">Collaboration between business and development is essential to crafting software that not
+            only adds value but is also technologically feasible.</div>
         </div>
         <div class="tile">
           <TelescopeIcon />
-          <h5>Strong product vision</h5>
-          <p>Software excels when it focuses on doing one thing exceptionally well. A strong product vision prioritizes
-            excellence over unnecessary complexities.</p>
+          <div class="h5">Strong product vision</div>
+          <div class="body1">Software excels when it focuses on doing one thing exceptionally well. A strong product
+            vision prioritizes excellence over unnecessary complexities.</div>
         </div>
       </div>
     </div>
@@ -30,7 +27,6 @@
 
 <script>
 import { buildURL } from '@/utils'
-import Icon from '@/components/elements/Icon.vue'
 import AgileIcon from '@/assets/landingpage/agile.svg'
 import TeamsIcon from '@/assets/landingpage/teams.svg'
 import TelescopeIcon from '@/assets/landingpage/telescope.svg'
@@ -39,7 +35,6 @@ import TelescopeIcon from '@/assets/landingpage/telescope.svg'
 export default {
   components: {
     AgileIcon,
-    Icon,
     TeamsIcon,
     TelescopeIcon,
   },
@@ -52,18 +47,13 @@ export default {
 </script>
 
 <style scoped>
-h4 {
+.h5 {
   color: white;
-  margin-bottom: 24px;
-  margin-top: 0px;
-}
-
-h5 {
   margin: auto 0;
 }
 
-p {
-  margin: 0;
+.body1 {
+  color: var(--light-200);
 }
 
 .grid {
@@ -73,24 +63,28 @@ p {
 }
 
 .wrapper {
-  background-color: var(--dark);
+  background-color: var(--dark-100);
   padding-top: 48px;
   padding-bottom: 72px;
+  fill: white;
 }
 
 .tile {
-  border-radius: var(--radius);
-  background-color: white;
   padding: 24px;
   display: grid;
-  grid-template-rows: 2fr 1fr 2fr; 
+  grid-template-rows: 2fr 1fr 2fr;
 }
 
 .tile svg {
-  margin: auto;
+  margin: auto 0;
 }
 
 @media screen and (max-width: 768px) {
+  .tile {
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
   .wrapper {
     padding-top: 32px;
     padding-bottom: 64px;
@@ -98,6 +92,7 @@ p {
 
   .grid {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
 }

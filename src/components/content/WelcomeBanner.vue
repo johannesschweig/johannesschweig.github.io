@@ -1,36 +1,31 @@
 <template>
   <div class='responsive'>
-    <img :src="buildURL('landingpage/portrait.png')" />
     <div class="text">
-      <h4>From Vision to Interface</h4>
-      <p>As a <span>UX Designer</span> or <span>Product Manager</span> I help companies translate business needs into working
-        software. With a
-        focused and detail-oriented approach I make sure deadlines are met and outcomes as expected.</p>
-      <p>Contact me for Interim UX/Product roles or coaching.</p>
+      <div class="h2">Clear requirements, smooth delivery.</div>
+      <div class="body1">I am a freelance UX & Product Consultant helping teams with requirements engineering and UX design. Contact me
+        for freelance roles or coaching.</div>
       <div class="buttons">
-        <Icon size='32' text='Send me an email' href='mailto:hello@johannesschweig.de'>
-          <MailIcon />
-        </Icon>
-        <Icon size='32' text="Linkedin" href='https://linkedin.com/in/jschweig'>
-          <LinkedinIcon />
-        </Icon>
+        <Button type="primary" bg="light" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>
+          <SendIcon />
+        </Button>
+        <Button type="secondary" bg="light" size='lg' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
+        </Button>
       </div>
     </div>
+    <img :src="buildURL('landingpage/portrait.png')" />
   </div>
 </template>
 
 <script>
-import MailIcon from '@/assets/bio/mail.svg'
-import LinkedinIcon from '@/assets/bio/linkedin.svg'
+import SendIcon from '@/assets/landingpage/send.svg'
 import { buildURL } from '@/utils'
-import Icon from '@/components/elements/Icon.vue'
+import Button from '@/components/elements/Button.vue'
 
 
 export default {
   components: {
-    Icon,
-    LinkedinIcon,
-    MailIcon,
+    Button,
+    SendIcon,
   },
   methods: {
     buildURL(src) {
@@ -41,49 +36,51 @@ export default {
 </script>
 
 <style scoped>
-.text p span {
-  font-size: 20px;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-h4 {
-  margin: 0;
-}
-
 .responsive {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 48px;
-  margin-bottom: 72px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 72px;
   gap: 24px;
-}
-
-.text {
-  grid-column: 2/4;
+  align-items: end;
 }
 
 img {
   max-width: 100%;
-  border-radius: var(--radius);
-  opacity: .9;
+}
+
+.text {
+  margin: auto 0;
+  display: grid;
+  gap: 24px;
+}
+
+.text .body1 {
+  color: var(--dark-200);
+}
+
+.buttons {
+  display: flex;
 }
 
 .buttons a:first-child {
-  margin-right: 16px;
+  margin-right: 24px;
 }
 
 @media screen and (max-width: 768px) {
   img {
-    max-width: 70%;
-    margin: 0 15% 24px 15%;
+    margin-top: 24px;
+    /* TODO: what is this */
+    margin-bottom: -5px;
+    max-width: 80%;
   }
 
   .responsive {
     display: block;
     margin-top: 32px;
-    margin-bottom: 64px;
+  }
+
+  .h2 {
+    font-size: var(--size-h3);
   }
 }
-
 </style>

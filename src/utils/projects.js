@@ -10,6 +10,7 @@ export const projData = [
     slogan: 'Real estate website for Dubai',
     clients: ['Gravitas Property Ventures'],
     task: 'UI Design',
+    industry: 'Real Estate',
     date: 'Jan 2024',
     active: true
   },
@@ -23,6 +24,7 @@ export const projData = [
     slogan: 'Processing traffic tickets for a car rental',
     clients: ['MaibornWolff', 'Car rental company'],
     task: 'Product Management',
+    industry: 'Mobility',
     date: 'Feb 2022-Jan 2023',
     active: true
   },
@@ -36,6 +38,7 @@ export const projData = [
     slogan: 'More democracy with civic councils',
     clients: ['MaibornWolff', 'Demokratie Innovation e. V.'],
     task: 'UI Design',
+    industry: 'NGO',
     date: 'Jan-Feb 2022',
     active: true
   },
@@ -49,6 +52,7 @@ export const projData = [
     slogan: 'Helping financial decision makers in stormy times',
     clients: ['Valsight'],
     task: 'UX Research',
+    industry: 'Finance',
     date: 'Jan-Mar 2020',
     active: false // active projects are shown on the landing page, inactive ones are only accessible by route
   },
@@ -62,6 +66,7 @@ export const projData = [
     slogan: 'Collaborative platform for data scientists',
     clients: ['KNIME'],
     task: 'UI/UX Design',
+    industry: 'Data Science',
     date: '2018-2019',
     active: true
   },
@@ -75,6 +80,7 @@ export const projData = [
     slogan: 'Turning people into urban gardeners',
     clients: ['Greenbox'],
     task: 'Usability evaluation',
+    industry: 'B2C App',
     date: '2015',
     active: false
   },
@@ -88,6 +94,7 @@ export const projData = [
     slogan: 'The musicplayer that knows what you want to hear',
     clients: ['Myself'],
     task: 'Design & Development',
+    industry: 'Entertainment',
     date: '2015-2017',
     active: false
   },
@@ -101,6 +108,7 @@ export const projData = [
     slogan: 'Finding the needle in the data haystack',
     clients: ['KNIME'],
     task: 'UI/UX Design',
+    industry: 'Data Science',
     date: '2018',
     active: false
   },
@@ -114,6 +122,7 @@ export const projData = [
     slogan: 'Code snippets for faster data transformation',
     clients: ['KNIME'],
     task: 'UI/UX Design',
+    industry: 'Data Science',
     date: '2017',
     active: false
   },
@@ -127,6 +136,7 @@ export const projData = [
     slogan: 'Digitalizing the work of mechanics',
     clients: ['Condat'],
     task: 'Field test',
+    industry: 'Manufacturing',
     date: '2015',
     active: false
   },
@@ -140,6 +150,7 @@ export const projData = [
     slogan: 'How to make eye tracking more robust',
     clients: ['TU Berlin'],
     task: 'Master thesis',
+    industry: 'Academia',
     date: '2016-2017',
     active: false
   },

@@ -7,8 +7,8 @@
 				tickets.</p>
 			<p>The nature of this work is confidential. <a class="link" href='mailto:hello@johannesschweig.de'>Contact me </a>for the
 					password.</p>
-			<Icon size='32' text='Download the PDF' :href='buildURL("trafficticket/trafficticket.pdf")'>
-			</Icon>
+			<Button type="primary" bg="light" size='sm' text='Download the PDF' :href='buildURL("trafficticket/trafficticket.pdf")'>
+			</Button>
 		</div>
 		<project-arrows :route='"/trafficticket"'></project-arrows>
 	</div>
@@ -17,7 +17,7 @@
 <script>
 import ProjectHeader from '../elements/ProjectHeader.vue'
 import projectArrows from '../elements/ProjectArrows.vue'
-import Icon from '@/components/elements/Icon.vue'
+import Button from '@/components/elements/Button.vue'
 import { buildURL } from '@/utils'
 
 export default {
@@ -29,7 +29,7 @@ export default {
 	components: {
 		'project-header': ProjectHeader,
 		'project-arrows': projectArrows,
-		Icon,
+		Button,
 	},
 	methods: {
 		buildURL(src) {

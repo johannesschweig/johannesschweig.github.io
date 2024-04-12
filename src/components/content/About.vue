@@ -2,37 +2,53 @@
   <div id='about'>
     <div class='responsive'>
       <img :src="buildURL('bio/portrait.jpg')" />
-      <div
-        id='text'
-        class='body1'>
-        <h4>About me</h4>
-        <p>I am a UX & Product Consultant with 6 years of experience in building digital products. I am always eager to learn new things and to educate my team on cool new methods I found. I love to code small projects (such as this website) in my free time and also enjoy to drill into data (e.g. google analytics) to gain user insights. Even though I have very broad interests, my passion belongs to tailoring digital products to user needs.</p>
-        <h5>Things I believe in</h5>
-        <h6>💎 Rigorous prioritization</h6>
-        <p>There will always be more to do than you have time for. Prioritization makes sure that you will have the maximum impact for the limited resources you are provided.</p>
-        <h6>⚙️ Incremental changes</h6>
-        <p>You can learn faster what works and what does not which is crucial in fast moving environments.</p>
-        <h6>💬 Strong feedback cultures</h6>
-        <p>Everyone makes mistakes and to acknowledge them means to grow in your role and as a person.</p>
-        <div class='icons'>
-          <Icon
-            size='32'
-            text='Resume'
-            :href='buildURL("bio/CV.pdf")' >
-            <CvIcon />
-          </Icon>
-          <Icon
-            size='32'
-            text='ux.stackexchange'
+      <div id='text' class='body1'>
+        <h4>About</h4>
+        <p>With 7 years of diverse industry experience, I bring a dynamic blend of strategic product management and
+          impactful design to your projects. From automotive to finance and beyond, I specialize in crafting
+          user-centric experiences that are easy to use and great for business. Let's collaborate to turn your ideas
+          into exceptional solution!</p>
+        <Button type="primary" bg="light" size='lg' text='Download CV' :href='buildURL("bio/CV.pdf")'>
+          <CvIcon />
+        </Button>
+        <h5>Industries</h5>
+        <div class="industries">
+          <div
+            v-for='industry in ["B2B SaaS", "Automotive", "Manufacturing", "Finance", "Consulting", "Startup", "NGO"]'
+            class="tag">
+            {{ industry }}
+          </div>
+        </div>
+        <h5>Skills</h5>
+        <div class="skills">
+          <div v-for='skill in ["UX Design", "UI Design", "Web design", "Conception", "Prototyping"
+        , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
+        , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="tag">
+            {{ skill }}
+          </div>
+        </div>
+        <h5>Networks</h5>
+        <div class='networks'>
+          <Button type="secondary" bg="light" size='sm' text='Uplink' href='https://uplink.tech/'>
+            <UplinkIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='Malt' href='https://www.malt.de/profile/johannesschweig'>
+            <MaltIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='Freelance.de' href='https://freelance.de/'>
+            <FreelancedeIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='Freelancermap'
+            href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
+            <FreelancermapIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='GitHub' href='https://github.com/johannesschweig'>
+            <GhIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='ux.stackexchange'
             href='https://ux.stackexchange.com/users/110814/nash'>
             <UxIcon />
-          </Icon>
-          <Icon
-            size='32'
-            text='GitHub'
-            href='https://github.com/johannesschweig'>
-              <GhIcon />
-          </Icon>
+          </Button>
         </div>
       </div>
     </div>
@@ -41,18 +57,26 @@
 
 
 <script>
-import Icon from '@/components/elements/Icon.vue'
+import Button from '@/components/elements/Button.vue'
 import UxIcon from '@/assets/bio/ux.svg'
 import CvIcon from '@/assets/bio/cv.svg'
 import GhIcon from '@/assets/bio/github.svg'
+import FreelancermapIcon from '@/assets/bio/freelancermap.svg'
+import MaltIcon from '@/assets/bio/malt.svg'
+import UplinkIcon from '@/assets/bio/uplink.svg'
+import FreelancedeIcon from '@/assets/bio/freelancede.svg'
 import { buildURL } from '@/utils'
 
 export default {
   components: {
     CvIcon,
     GhIcon,
-    Icon,
-    UxIcon
+    Button,
+    UxIcon,
+    UplinkIcon,
+    FreelancermapIcon,
+    FreelancedeIcon,
+    MaltIcon,
   },
   methods: {
     buildURL(src) {
@@ -63,6 +87,25 @@ export default {
 </script>
 
 <style scoped>
+#text>p {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.networks>a {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  display: inline-block;
+  background: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
 #about {
   min-height: calc(100vh - 64px - 252px);
 }
@@ -70,62 +113,22 @@ export default {
 .responsive {
   padding-top: 48px;
   padding-bottom: 48px;
-  display: grid;
-  grid-template-columns: 4fr 48px 5fr
 }
 
-.responsive > img {
-  max-width: 100%;
-  grid-column: 1 / 2;
+img {
+  width: 100%;
+  border-radius: var(--radius);
 }
 
-#text {
-  grid-column: 3 / 4;
-  padding-bottom: 0;
-}
-
-h4 {
-  margin-top: 0px;
-}
-
-#text {
-  padding-bottom: 24px;
-}
-
-.icons {
-  margin-top: 20px;
-}
-
-.icons > a {
-  margin-right: 24px;
-}
-
-@media screen and (max-width: 768px) and (min-width: 550px) {
-  .responsive > img {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .responsive {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
   }
 
   h4 {
-    font-size: var(--size-h5);
-    margin-top: 32px;
-  }
-
-  h5 {
-    font-size: var(--size-h6);
-  }
-
-  h6 {
-    font-size: var(--size-sub1);
-    font-weight: bold;
+    margin-top: 0;
   }
 }
 </style>
