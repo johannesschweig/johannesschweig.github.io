@@ -7,7 +7,7 @@
         <p>With 7 years of diverse industry experience, I bring a dynamic blend of strategic product management and
           impactful design to your projects. From automotive to finance and beyond, I specialize in crafting
           user-centric experiences that are easy to use and great for business. Let's collaborate to turn your ideas
-          into exceptional solution!</p>
+          into exceptional solutions!</p>
         <Button type="primary" bg="light" size='lg' text='Download CV' :href='buildURL("bio/CV.pdf")'>
           <CvIcon />
         </Button>

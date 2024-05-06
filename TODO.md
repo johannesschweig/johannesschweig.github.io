@@ -1,4 +1,11 @@
+- Zoom level on mobile is messed up
+- Add animations for content on landing page
+- cv button looks weird in sm on mobile
+
 # DONE
+## 3.1.0
+- made by: as link to github project
+- updated cv
 ## 3.0.0
 - Restyling of landing page
 - New colors, new button styles
@@ -68,8 +75,3 @@
 - build collage of projects as preview-img
 - icon for artwork
 - check images for resolution (800x600 max)
-
-# DROPPED
-- PhoenixJS improvements: create PhoenixJS image, overlay screenshot, screenshot of the auto dj icons -> phoenixjs is about to be retired
-- Thesis: Fix pdf download
-- insert PhoenixJS image -> will be deprecated soon

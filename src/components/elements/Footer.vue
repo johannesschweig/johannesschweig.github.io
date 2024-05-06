@@ -29,7 +29,7 @@
         <h6>Legal</h6>
         <a class="body2 greylink" href="/legal">Imprint/Impressum</a>
       </div>
-      <div class="disclaimer body2">Made by Johannes Schweig with Vue.js</div>
+      <a class="body2 greylink disclaimer" href="https://github.com/johannesschweig/johannesschweig.github.io">Made by Johannes Schweig with Vue.js</a>
     </div>
   </div>
   </div>
