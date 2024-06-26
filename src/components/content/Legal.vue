@@ -3,14 +3,15 @@
     id="content"
     class='responsive body2'>
 		<h5>Legal Disclosure</h5>
-		<p>Information in accordance with section 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
-		<h6>Contact</h6>
-		<p>Telephone: <img src='../../assets/phone.png' alt="" /></p>
+		<p>Johannes Schweig</p>
+		<p>Flemingstr 6, 10557 Berlin</p>
+		<p>VAT No.: DE363289149</p>
+		<p>Telephone: 030/60269851</p>
 		<p>E-Mail: <a class='link' href='mailto:hello@johannesschweig.de'>hello@johannesschweig.de</a> </p>
 		<p>Internetadresse: <a class='link' href="http://www.johannesschweig.de">www.johannesschweig.de</a></p>
-		<h6>Person responsible for content in accordance with 55 Abs. 2 RStV</h6>
-		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
+		<h6>Person responsible for content</h6>
+		<p>Johannes Schweig</p>
+		<p>Flemingstr 6, 10557 Berlin</p>
 		<h6>Indication of source for images and graphics</h6>
 		<ul>
 			<li
@@ -27,14 +28,15 @@
 		<p><i>Copyright: </i>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights. Individual reproductions of a work are allowed only for private use, so must not serve either directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable (§ 106 of the copyright law).</p>
 		<p><i>Quelle: </i><a class='link' href="http://www.muster-vorlagen.net">http://www.muster-vorlagen.net</a></p>
 		<h5>Impressum</h5>
-		<p>Angaben gemäß § 5 TMG</p>
-		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
-		<h6>Kontakt</h6>
-		<p>Telefon: <img src='../../assets/phone.png' alt="" /></p>
+		<p>Johannes Schweig</p>
+		<p>Flemingstr 6, 10557 Berlin</p>
+		<p>USt - IdNr: DE363289149</p>
+		<p>Telefon: 030/60269851</p>
 		<p>E-Mail: <a class='link' href='mailto:hello@johannesschweig.de'>hello@johannesschweig.de</a> </p>
 		<p>Internetadresse: <a class='link' href="http://www.johannesschweig.de">www.johannesschweig.de</a></p>
-		<h6>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h6>
-		<p>Johannes Schweig, <img src='../../assets/address-light.png' alt="" /></p>
+		<h6>Verantwortlich für den Inhalt</h6>
+		<p>Johannes Schweig</p>
+		<p>Flemingstr 6, 10557 Berlin</p>
 		<h6>Quellenangaben für die verwendeten Bilder und Grafiken</h6>
 			<!-- <li>artist von Gregor Cresnar aus Symbols Vol. 2 Collection von the Noun Project, Lizenz: <a class='link' href="https://creativecommons.org/licenses/by/3.0/">Creative Commons-BY 3.0</a> Quelle: <a class='link' href="https://thenounproject.com/term/artist/368426">Link</a></li> -->
 		<ul>

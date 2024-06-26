@@ -15,7 +15,7 @@
       <div>
         <h6>Contact</h6>
         <p class="body2">Johannes Schweig<br>
-          <img src="../../assets/landingpage/address-dark.png" alt="" />
+		      Flemingstr 6, 10557 Berlin<br>
           <br>hello@johannesschweig.de<br>www.johannesschweig.de
         </p>
       </div>
