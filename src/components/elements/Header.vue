@@ -50,7 +50,6 @@ export default {
   grid-template-columns: 180px 1fr 100px 100px;
 }
 
-
 #name {
   grid-column: 1 / 2;
   color: var(--dark-300);
@@ -75,6 +74,20 @@ export default {
 #about.active {
   color: var(--blue-100);
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  #grid {
+    grid-template-columns: 180px 1fr 100px;
+  }
+  #work {
+    display: none;
+  }
+  
+  #about {
+    text-align: right;
+    grid-column: 3 / 4;
+  }
 }
 
 </style>

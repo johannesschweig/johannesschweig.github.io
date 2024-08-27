@@ -1,8 +1,9 @@
-- Zoom level on mobile is messed up
 - Add animations for content on landing page
-- cv button looks weird in sm on mobile
 
 # DONE
+## 3.2.0
+- Added new cv links instead of file
+- Zoom level on mobile is messed up -> Made header smaller on mobile
 ## 3.1.0
 - made by: as link to github project
 - updated cv

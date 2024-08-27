@@ -8,9 +8,15 @@
           impactful design to your projects. From automotive to finance and beyond, I specialize in crafting
           user-centric experiences that are easy to use and great for business. Let's collaborate to turn your ideas
           into exceptional solutions!</p>
-        <Button type="primary" bg="light" size='lg' text='Download CV' :href='buildURL("bio/CV.pdf")'>
-          <CvIcon />
-        </Button>
+        <h5>CV</h5>
+        <div class="cv">
+          <Button type="primary" bg="light" size='sm' text='English CV' href='https://drive.google.com/file/d/19Fq8oCB_v1aAk957t-IXDm7rekfPUyf0/view?usp=drive_link'>
+            <CvIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='German CV' href='https://drive.google.com/file/d/1Z7ydaFpTvXqlFKXE1KLeM45NHirvEmar/view?usp=drive_link'>
+            <CvIcon />
+          </Button>
+        </div>
         <h5>Industries</h5>
         <div class="industries">
           <div
@@ -87,6 +93,11 @@ export default {
 </script>
 
 <style scoped>
+.cv>a {
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
 #text>p {
   font-size: 20px;
   line-height: 36px;
