@@ -2,6 +2,8 @@
 
 # DONE
 ## 3.2.0
+- Content now takes up available space, footer at the bottom
+- LT testimonial
 - Added new cv links instead of file
 - Zoom level on mobile is messed up -> Made header smaller on mobile
 ## 3.1.0

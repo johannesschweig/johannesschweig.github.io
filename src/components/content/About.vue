@@ -117,10 +117,6 @@ export default {
   margin-bottom: 8px;
 }
 
-#about {
-  min-height: calc(100vh - 64px - 252px);
-}
-
 .responsive {
   padding-top: 48px;
   padding-bottom: 48px;

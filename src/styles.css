@@ -73,12 +73,13 @@ body {
   color: var(--dark-100);
   margin: 0;
   background: var(--light-100);
+  min-height: 100vh;
 }
 
 #app {
   display: grid;
   grid-template-rows: 64px 1fr auto;
-  height: 100%;
+  min-height: 100vh;
 }
 
 /* Headings */
