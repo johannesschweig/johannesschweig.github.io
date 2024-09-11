@@ -1,6 +1,7 @@
-- Add animations for content on landing page
 
 # DONE
+## 3.3.0
+- added fixed blurry background 
 ## 3.2.0
 - Content now takes up available space, footer at the bottom
 - LT testimonial
@@ -78,3 +79,6 @@
 - build collage of projects as preview-img
 - icon for artwork
 - check images for resolution (800x600 max)
+
+# DROPPED
+- Add animations for content on landing page: it is way to much work to chain together these animations

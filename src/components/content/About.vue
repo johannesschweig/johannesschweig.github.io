@@ -20,14 +20,14 @@
         <h5>Industries</h5>
         <div class="industries">
           <div
-            v-for='industry in ["B2B SaaS", "Automotive", "Manufacturing", "Finance", "Consulting", "Startup", "NGO"]'
+            v-for='industry in ["B2B SaaS", "Automotive", "Energy", "FinTech", "Manufacturing", "Consulting", "Startup"]'
             class="tag">
             {{ industry }}
           </div>
         </div>
         <h5>Skills</h5>
         <div class="skills">
-          <div v-for='skill in ["UX Design", "UI Design", "Web design", "Conception", "Prototyping"
+          <div v-for='skill in ["UX Design", "UI Design", "Conception", "Prototyping"
         , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
         , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="tag">
             {{ skill }}

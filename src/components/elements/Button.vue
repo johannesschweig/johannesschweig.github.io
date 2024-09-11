@@ -48,7 +48,7 @@ export default {
       } else if (this.type === "secondary" && this.bg === "light") { // secondary light
         iconColor = "var(--dark-200)"
         bgColor = "none"
-        bgHoverColor = "var(--light-200)"
+        bgHoverColor = "rgba(255, 255, 255, 0.5)"
         border = "1px solid var(--dark-200)"
       } else { // secondary dark
         iconColor = "var(--light-200)"
