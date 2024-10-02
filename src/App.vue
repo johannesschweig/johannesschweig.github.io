@@ -40,7 +40,7 @@ export default {
     border-radius: 100%;
     height: 0;
     filter: blur(8vw);
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .background div:nth-child(1) {

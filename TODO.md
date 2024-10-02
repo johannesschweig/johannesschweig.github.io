@@ -1,5 +1,8 @@
 
 # DONE
+## 3.4.0
+- changed slogan
+- changed link for testimonials
 ## 3.3.0
 - added fixed blurry background 
 ## 3.2.0

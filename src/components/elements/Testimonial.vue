@@ -1,5 +1,5 @@
 <template>
-  <a class='tile' href='https://www.linetweet.com/'>
+  <div class='tile'>
     <div class='text'>
       {{ testimonialProps.text }}
     </div>
@@ -13,14 +13,23 @@
           {{ testimonialProps.position }} @ {{ testimonialProps.company }}
         </div>
       </div>
+      <Button type="secondary" bg="dark" size='sm' href='https://www.linetweet.com/'>
+        <ArrowUpIcon />
+      </Button>
     </div>
-  </a>
+  </div>
 </template>
 
 <script>
 import { buildURL } from '@/utils';
+import ArrowUpIcon from '@/assets/landingpage/arrow-up.svg'
+import Button from './Button.vue';
 
 export default {
+  components: {
+    ArrowUpIcon,
+    Button,
+  },
   props: {
     testimonialProps: {
       type: Object,
@@ -51,7 +60,7 @@ export default {
 
 .person {
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 64px 1fr 48px;
   column-gap: 12px;
   align-items: center;
 }

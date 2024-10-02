@@ -65,14 +65,14 @@ export default {
 .wrapper {
   background-color: var(--dark-100);
   padding-top: 48px;
-  padding-bottom: 72px;
+  padding-bottom: 48px;
   fill: white;
 }
 
 .tile {
   padding: 24px;
   display: grid;
-  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-rows: 3fr 1fr 2fr;
 }
 
 .tile svg {

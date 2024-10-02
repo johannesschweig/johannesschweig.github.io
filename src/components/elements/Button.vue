@@ -20,7 +20,6 @@ export default {
     },
     text: {
       type: String,
-      required: true,
     },
     type: {
       type: String,
@@ -33,7 +32,6 @@ export default {
   },
   computed: {
     bgStyle() {
-
       let iconColor, bgColor, bgHoverColor, border, color
       if (this.type === "primary" && this.bg === "light") { // primary light
         iconColor = "white"
@@ -65,7 +63,8 @@ export default {
         '--bg-hover-color': bgHoverColor,
         'border': border,
         color: color,
-        'grid-template-columns': this.$slots.default ? 'var(--size) 1fr' : '1fr',
+        'grid-template-columns': this.$slots.default && this.text ? 'var(--size) 1fr' : '1fr',
+        'padding': this.text ? '12px 24px' : '11px 12px',
       }
     }
   }
@@ -79,7 +78,6 @@ a {
   cursor: pointer;
   transition: all .1s ease;
   border-radius: var(--radius);
-  padding: 12px 24px;
   background-color: var(--bg-color);
   align-items: center;
 }

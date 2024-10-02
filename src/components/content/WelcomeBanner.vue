@@ -1,8 +1,8 @@
 <template>
   <div class='responsive'>
     <div class="text">
-      <div class="h2">Clear requirements, smooth delivery.</div>
-      <div class="body1">I am a freelance UX & Product Consultant helping teams with requirements engineering and UX design. Contact me
+      <div class="h2">Beautiful, functional products that scale</div>
+      <div class="body1">I am a freelance UX & Product Consultant helping teams with UX design and product management. Contact me
         for freelance roles or coaching.</div>
       <div class="buttons">
         <Button type="primary" bg="light" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>
@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .responsive {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5fr 4fr;
   margin-top: 72px;
   gap: 24px;
   align-items: end;
