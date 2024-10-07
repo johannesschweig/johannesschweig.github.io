@@ -13,7 +13,7 @@
           {{ testimonialProps.position }} @ {{ testimonialProps.company }}
         </div>
       </div>
-      <Button type="secondary" bg="dark" size='sm' href='https://www.linetweet.com/'>
+      <Button type="secondary" bg="dark" size='sm' :href='testimonialProps.link'>
         <ArrowUpIcon />
       </Button>
     </div>
@@ -51,6 +51,7 @@ export default {
   color: white;
   padding: 24px;
   display: grid;
+  grid-template-rows: 1fr 64px;
   gap: 24px;
 }
 
