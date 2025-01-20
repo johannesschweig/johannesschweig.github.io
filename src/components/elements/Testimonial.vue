@@ -10,7 +10,8 @@
           {{ testimonialProps.name }}
         </div>
         <div class='position'>
-          {{ testimonialProps.position }} @ {{ testimonialProps.company }}
+          {{ testimonialProps.position }}
+          <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
         </div>
       </div>
       <Button type="secondary" bg="dark" size='sm' :href='testimonialProps.link'>
