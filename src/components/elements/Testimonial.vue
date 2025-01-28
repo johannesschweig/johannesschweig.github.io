@@ -1,8 +1,6 @@
 <template>
   <div class='tile'>
-    <div class='text'>
-      {{ testimonialProps.text }}
-    </div>
+    <TextExpand :text="testimonialProps.text" :limit="330" />
     <div class='person'>
       <img :src='buildURL(`landingpage/${testimonialProps.image}`)' :alt='testimonialProps.name' />
       <div class='identity'>
@@ -25,11 +23,13 @@
 import { buildURL } from '@/utils';
 import ArrowUpIcon from '@/assets/landingpage/arrow-up.svg'
 import Button from './Button.vue';
+import TextExpand from './TextExpand.vue';
 
 export default {
   components: {
     ArrowUpIcon,
     Button,
+    TextExpand,
   },
   props: {
     testimonialProps: {
@@ -56,9 +56,6 @@ export default {
   gap: 24px;
 }
 
-.text {
-  line-height: 28px;
-}
 
 .person {
   display: grid;
@@ -84,5 +81,4 @@ img {
   font-size: var(--size-sub2);
   color: var(--light-200);
 }
-
 </style>
