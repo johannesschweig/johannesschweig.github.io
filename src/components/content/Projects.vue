@@ -2,8 +2,8 @@
   <div class="wrapper">
     <div id='projects' class="responsive">
       <h4 @click="clickProjects()">
-        {{ projectsClicked > 2 ? "All " : "" }}
-        Projects
+        {{ projectsClicked > 2 ? "All " : "My" }}
+        projects
       </h4>
       <div class='grid'>
         <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />
@@ -43,25 +43,12 @@ export default {
 <style scoped>
 .wrapper {
   background-color: var(--dark-100);
-  padding-top: 1px;
+  padding-top: 1px; /* somehow the margin of the heading is not respected */
   padding-bottom: 1px;
 }
 
 h4 {
   color: white;
   margin-bottom: 32px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-bottom: 100px;
-}
-
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 </style>

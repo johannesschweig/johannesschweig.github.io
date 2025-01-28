@@ -64,9 +64,8 @@ h2, h5 {
   display: grid;
   grid-template-rows: 1fr 3fr;
   row-gap: 4px;
+  column-gap: 32px;
   grid-auto-flow: column;
-  max-width: 700px;
-  justify-content: space-between;
 }
 
 

@@ -6,8 +6,8 @@
     <div class='text'>
       <div class='h5 regular'>{{ projProps.slogan }}</div>
       <div class="tags">
-        <Tag :text="projProps.task" type="primary" bg="light" />
-        <Tag :text="projProps.industry" type="secondary" bg="light"/>
+        <Tag :text="projProps.task" type="primary" bg="dark" />
+        <Tag :text="projProps.industry" type="secondary" bg="dark"/>
       </div>
     </div>
   </router-link>
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .tile {
-  background-color: white;
+  background-color: var(--dark-200);
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-light);
   --anim-dur: .1s;
@@ -45,7 +45,7 @@ export default {
   -moz-transition: var(--anim-dur) ease;
   -o-transition: var(--anim-dur) ease;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  color: var(--dark-100);
+  color: white;
 }
 
 .tile:hover {

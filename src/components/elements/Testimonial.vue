@@ -12,7 +12,7 @@
           <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
         </div>
       </div>
-      <Button type="secondary" bg="dark" size='sm' :href='testimonialProps.link'>
+      <Button type="secondary" bg="grey" size='sm' :href='testimonialProps.link'>
         <ArrowUpIcon />
       </Button>
     </div>
@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .tile {
-  background-color: var(--dark-100);
+  background-color: var(--dark-200);
   border-radius: var(--radius-2);
   color: white;
   padding: 24px;

@@ -48,6 +48,11 @@ export default {
         bgColor = "none"
         bgHoverColor = "rgba(255, 255, 255, 0.5)"
         border = "1px solid var(--dark-200)"
+      } else if (this.type === "secondary" && this.bg === "grey") { // secondary grey
+        iconColor = "var(--light-200)"
+        bgColor = "none"
+        bgHoverColor = "var(--dark-100)"
+        border = "1px solid var(--light-200)"
       } else { // secondary dark
         iconColor = "var(--light-200)"
         bgColor = "none"

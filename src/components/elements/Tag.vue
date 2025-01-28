@@ -32,8 +32,8 @@ export default {
           }
         } else if (this.type === 'secondary') {
           return {
-            backgroundColor: "var(--dark-200)",
-            color: "var(--light-100)",
+            backgroundColor: "var(--light-200)",
+            color: "var(--dark-200)",
           }
         }
       } else if (this.bg === 'light') {

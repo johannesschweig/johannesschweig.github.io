@@ -30,17 +30,4 @@ export default {
 h4 {
   margin-bottom: 32px;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-bottom: 100px;
-}
-
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 </style>
