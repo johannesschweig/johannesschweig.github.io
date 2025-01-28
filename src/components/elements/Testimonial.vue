@@ -68,10 +68,12 @@ export default {
 }
 
 img {
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+  width: 60px;
+  height: 60px;
+  border-radius: 99px;
   object-fit: cover;
+  border: 2px solid var(--blue-200);
+  padding: 2px;
 }
 
 .name {

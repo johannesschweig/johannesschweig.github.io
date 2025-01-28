@@ -1,9 +1,7 @@
 <template>
   <div
     class="tag button"
-    :style='{
-      backgroundColor: type === "primary" ? "var(--blue-300)" : "var(--dark-200)",
-    }'>
+    :style='getStyle'>
     {{ text }}
   </div>
 </template>
@@ -18,6 +16,40 @@ export default {
     type: {
       type: String,
       required: true,
+    },
+    bg: {
+      type: String,
+      required: true,
+    }
+  },
+  computed: {
+    getStyle() {
+      if (this.bg === 'dark') {
+        if (this.type === 'primary') {
+          return {
+            backgroundColor: "var(--blue-300)",
+            color: "var(--light-100)",
+          }
+        } else if (this.type === 'secondary') {
+          return {
+            backgroundColor: "var(--dark-200)",
+            color: "var(--light-100)",
+          }
+        }
+      } else if (this.bg === 'light') {
+        if (this.type === 'primary') {
+          return {
+            backgroundColor: "var(--blue-200)",
+            color: "var(--light-100)",
+          }
+        } else if (this.type === 'secondary') {
+          return {
+            backgroundColor: "var(--light-200)",
+            color: "var(--dark-200)",
+          }
+        }
+      }
+      // backgroundColor: type === "primary" ? "var(--blue-300)" : "var(--dark-200)",
     }
   },
 }
@@ -27,7 +59,6 @@ export default {
 .tag {
   display: inline-block;
   padding: 6px 12px;
-  color: var(--light-100);
   border-radius: var(--radius);
 }
 
