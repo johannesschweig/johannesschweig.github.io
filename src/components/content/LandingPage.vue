@@ -2,7 +2,7 @@
   <WelcomeBanner />
   <Projects />
   <Testimonials />
-  <!-- <Packages /> -->
+  <Packages />
 </template>
 
 <script>

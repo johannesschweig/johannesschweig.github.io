@@ -1,9 +1,8 @@
 <template>
   <div class='responsive'>
     <div class="text">
-      <div class="h2">Beautiful, functional products that scale</div>
-      <div class="body1">I am a freelance UX & Product Consultant helping teams with UX design and product management. Contact me
-        for freelance roles or coaching.</div>
+      <div class="h2">Design with clarity. Develop without guesswork.</div>
+      <div class="body1">I help founders and venture teams turn ideas into clear, buildable products. With wireframes and prototypes, I align teams on scope, refine the user journey, and make development-ready designs.</div>
       <div class="buttons">
         <Button type="primary" bg="light" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>
           <SendIcon />

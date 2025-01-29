@@ -157,6 +157,30 @@ export default {
 					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
 					sourceLink: 'https://thenounproject.com/icon/send-6776899/'
 				},
+				{
+					title: 'Calendar',
+					author: 'etika ariatna',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/icon/calendar-7503036/'
+				},
+				{
+					title: 'Checkmark',
+					author: 'Melisa Lutfiani',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/icon/checkmark-7188359/'
+				},
+				{
+					title: 'half time',
+					author: 'Berkah Icon',
+					platform: 'The Noun Project',
+					licenseName: 'Creative Commons-BY 3.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+					sourceLink: 'https://thenounproject.com/icon/half-time-6804561/'
+				},
 			]
 		}
 	}

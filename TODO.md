@@ -1,5 +1,9 @@
 
 # DONE
+## 3.6.0
+- change hero copy
+- removed believes
+- added packages
 ## 3.5.0
 - venture kitchen testimonial
 ## 3.4.0

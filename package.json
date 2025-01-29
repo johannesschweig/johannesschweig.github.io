@@ -1,6 +1,6 @@
 {
   "name": "johannesschweig.github.io",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "description": "Portfolio website in vue.js",
   "author": "Johannes Schweig <j.schweig@posteo.de>",
   "private": true,
