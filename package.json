@@ -12,7 +12,9 @@
     "test:unit": "vitest"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.13",
     "pinia": "^2.1.7",
+    "tailwindcss": "^4.0.13",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"

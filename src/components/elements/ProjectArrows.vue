@@ -1,6 +1,7 @@
 <template>
   <div id='projectArrows' class='responsive'>
     <router-link
+      v-if="previousProject.route"
       class='previous'
       :to='previousProject.route'>
       <Arrow />
@@ -8,6 +9,7 @@
     </router-link>
     <div class='flex-grow'></div>
     <router-link
+      v-if="nextProject.route"
       class='next'
       :to='nextProject.route'>
       <span>Next project: {{ nextProject.name }}</span>
@@ -16,34 +18,28 @@
   </div>
 </template>
 
-<script>
-import { getPreviousNextProjects } from '../../utils/index.js'
+<script setup>
+import { ref, onMounted } from 'vue'
+import { getPreviousNextProjects } from '@/utils/index.js'
 import Arrow from '@/assets/arrow.svg'
 
-export default {
-  components: {
-    Arrow
-  },
-  data() {
-    return {
-      previousProject: {route: null, name: null},
-      nextProject: {route: null, name: null},
-    }
-  },
-  props: {
-    route: {
-      type: String,
-      required: true
-    }
-  },
-  // check which project this component belongs to and find the previous/next project
-  created() {
-    let previousNext = getPreviousNextProjects(this.route)
-    this.previousProject = previousNext.previous
-    this.nextProject = previousNext.next
+const props = defineProps({
+  route: {
+    type: String,
+    required: true
   }
-}
+})
+
+const previousProject = ref({ route: null, name: null })
+const nextProject = ref({ route: null, name: null })
+
+onMounted(() => {
+  const { previous, next } = getPreviousNextProjects(props.route)
+  previousProject.value = previous
+  nextProject.value = next
+})
 </script>
+
 
 <style scoped>
 #projectArrows {

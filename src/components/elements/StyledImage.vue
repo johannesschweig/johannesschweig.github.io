@@ -1,13 +1,19 @@
 <template>
 	<div id='container'>
 		<img
-      v-if='!isVideo()'
-      :class='["img-md", { "shadow": shadow }]'
+      v-if='!isVideo'
+      :class='["img-md", {
+				"md:drop-shadow-sm": shadow,
+				"rounded-2xl": rounded,
+			}]'
       :src='src'
       :alt='alt' />
 		<video
-      v-if='isVideo()'
-      :class='["img-md", { "shadow": shadow }]'
+      v-if='isVideo'
+      :class='["img-md", {
+				"md:drop-shadow-sm": shadow,
+				"rounded-2xl": rounded,
+			}]'
       autoplay
       muted
       loop>
@@ -18,32 +24,29 @@
 	</div>
 </template>
 
-<script>
-export default {
-	props: {
-		src: {
-			type: String,
-			required: true
-		},
-		alt: {
-			type: String
-    },
-    shadow: {
-      type: Boolean,
-      default: true
-    }
-	},
-	methods: {
-		// returns true if the source is a video, false if it is something else (e.g. image)
-		isVideo() {
-			if (this.$props.src.endsWith('.mp4') | this.$props.src.endsWith('.webm')) {
-				return true
-			} else {
-				return false
-			}
-		}
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+  src: {
+    type: String,
+    required: true
+  },
+  alt: {
+    type: String
+  },
+  shadow: {
+    type: Boolean,
+    default: true
+  },
+	rounded: {
+		type: Boolean,
+		default: false,
 	}
-}
+})
+
+// Computed property to determine if the source is a video
+const isVideo = computed(() => props.src.endsWith('.mp4') || props.src.endsWith('.webm'))
 </script>
 
 <style scoped>
@@ -84,12 +87,6 @@ export default {
 
 	.img-md {
 		max-width: 70%;
-	}
-
-	img.shadow,
-  video.shadow {
-		-webkit-filter: drop-shadow(0 1px 3px #ccc);
-		filter: drop-shadow(0 1px 3px #ccc);
 	}
 }
 </style>
