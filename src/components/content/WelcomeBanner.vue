@@ -1,7 +1,7 @@
 <template>
   <div class='responsive'>
     <div class="text">
-      <div class="h2">Design with clarity. Develop without guesswork.</div>
+      <div class="h2 leading-20">Design with clarity. Develop without guesswork.</div>
       <div class="body1">I help founders and venture teams turn ideas into clear, buildable products. With wireframes and prototypes, I align teams on scope, refine the user journey, and make development-ready designs.</div>
       <div class="buttons">
         <Button type="primary" bg="light" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>

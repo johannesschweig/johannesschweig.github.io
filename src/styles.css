@@ -206,6 +206,7 @@ ol {
 
 p {
   line-height: 28px;
+  @apply my-4;
 }
 
 ul {

@@ -4,16 +4,22 @@
       v-if="previousProject.route"
       class='previous'
       :to='previousProject.route'>
-      <Arrow />
-      <span>Previous project: {{ previousProject.name }}</span>
+      <Arrow class="mr-2"/>
+      <span>
+        <span class="hidden md:inline-block">Previous project:</span>
+        {{ previousProject.name }}
+      </span>
     </router-link>
     <div class='flex-grow'></div>
     <router-link
       v-if="nextProject.route"
       class='next'
       :to='nextProject.route'>
-      <span>Next project: {{ nextProject.name }}</span>
-      <Arrow />
+      <span>
+        <span class="hidden md:inline-block">Next project:</span>
+        {{ nextProject.name }}
+      </span>
+      <Arrow class="ml-2"/>
     </router-link>
   </div>
 </template>
@@ -40,7 +46,6 @@ onMounted(() => {
 })
 </script>
 
-
 <style scoped>
 #projectArrows {
   margin-top: 64px;
@@ -56,17 +61,15 @@ onMounted(() => {
   padding: 6px 16px;
   background-size: 200% 100%;
   transition: all .15s ease;
-}
-
-#projectArrows *:first-child {
-  margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
 #projectArrows > a:hover {
   color: white;
 }
 
-svg >>> path{
+svg >>> path {
   fill: var(--blue-200);
   transition: all .15s ease;
 }
@@ -99,12 +102,11 @@ svg >>> path{
   color: white;
 }
 
-a:hover svg >>> path{
+a:hover svg >>> path {
   fill: white;
 }
 
 .flex-grow {
   flex-grow: 1;
 }
-
 </style>
