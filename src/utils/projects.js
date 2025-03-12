@@ -1,6 +1,20 @@
 // data for the projects
 export const projData = [
-{
+  {
+    route: '/businesshub',
+    image: {
+      src: 'businesshub/dashboard-mockup.jpg',
+      alt: 'Design for a business hub',
+    },
+    name: 'Business hub',
+    slogan: 'Business hub for the middle east',
+    clients: ['Nelta'],
+    task: 'UX/UI Design',
+    industry: 'Government',
+    date: 'March 2025',
+    active: true
+  },
+  {
     route: '/dubai',
     image: {
       src: 'dubai/venice-showcase.png',
@@ -68,7 +82,7 @@ export const projData = [
     task: 'UI/UX Design',
     industry: 'Data Science',
     date: '2018-2019',
-    active: true
+    active: false,
   },
   {
     route: '/greenbox',

@@ -10,17 +10,19 @@
           into exceptional solutions!</p>
         <h5>CV</h5>
         <div class="cv">
-          <Button type="primary" bg="light" size='sm' text='English CV' href='https://drive.google.com/file/d/19Fq8oCB_v1aAk957t-IXDm7rekfPUyf0/view?usp=drive_link'>
+          <Button type="primary" bg="light" size='sm' text='English CV'
+            href='https://drive.google.com/file/d/19Fq8oCB_v1aAk957t-IXDm7rekfPUyf0/view?usp=drive_link'>
             <CvIcon />
           </Button>
-          <Button type="secondary" bg="light" size='sm' text='German CV' href='https://drive.google.com/file/d/1Z7ydaFpTvXqlFKXE1KLeM45NHirvEmar/view?usp=drive_link'>
+          <Button type="secondary" bg="light" size='sm' text='German CV'
+            href='https://drive.google.com/file/d/1Z7ydaFpTvXqlFKXE1KLeM45NHirvEmar/view?usp=drive_link'>
             <CvIcon />
           </Button>
         </div>
         <h5>Industries</h5>
         <div class="industries">
           <div
-            v-for='industry in ["B2B SaaS", "Automotive", "Energy", "FinTech", "Manufacturing", "Consulting", "Startup"]'
+            v-for='industry in ["B2B SaaS", "Automotive", "Energy", "FinTech", "Manufacturing", "Consulting", "Startup", "Retail", "Construction", "Real Estate", "Sustainability", "Grants", "Crypto"]'
             class="tag">
             {{ industry }}
           </div>
@@ -28,8 +30,8 @@
         <h5>Skills</h5>
         <div class="skills">
           <div v-for='skill in ["UX Design", "UI Design", "Conception", "Prototyping"
-        , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
-        , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="tag">
+            , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
+            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="tag">
             {{ skill }}
           </div>
         </div>
