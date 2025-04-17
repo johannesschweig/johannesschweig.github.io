@@ -4,10 +4,10 @@
       <img :src="buildURL('bio/portrait.jpg')" />
       <div id='text' class='body1'>
         <h4>About</h4>
-        <p>With 7 years of diverse industry experience, I bring a dynamic blend of strategic product management and
-          impactful design to your projects. From automotive to finance and beyond, I specialize in crafting
-          user-centric experiences that are easy to use and great for business. Let's collaborate to turn your ideas
-          into exceptional solutions!</p>
+        <p>I help founders and product teams turn vague ideas into clear, buildable products. Using Figma, I shape early
+          concepts into prototypes you can show investors, test with users, and hand over to developers. I focus on
+          scope, structure, and fast feedback loops—so everyone knows what to build, and why. Based in Berlin. Happy to
+          jump in early and stay hands-on through delivery.</p>
         <h5>CV</h5>
         <div class="cv">
           <Button type="primary" bg="light" size='sm' text='English CV'
