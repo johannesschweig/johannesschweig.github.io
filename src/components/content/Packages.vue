@@ -1,7 +1,7 @@
 <template>
   <div class="responsive">
     <h4>My offers</h4>
-    <div class="grid">
+    <div class="general-grid">
       <div class="card">
         <div class="h5 title">MVP Accelerator</div>
         <div class="divider"></div>

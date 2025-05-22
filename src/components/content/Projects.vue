@@ -5,7 +5,7 @@
         {{ projectsClicked > 2 ? "All " : "My" }}
         projects
       </h4>
-      <div class='grid'>
+      <div class='general-grid'>
         <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />
       </div>
     </div>

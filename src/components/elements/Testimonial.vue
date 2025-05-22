@@ -1,18 +1,20 @@
 <template>
-  <div class='tile'>
+  <div class='tile bg-dark-200'>
     <TextExpand :text="testimonialProps.text" :limit="330" />
-    <div class='person'>
-      <img :src='buildURL(`landingpage/${testimonialProps.image}`)' :alt='testimonialProps.name' />
-      <div class='identity'>
-        <div class='name'>
-          {{ testimonialProps.name }}
+    <div class='grid grid-cols-[1fr_48px] items-center'>
+      <a :href='testimonialProps.personLink' class="grid grid-cols-[64px_1fr] gap-3 items-center  hover:bg-linear-to-r from-dark-100 to-dark-200 rounded-l-full rounded-r-4xl group">
+        <img :src='buildURL(`landingpage/${testimonialProps.image}`)' :alt='testimonialProps.name' class="border-2 border-blue-200 group-hover:border-blue-300"/>
+        <div class='identity'>
+          <div class='name text-white'>
+            {{ testimonialProps.name }}
+          </div>
+          <div class='position'>
+            {{ testimonialProps.position }}
+            <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
+          </div>
         </div>
-        <div class='position'>
-          {{ testimonialProps.position }}
-          <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
-        </div>
-      </div>
-      <Button type="secondary" bg="grey" size='sm' :href='testimonialProps.link'>
+      </a>
+      <Button type="secondary" bg="grey" size='sm' :href='testimonialProps.companyLink' class="h-12">
         <ArrowUpIcon />
       </Button>
     </div>
@@ -47,7 +49,6 @@ export default {
 
 <style scoped>
 .tile {
-  background-color: var(--dark-200);
   border-radius: var(--radius-2);
   color: white;
   padding: 24px;
@@ -57,19 +58,11 @@ export default {
 }
 
 
-.person {
-  display: grid;
-  grid-template-columns: 64px 1fr 48px;
-  column-gap: 12px;
-  align-items: center;
-}
-
 img {
   width: 60px;
   height: 60px;
   border-radius: 99px;
   object-fit: cover;
-  border: 2px solid var(--blue-200);
   padding: 2px;
 }
 

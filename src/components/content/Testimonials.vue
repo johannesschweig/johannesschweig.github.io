@@ -2,7 +2,7 @@
   <div>
     <div class="responsive">
       <h4>What my clients say</h4>
-      <div class='grid'>
+      <div class='general-grid'>
         <Testimonial v-for='t in testimonials' :testimonialProps='t'/>
       </div>
     </div>
