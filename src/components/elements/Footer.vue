@@ -48,10 +48,10 @@ export default {
     return {
       platforms: [
         { name: "LinkedIn", url: "https://linkedin.com/in/jschweig" },
-        { name: "Uplink", url: "https://uplink.tech/" },
-        { name: "Malt", url: "https://www.malt.de/profile/johannesschweig" },
-        { name: "Freelance.de", url: "https://freelance.de/" },
         { name: "Freelancermap", url: "https://www.freelancermap.de/profil/ux-und-product-consultant" },
+        { name: "Malt", url: "https://www.malt.de/profile/johannesschweig" },
+        { name: "Junico", url: "https://www.junico.de/freelancer/johannes-118" },
+        { name: "Uplink", url: "https://uplink.tech/" },
         { name: "GitHub", url: "https://github.com/johannesschweig" },
         { name: "ux.stackexchange", url: "https://ux.stackexchange.com/users/110814/nash" }
       ]

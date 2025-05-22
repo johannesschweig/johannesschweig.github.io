@@ -37,18 +37,18 @@
         </div>
         <h5>Networks</h5>
         <div class='networks'>
-          <Button type="secondary" bg="light" size='sm' text='Uplink' href='https://uplink.tech/'>
-            <UplinkIcon />
+          <Button type="secondary" bg="light" size='sm' text='Freelancermap'
+            href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
+            <FreelancermapIcon />
+          </Button>
+          <Button type="secondary" bg="light" size='sm' text='Junico' href='https://www.junico.de/freelancer/johannes-118'>
+            <JunicoIcon />
           </Button>
           <Button type="secondary" bg="light" size='sm' text='Malt' href='https://www.malt.de/profile/johannesschweig'>
             <MaltIcon />
           </Button>
-          <Button type="secondary" bg="light" size='sm' text='Freelance.de' href='https://freelance.de/'>
-            <FreelancedeIcon />
-          </Button>
-          <Button type="secondary" bg="light" size='sm' text='Freelancermap'
-            href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
-            <FreelancermapIcon />
+          <Button type="secondary" bg="light" size='sm' text='Uplink' href='https://uplink.tech/'>
+            <UplinkIcon />
           </Button>
           <Button type="secondary" bg="light" size='sm' text='GitHub' href='https://github.com/johannesschweig'>
             <GhIcon />
@@ -72,7 +72,7 @@ import GhIcon from '@/assets/bio/github.svg'
 import FreelancermapIcon from '@/assets/bio/freelancermap.svg'
 import MaltIcon from '@/assets/bio/malt.svg'
 import UplinkIcon from '@/assets/bio/uplink.svg'
-import FreelancedeIcon from '@/assets/bio/freelancede.svg'
+import JunicoIcon from '@/assets/bio/junico.svg'
 import { buildURL } from '@/utils'
 
 export default {
@@ -83,7 +83,7 @@ export default {
     UxIcon,
     UplinkIcon,
     FreelancermapIcon,
-    FreelancedeIcon,
+    JunicoIcon,
     MaltIcon,
   },
   methods: {
