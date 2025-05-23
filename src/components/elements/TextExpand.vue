@@ -1,7 +1,7 @@
 <template>
-  <div class='text'>
+  <div class='text-white leading-7'>
     {{ collapsed && text.length > limit ? text.slice(0, limit).trim() + "..." : text }}
-    <span v-if='text.length > limit' class="subtitle2" @click="toggleExpand">
+    <span v-if='text.length > limit' class="text-blue-300 text-sm hover:text-blue-400 active:text-blue-400 cursor-pointer transition-all duration-100 ease-in-out" @click="toggleExpand">
       {{ collapsed ? "More" : "Less" }}
     </span>
   </div>
@@ -31,19 +31,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.text {
-  line-height: 28px;
-}
-
-span {
-  color: var(--blue-300);
-  transition: all .1s ease;
-}
-span:hover,
-span:active {
-  color: var(--blue-400);
-  cursor: pointer;
-}
-</style>

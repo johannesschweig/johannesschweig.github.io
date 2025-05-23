@@ -70,7 +70,7 @@
   --size-h5: 24px;
   --size-h6: 20px;
   --size-sub1: 16px;
-  --size-sub2: 14px;
+  --size-sub2: 14px; /* text-sm */
 }
 
 @theme {
