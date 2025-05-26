@@ -1,5 +1,36 @@
+## Refactor css styles to tailwind
+- styles: responsive, body1-2, p, ul, li
+App.vue
+│   ├── Legal.vue
+│   ├── Projects.vue
+│   ├── Testimonials.vue
+│   └── WelcomeBanner.vue
+├── elements
+│   ├── Button.vue
+│   ├── Header.vue
+│   ├── ProjectArrows.vue
+│   ├── ProjectHeader.vue
+│   ├── ProjectPreview.vue
+│   ├── StyledImage.vue
+│   ├── Tag.vue
+│   ├── Testimonial.vue
+│   └── TextExpand.vue
+└── projects
+    ├── Businesshub.vue
+    ├── CodeSnippets.vue
+    ├── Dubai.vue
+    ├── EsGehtLos.vue
+    ├── Greenbox.vue
+    ├── KnimeHub.vue
+    ├── Mechanics.vue
+    ├── Phoenix.vue
+    ├── QueryBuilder.vue
+    ├── ScenarioManager.vue
+    ├── Thesis.vue
+    └── TrafficTicket.vue
 
 # DONE
+see commit history for changes. Automatic deploy from main with github actions
 ## 3.6.0
 - change hero copy
 - removed believes
