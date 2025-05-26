@@ -2,8 +2,6 @@
 - styles: responsive, body1-2, p, ul, li
 App.vue
 │   ├── Legal.vue
-│   ├── Projects.vue
-│   ├── Testimonials.vue
 │   └── WelcomeBanner.vue
 ├── elements
 │   ├── Button.vue

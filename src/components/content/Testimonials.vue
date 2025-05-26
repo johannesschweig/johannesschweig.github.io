@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="responsive legacy">
-      <h4>What my clients say</h4>
+    <div class="responsive">
+      <h2 class="text-3xl font-medium mt-10 mb-8">What my clients say</h2>
       <div class='general-grid'>
         <Testimonial v-for='t in testimonials' :testimonialProps='t'/>
       </div>

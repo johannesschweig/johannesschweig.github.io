@@ -1,10 +1,11 @@
 <template>
-  <div class="wrapper legacy">
+  <!-- TODO: somehow the margin of the heading is not respected -->
+  <div class="bg-dark-100 py-px">
     <div id='projects' class="responsive">
-      <h4 @click="clickProjects()">
+      <h2 @click="clickProjects()" class="text-3xl font-medium mt-10 mb-8 text-white">
         {{ projectsClicked > 2 ? "All " : "My" }}
         projects
-      </h4>
+      </h2>
       <div class='general-grid'>
         <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />
       </div>
@@ -39,16 +40,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.wrapper {
-  background-color: var(--dark-100);
-  padding-top: 1px; /* somehow the margin of the heading is not respected */
-  padding-bottom: 1px;
-}
-
-h4 {
-  color: white;
-  margin-bottom: 32px;
-}
-</style>

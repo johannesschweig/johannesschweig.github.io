@@ -1,6 +1,6 @@
 <template>
   <div class="responsive"> 
-    <h2 class="text-3xl mt-10 mb-8">My offers</h2>
+    <h2 class="text-3xl font-medium mt-10 mb-8">My offers</h2>
     <div class="general-grid">
       <div class="bg-light-100 rounded-2xl border border-light-200 p-8 grid gap-3 grid-rows-[48px_12px_1fr_12px_40px] items-center">
         <h3 class="text-2xl">MVP Accelerator</h3>
