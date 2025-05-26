@@ -1,13 +1,25 @@
 <template>
-  <a :href='href' :style='bgStyle'>
-    <slot></slot>
-    <span :class='["text", size === "lg" ? "button-lg" : "button"]' v-if='text'>
+  <a :href='href' :class="'rounded-lg inline-grid gap-3 items-center transition ease ' + styleMap[type][bg]" :style="bgStyle">
+    <slot></slot> <!-- icon -->
+    <span v-if='text' :class='size === "lg" ? "text-base leading-6 md:text-xl md:leading-8" : "text-base leading-6"'>
       {{ text }}
     </span>
   </a>
 </template>
 
 <script>
+const styleMap = {
+  primary: {
+    light: 'bg-blue-200 hover:bg-blue-100 active:bg-blue-100 text-white fill-white',
+    dark: 'bg-blue-300 hover:bg-blue-400 active:bg-blue-400 text-dark-100 fill-dark-100',
+  },
+  secondary: {
+    light: 'hover:bg-[#ffffff80] active:bg-[#ffffff80] border border-dark-200 text-dark-200 fill-dark-200',
+    grey: 'hover:bg-dark-100 active:bg-dark-100 border border-light-200 text-light-200 fill-light-200',
+    dark: 'hover:bg-dark-200 active:bg-dark-200 border border-light-200 text-light-200 fill-light-200'
+  },
+}
+
 export default {
   props: {
     href: {
@@ -30,44 +42,15 @@ export default {
       required: true,
     }
   },
+  data() {
+    return {
+      styleMap,
+    }
+  },
   computed: {
     bgStyle() {
-      let iconColor, bgColor, bgHoverColor, border, color
-      if (this.type === "primary" && this.bg === "light") { // primary light
-        iconColor = "white"
-        bgColor = "var(--blue-200)"
-        bgHoverColor = "var(--blue-100)"
-        border = "none"
-      } else if (this.type === "primary" && this.bg === "dark") { // primary dark
-        iconColor = "var(--dark-100)"
-        bgColor = "var(--blue-300)"
-        bgHoverColor = "var(--blue-400)"
-        border = "none"
-      } else if (this.type === "secondary" && this.bg === "light") { // secondary light
-        iconColor = "var(--dark-200)"
-        bgColor = "none"
-        bgHoverColor = "rgba(255, 255, 255, 0.5)"
-        border = "1px solid var(--dark-200)"
-      } else if (this.type === "secondary" && this.bg === "grey") { // secondary grey
-        iconColor = "var(--light-200)"
-        bgColor = "none"
-        bgHoverColor = "var(--dark-100)"
-        border = "1px solid var(--light-200)"
-      } else { // secondary dark
-        iconColor = "var(--light-200)"
-        bgColor = "none"
-        bgHoverColor = "var(--dark-200)"
-        border = "1px solid var(--light-200)"
-      }
-      color = iconColor
-
       return {
         '--size': this.size === "lg" ? "32px" : "24px",
-        '--icon-color': iconColor,
-        '--bg-color': bgColor,
-        '--bg-hover-color': bgHoverColor,
-        'border': border,
-        color: color,
         'grid-template-columns': this.$slots.default && this.text ? 'var(--size) 1fr' : '1fr',
         'padding': this.text ? '12px 24px' : '11px 12px',
       }
@@ -77,44 +60,11 @@ export default {
 </script>
 
 <style scoped>
-a {
-  display: inline-grid;
-  gap: 12px;
-  cursor: pointer;
-  transition: all .1s ease;
-  border-radius: var(--radius);
-  background-color: var(--bg-color);
-  align-items: center;
-}
-
-:deep(svg),
-:deep(img) {
-  display: inline-block;
+::v-deep(svg),
+::v-deep(g) {
+  width: var(--size);
   max-width: var(--size);
   max-height: var(--size);
-  vertical-align: top;
-  fill: var(--icon-color);
-}
-
-:deep(svg) {
-  width: var(--size);
-}
-
-:deep(svg path) {
-  transition: all .2s ease;
-}
-
-a:hover,
-a:active {
-  background-color: var(--bg-hover-color);
-}
-
-a :deep(svg path) {
-  fill: var(--icon-color);
-}
-
-.text {
-  line-height: var(--size);
 }
 
 

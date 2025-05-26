@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<project-header :route='"/trafficticket"'></project-header>
-		<div class='responsive'>
-			<h4>TL;DR</h4>
+		<div class='responsive text-dark-200'>
+			<h2 class="content-heading1">TL;DR</h2>
 			<p>I was the project lead for a big car rental company building a system that automatically processed traffic
 				tickets.</p>
 			<p>The nature of this work is confidential. <a class="link" href='mailto:hello@johannesschweig.de'>Contact me </a>for the

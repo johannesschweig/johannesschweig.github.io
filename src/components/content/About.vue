@@ -1,15 +1,15 @@
 <template>
-  <div id='about'>
-    <div class='responsive'>
-      <img :src="buildURL('bio/portrait.jpg')" />
-      <div id='text' class='body1'>
-        <h4>About</h4>
-        <p>I help founders and product teams turn vague ideas into clear, buildable products. Using Figma, I shape early
+  <div>
+    <div class='responsive pt-4 pb-12 md:py-12'>
+      <img class="w-full rounded-lg" :src="buildURL('bio/portrait.jpg')" />
+      <div>
+        <h1 class="text-3xl mb-4 font-medium mt-10 md:mt-0">About</h1>
+        <div class="text-lg leading-8">I help founders and product teams turn vague ideas into clear, buildable products. Using Figma, I shape early
           concepts into prototypes you can show investors, test with users, and hand over to developers. I focus on
           scope, structure, and fast feedback loops—so everyone knows what to build, and why. Based in Berlin. Happy to
-          jump in early and stay hands-on through delivery.</p>
-        <h5>CV</h5>
-        <div class="cv">
+          jump in early and stay hands-on through delivery.</div>
+        <h2 class="text-2xl mt-8 mb-3 font-medium">CV</h2>
+        <div class="flex flex-wrap gap-3">
           <Button type="primary" bg="light" size='sm' text='English CV'
             href='https://drive.google.com/file/d/19Fq8oCB_v1aAk957t-IXDm7rekfPUyf0/view?usp=drive_link'>
             <CvIcon />
@@ -19,24 +19,24 @@
             <CvIcon />
           </Button>
         </div>
-        <h5>Industries</h5>
-        <div class="industries">
+        <h2 class="text-2xl mt-8 mb-3 font-medium">Industries</h2>
+        <div class="flex flex-wrap gap-2">
           <div
             v-for='industry in ["B2B SaaS", "Automotive", "Energy", "FinTech", "Manufacturing", "Consulting", "Startup", "Retail", "Construction", "Real Estate", "Sustainability", "Grants", "Crypto"]'
-            class="tag">
+            class="px-3 py-1.5 bg-white rounded-lg">
             {{ industry }}
           </div>
         </div>
-        <h5>Skills</h5>
-        <div class="skills">
+        <h2 class="text-2xl mt-8 mb-3 font-medium">Skills</h2>
+        <div class="flex flex-wrap gap-2">
           <div v-for='skill in ["UX Design", "UI Design", "Conception", "Prototyping"
             , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
-            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="tag">
+            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="px-3 py-1.5 bg-white rounded-lg">
             {{ skill }}
           </div>
         </div>
-        <h5>Networks</h5>
-        <div class='networks'>
+        <h2 class="text-2xl mt-8 mb-3 font-medium">Networks</h2>
+        <div class='flex flex-wrap gap-3'>
           <Button type="secondary" bg="light" size='sm' text='Freelancermap'
             href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
             <FreelancermapIcon />
@@ -95,49 +95,11 @@ export default {
 </script>
 
 <style scoped>
-.cv>a {
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-
-#text>p {
-  font-size: 20px;
-  line-height: 36px;
-}
-
-.networks>a {
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-
-.tag {
-  padding: 6px 12px;
-  border-radius: var(--radius);
-  display: inline-block;
-  background: white;
-  margin-right: 8px;
-  margin-bottom: 8px;
-}
-
-.responsive {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-img {
-  width: 100%;
-  border-radius: var(--radius);
-}
-
 @media screen and (min-width: 768px) {
   .responsive {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 24px;
-  }
-
-  h4 {
-    margin-top: 0;
   }
 }
 </style>

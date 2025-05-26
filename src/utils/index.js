@@ -1,4 +1,4 @@
-import { projData, activeRoutes } from './projects.js'
+import { projData } from './projects.js'
 
 // returns the name of the project from a route (e.g. '/phoenix' -> Phoenix)
 export function getProjectNameFromRoute(route) {
@@ -25,19 +25,19 @@ function getMod(i, j) {
 export function getPreviousNextProjects(route) {
   // find index of current project
   // by default found is the last project (e.g. inactive ones)
-  let found = activeRoutes.length;
-  for (let i = 0; i < activeRoutes.length; i++) {
-    if (activeRoutes[i].route == route) {
+  let found = projData.length;
+  for (let i = 0; i < projData.length; i++) {
+    if (projData[i].route == route) {
       found = i
       break
     }
   }
-  let previous = getMod(found - 1, activeRoutes.length)
-  let next = getMod(found + 1, activeRoutes.length)
+  let previous = getMod(found - 1, projData.length)
+  let next = getMod(found + 1, projData.length)
 
   return {
-    previous: activeRoutes[previous],
-    next: activeRoutes[next]
+    previous: projData[previous],
+    next: projData[next]
   }
 }
 

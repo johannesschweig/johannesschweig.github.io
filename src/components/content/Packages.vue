@@ -1,10 +1,10 @@
 <template>
-  <div class="responsive">
-    <h4>My offers</h4>
+  <div class="responsive mb-16"> 
+    <h2 class="text-3xl font-medium mt-10 mb-8">My offers</h2>
     <div class="general-grid">
-      <div class="card">
-        <div class="h5 title">MVP Accelerator</div>
-        <div class="divider"></div>
+      <div class="bg-light-100 rounded-2xl border border-light-200 p-8 grid gap-3 grid-rows-[48px_12px_1fr_12px_40px] items-center">
+        <h3 class="text-2xl">MVP Accelerator</h3>
+        <div class="h-px bg-light-200"></div>
         <ul>
           <li>Kick-off Workshop (on-site)</li>
           <li>Clear scope of the core user journey</li>
@@ -13,15 +13,15 @@
           <li>Basic design system (colors, typography, components)</li>
           <li class="calendar">Timeline: 1 – 2 months</li>
         </ul>
-        <div class="divider"></div>
+        <div class="h-px bg-light-200"></div>
         <div>
-          <div class="h6">1 000€ – 4 000€</div>
-          <div class='subtitle2'>Depending on scope</div>
+          <div class="h6">2 000€ – 8 000€</div>
+          <div class='text-dark-300'>Depending on scope</div>
         </div>
       </div>
-      <div class="card">
-        <div class="h5 title">UX for agile teams</div>
-        <div class="divider"></div>
+      <div class="bg-light-100 rounded-2xl border border-light-200 p-8 grid gap-3 grid-rows-[48px_12px_1fr_12px_40px] items-center">
+        <h3 class="text-2xl">UX for agile teams</h3>
+        <div class="h-px bg-light-200"></div>
         <ul>
           <li>Interviewing users and documenting pain points</li>
           <li>Interaction design for new features</li>
@@ -29,8 +29,8 @@
           <li>Supporting developers in the development process</li>
           <li class="stopwatch">Part-time or full-time</li>
         </ul>
-        <div class="divider"></div>
-        <div class="h6">80€/h</div>
+        <div class="h-px bg-light-200"></div>
+        <div class="h6">90€/h</div>
       </div>
     </div>
   </div>
@@ -47,39 +47,6 @@ export default {
 </script>
 
 <style scoped>
-.responsive {
-  margin-bottom: 64px;
-}
-
-h4 {
-  margin-bottom: 32px;
-}
-
-.card {
-  background-color: var(--light-100);
-  border-radius: var(--radius-2);
-  border: 1px solid var(--light-200);
-  padding: 32px;
-  gap: 12px;
-  display: grid;
-  grid-template-rows: 48px 12px 1fr 12px 40px;
-  align-items: center;
-}
-
-
-p {
-  color: var(--dark-200);
-}
-
-.divider {
-  background-color: var(--light-200);
-  height: 1px;
-}
-
-.subtitle2 {
-  color: var(--dark-300);
-}
-
 ul {
   margin: 0;
   padding: 0;

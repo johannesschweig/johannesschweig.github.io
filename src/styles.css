@@ -44,36 +44,15 @@
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* TODO remove css vars references in this file */
 :root {
-  --font-sans: "Inter", sans-serif;
-  --content-padding: 30px;
-  --blue-100: #2A4A8A;
   --blue-200: #355DAE;
-  --blue-300: #4070D1;
   --blue-400: #4B83F5;
-  --dark-100: #1A1C21;
-  --dark-200: #353942;
-  --dark-300: #525866;
   --light-100: #E6EAF2;
-  --light-200: #C2C5CC;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  --shadow-light: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
-  --shadow-light-hover: 0 14px 28px rgba(255, 255, 255, 0.12), 0 10px 10px rgba(255, 255, 255, 0.12);
-  --radius: 8px;
-  --radius-2: calc(8px * 2);
-  /* Font sizes */
-  --size-h1: 96px;
-  --size-h2: 64px;
-  --size-h3: 48px;
-  --size-h4: 32px;
-  --size-h5: 24px;
-  --size-h6: 20px;
-  --size-sub1: 16px;
-  --size-sub2: 14px; /* text-sm */
 }
 
 @theme {
+  --font-sans: "Inter", sans-serif;
   --color-blue-100: #2A4A8A;
   --color-blue-200: #355DAE;
   --color-blue-300: #4070D1;
@@ -85,129 +64,18 @@
   --color-light-200: #C2C5CC;
 }
 
-body {
-  font-family: var(--font-sans);
-  color: var(--dark-100);
-  margin: 0;
-  min-height: 100vh;
-}
-
-#app {
-  display: grid;
-  grid-template-rows: 64px 1fr auto;
-  min-height: 100vh;
-}
-
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  color: var(--dark-100);
+.content-heading1,
+.content-heading2 {
+  @apply font-medium text-dark-100
 }
 
-.regular {
-  font-weight: 400;
+.content-heading1 {
+  @apply text-xl leading-8 md:text-3xl md:leading-14
 }
 
-h1,
-.h1 {
-  font-size: var(--size-h1);
-  margin: 112px 0 48px 0;
-}
-
-h2,
-.h2 {
-  font-size: var(--size-h2);
-  margin: 72px 0 32px 0;
-}
-
-h3,
-.h3 {
-  font-size: var(--size-h3);
-  margin: 60px 0 24px 0;
-}
-
-h4,
-.h4 {
-  font-size: var(--size-h4);
-  margin: 40px 0 16px 0;
-}
-
-h5,
-.h5 {
-  font-size: var(--size-h5);
-  margin: 32px 0 12px 0;
-}
-
-h6,
-.h6 {
-  font-size: var(--size-h6);
-  margin: 24px 0 8px 0;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin: 0
-}
-
-.subtitle1 {
-  font-size: var(--size-sub1);
-  color: var(--dark-300);
-}
-
-.subtitle2 {
-  font-size: var(--size-sub2);
-  color: var(--dark-300);
-}
-
-.body1 {
-  font-size: var(--size-sub1);
-  line-height: 24px;
-  color: var(--dark-200);
-}
-
-.body2 {
-  font-size: var(--size-sub2);
-  line-height: 28px;
-}
-
-.body1 p {
-  margin: 0 0 24px 0;
-  line-height: 32px;
-}
-
-.body2 p {
-  margin: 6px 0;
-  line-height: 24px;
-}
-
-.button {
-  font-size: var(--size-sub1);
-}
-
-.button-lg {
-  font-size: var(--size-h6);
-}
-
-@media screen and (max-width: 768px) {
-  .button-lg {
-    font-size: var(--size-sub1);
-  }
-}
-
-
-/* General classes */
-a {
-  text-decoration: none;
-  color: var(--dark-100);
+.content-heading2 {
+  @apply text-lg leading-8 md:text-2xl md:leading-12
 }
 
 p,
@@ -217,8 +85,7 @@ ol {
 }
 
 p {
-  line-height: 28px;
-  @apply my-4;
+  @apply mb-4 leading-8;
 }
 
 ul {
@@ -230,34 +97,51 @@ ol li {
   line-height: 28px;
 }
 
-/* custom classes */
 .link {
-  border-bottom: 2px solid var(--blue-300);
+  @apply border-b-2 border-blue-300 hover:border-blue-100 active:border-blue-100;
 }
 
-.link:hover,
-.link:active {
-  border-bottom: 2px solid var(--blue-100);
+.greylink {
+  @apply block cursor-pointer hover:text-white active:text-white;
 }
 
 /* responsive content*/
 .responsive {
-  padding-left: var(--content-padding);
-  padding-right: var(--content-padding);
-  max-width: 1220px;
-  margin: 0 auto;
+  @apply max-w-7xl mx-auto my-0 px-8;
 }
 
 /* grid */
 .general-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  margin-bottom: 100px;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 mb-24
 }
 
-@media screen and (min-width: 768px) {
-  .general-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.background {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-grow: 1;
+    z-index: -1;
+    background: var(--light-100);
 }
+
+.background div {
+    position: absolute;
+    border-radius: 100%;
+    height: 0;
+    filter: blur(8vw);
+    opacity: 0.2;
+}
+
+.background div:nth-child(1) {
+    background: linear-gradient(132deg, var(--blue-400) 0.00%, #f5834d 100.00%);
+    width: 80%;
+    padding-top: 80%;
+    left: 64%;
+    top: 52%;
+    transform: translateX(-50%) translateY(-50%);
+}
+

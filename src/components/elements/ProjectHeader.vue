@@ -1,24 +1,23 @@
 <template>
   <div
-    id='project-header'
-    class='responsive'>
-    <div id='name-container'>
-      <div class='subtitle1'>{{ project.name }}</div>
-      <h2>{{ project.slogan }}</h2>
+    class='responsive pt-4 pb-2 md:pt-16 md:pb-4'>
+    <div class='mb-8'>
+      <div class='text-dark-300 text-sm md:text-base'>{{ project.name }}</div>
+      <h1 class="text-4xl leading-12 md:text-6xl md:leading-20 font-medium">{{ project.slogan }}</h1>
     </div>
-    <div id='heading-container'>
-      <div class='subtitle1'> Client </div>
-      <h5>
+    <div class='grid grid-rows-[1fr_3fr] md:gap-y-1 gap-x-8 grid-flow-col'>
+      <div class='text-dark-300 text-sm md:text-base'>Client</div>
+      <h3 class='text-lg md:text-2xl font-medium'>
         <div
         :key='c'
         v-for='c in project.clients'>
         {{ c }}
         </div>
-      </h5>
-      <div class='subtitle1'> Task </div>
-      <h5>{{ project.task }}</h5>
-      <div class='subtitle1'> Timeline </div>
-      <h5>{{ project.date }}</h5>
+      </h3>
+      <div class='text-dark-300 text-sm md:text-base'>Task</div>
+      <h3 class="text-lg md:text-2xl font-medium">{{ project.task }}</h3>
+      <div class='text-dark-300 text-sm md:text-base'>Timeline</div>
+      <h3 class="text-lg md:text-2xl font-medium">{{ project.date }}</h3>
     </div>
   </div>
 </template>
@@ -44,46 +43,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-.responsive {
-  padding-top: 64px;
-  padding-bottom: 32px;
-}
-
-h2, h5 {
-  margin: 0;
-}
-
-#name-container {
-  margin-bottom: 32px;
-}
-
-#heading-container {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  row-gap: 4px;
-  column-gap: 32px;
-  grid-auto-flow: column;
-}
-
-
-@media screen and (max-width: 768px) {
-  #heading-container {
-    row-gap: 0px;
-  }
-
-  h2 {
-    font-size: var(--size-h3);
-  }
-
-  h5 {
-    font-size: var(--size-h6)
-  }
-
-  .subtitle1 {
-    font-size: var(--size-sub2);
-  }
-}
-</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="responsive">
-      <h4>What my clients say</h4>
+      <h2 class="text-3xl font-medium mt-10 mb-8">What my clients say</h2>
       <div class='general-grid'>
         <Testimonial v-for='t in testimonials' :testimonialProps='t'/>
       </div>
@@ -25,9 +25,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-h4 {
-  margin-bottom: 32px;
-}
-</style>
