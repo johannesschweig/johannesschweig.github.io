@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper legacy">
     <div id='projects' class="responsive">
       <h4 @click="clickProjects()">
         {{ projectsClicked > 2 ? "All " : "My" }}

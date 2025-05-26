@@ -1,7 +1,7 @@
 <template>
 	<div
     id="content"
-    class='responsive body2'>
+    class='responsive body2 legacy'>
 		<h5>Legal Disclosure</h5>
 		<p>Johannes Schweig</p>
 		<p>Flemingstr 6, 10557 Berlin</p>

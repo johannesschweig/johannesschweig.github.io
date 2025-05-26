@@ -1,7 +1,7 @@
 <template>
   <div
     id='project-header'
-    class='responsive'>
+    class='responsive legacy'>
     <div id='name-container'>
       <div class='subtitle1'>{{ project.name }}</div>
       <h2>{{ project.slogan }}</h2>

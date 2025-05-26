@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/mechanics"'></project-header>
-		<div class='responsive'>
+		<div class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>During my work for UseTree we tested the usability of an application with maintenance workers. The aim of the application is to allow for easy and sustainable transfer of knowledge.</p>
 			<styled-image

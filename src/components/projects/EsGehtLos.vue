@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/esgehtlos"'></project-header>
-		<div class='responsive body1'>
+		<div class='responsive body1 legacy'>
 			<h4>TL;DR</h4>
 			<p>I helped to build a product that helps a NGO to organize their citizen councils. One of the big features was a feedback flow for citizens to respond to an invitation for a council and mention their needs.</p>
 			<h4>Problem statement</h4>

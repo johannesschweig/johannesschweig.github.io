@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/greenbox"'></project-header>
-		<div id="greenbox" class='responsive'>
+		<div id="greenbox" class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>As part of a university course a design team and a UX research team helped a startup to improve their gardening app. I contributed with planning, conducting and evaluating usability tests as part of the UX research team (3 persons in total).</p>
 			<h4>Problem</h4>

@@ -3,7 +3,7 @@
 		<project-header :route='"/knimehub"'></project-header>
 		<div
       id='knimehub'
-      class='responsive body1'>
+      class='responsive body1 legacy'>
       <h4>TL;DR</h4>
       <p>I helped to build a website where data scientists can read up on existing functionality of the desktop application. This website also enables them to share and collaborate on data analysis projects.</p>
 			<h4>Introduction</h4>

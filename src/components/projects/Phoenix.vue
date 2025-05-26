@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/phoenix"'></project-header>
-		<div class='responsive'>
+		<div class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>In my free time I programmed a music player and expanded on it over the years. I learnt a lot about User-Centered Design, software engineering and making use of stackoverflow.</p>
 			<h4>Problem</h4>

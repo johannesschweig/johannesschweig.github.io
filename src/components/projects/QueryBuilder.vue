@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/querybuilder"'></project-header>
-		<div class='responsive'>
+		<div class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>I helped to build a functionality which lets users filter their data based on multiple, nested criteria.</p>
 			<h4>Problem</h4>

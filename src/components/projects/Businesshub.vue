@@ -1,7 +1,7 @@
 <template>
   <div>
     <ProjectHeader :route='"/businesshub"' />
-    <div id='dubai' class='responsive body1'>
+    <div id='dubai' class='responsive body1 legacy'>
       <h4>TL;DR</h4>
       <p>I designed the UI for a tender for a business hub in the middle east.</p>
       <h4>Task</h4>

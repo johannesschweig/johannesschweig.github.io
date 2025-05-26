@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="responsive">
+    <div class="responsive legacy">
       <h4>What my clients say</h4>
       <div class='general-grid'>
         <Testimonial v-for='t in testimonials' :testimonialProps='t'/>

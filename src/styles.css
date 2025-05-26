@@ -99,12 +99,12 @@ body {
 }
 
 /* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.legacy h1,
+.legacy h2,
+.legacy h3,
+.legacy h4,
+.legacy h5,
+.legacy h6 {
   font-weight: 500;
   color: var(--dark-100);
 }
@@ -113,37 +113,37 @@ h6 {
   font-weight: 400;
 }
 
-h1,
+.legacy h1,
 .h1 {
   font-size: var(--size-h1);
   margin: 112px 0 48px 0;
 }
 
-h2,
+.legacy h2,
 .h2 {
   font-size: var(--size-h2);
   margin: 72px 0 32px 0;
 }
 
-h3,
+.legacy h3,
 .h3 {
   font-size: var(--size-h3);
   margin: 60px 0 24px 0;
 }
 
-h4,
+.legacy h4,
 .h4 {
   font-size: var(--size-h4);
   margin: 40px 0 16px 0;
 }
 
-h5,
+.legacy h5,
 .h5 {
   font-size: var(--size-h5);
   margin: 32px 0 12px 0;
 }
 
-h6,
+.legacy h6,
 .h6 {
   font-size: var(--size-h6);
   margin: 24px 0 8px 0;

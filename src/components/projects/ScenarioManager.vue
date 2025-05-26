@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/scenariomanager"'></project-header>
-		<div class='responsive body1'>
+		<div class='responsive body1 legacy'>
 			<h4>TL;DR</h4>
 			<p>I led a discovery project aiming to improve a core functionality in a web application. I interviewed customers and internal stakeholders. As a result a couple of smaller fixes and a big feature were developed.</p>
 			<h4>Problem statement</h4>

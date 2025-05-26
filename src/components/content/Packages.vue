@@ -1,5 +1,5 @@
 <template>
-  <div class="responsive">
+  <div class="responsive legacy">
     <h4>My offers</h4>
     <div class="general-grid">
       <div class="card">

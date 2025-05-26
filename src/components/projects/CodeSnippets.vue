@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/codesnippets"'></project-header>
-		<div class='responsive'>
+		<div class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>I designed an interface where users can input multiple "code snippets" to transform their data.</p>
 			<h4>Problem</h4>

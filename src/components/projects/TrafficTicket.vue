@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<project-header :route='"/trafficticket"'></project-header>
-		<div class='responsive'>
+		<div class='responsive legacy'>
 			<h4>TL;DR</h4>
 			<p>I was the project lead for a big car rental company building a system that automatically processed traffic
 				tickets.</p>

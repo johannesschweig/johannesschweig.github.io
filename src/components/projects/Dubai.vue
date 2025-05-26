@@ -1,7 +1,7 @@
 <template>
   <div>
     <project-header :route='"/dubai"'></project-header>
-    <div id='dubai' class='responsive body1'>
+    <div id='dubai' class='responsive body1 legacy'>
       <h4>TL;DR</h4>
       <p>I designed the UI for several pages for a real estate company in Dubai showcasing their latest real estate
         projects.</p>
