@@ -1,8 +1,6 @@
 ## Refactor css styles to tailwind
 - styles: responsive, body1-2, p, ul, li
 App.vue
-│   ├── Legal.vue
-│   └── WelcomeBanner.vue
 ├── elements
 │   ├── Button.vue
 │   ├── Header.vue
