@@ -1,27 +1,17 @@
 <template>
-    <div id="header">
-        <div
-          id='grid'
-          class='responsive h6 regular'>
-            <router-link
-              id='name'
-              to='/'>
-              Johannes Schweig
-            </router-link>
-            <router-link
-              id='work'
-              to='/'
-              :class='[{"active": projectRoutes.indexOf($route.path) != -1 }]'>
-              Home
-            </router-link>
-            <router-link
-              id='about'
-              to='/about'
-              :class='[{"active": $route.path === "/about"}]'>
-              About
-            </router-link>
-        </div>
-    </div>
+  <nav
+    class='responsive w-full text-dark-300 text-xl h-16 grid items-center grid-cols-[180px_1fr_100px] md:grid-cols-[180px_1fr_100px_100px]'>
+    <router-link to='/' class="">
+      Johannes Schweig
+    </router-link>
+    <div></div>
+    <router-link to='/' :class='[" hidden md:block justify-self-end hover:text-blue-100 active:text-blue-100 hover:font-medium active:font-medium transition-all duration-100 ease-in-out", { "text-blue-100 font-medium": projectRoutes.indexOf($route.path) != -1 }]'>
+      Home
+    </router-link>
+    <router-link to='/about' :class='["justify-self-end hover:text-blue-100 active:text-blue-100 hover:font-medium active:font-medium transition-all duration-100 ease-in-out",{ "text-blue-100 font-medium": $route.path === "/about" }]'>
+      About
+    </router-link>
+  </nav>
 </template>
 
 <script>
@@ -35,59 +25,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-#header {
-  height: 64px;
-  width: 100%;
-}
-
-#grid {
-  /* padding for right links*/
-  --pad: 12px;
-  display: grid;
-  /* 30px left padding, size of name, free growing space, size of right links + padding, right padding  */
-  grid-template-columns: 180px 1fr 100px 100px;
-}
-
-#name {
-  grid-column: 1 / 2;
-  color: var(--dark-300);
-	line-height: 64px;
-}
-
-#work {
-  grid-column: 3 / 4;
-}
-
-#work,
-#about {
-  color: var(--dark-300);
-  text-align: center;
-	line-height: 62px;
-  transition:all .15s ease;
-}
-
-#work:hover,
-#about:hover,
-#work.active,
-#about.active {
-  color: var(--blue-100);
-  font-weight: 500;
-}
-
-@media screen and (max-width: 768px) {
-  #grid {
-    grid-template-columns: 180px 1fr 100px;
-  }
-  #work {
-    display: none;
-  }
-  
-  #about {
-    text-align: right;
-    grid-column: 3 / 4;
-  }
-}
-
-</style>
