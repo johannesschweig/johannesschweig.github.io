@@ -1,8 +1,8 @@
 <template>
-  <div id='projectArrows' class='responsive'>
+  <div class='responsive py-12 flex text-xl text-blue-200'>
     <router-link
       v-if="previousProject.route"
-      class='previous'
+      class='previous flex items-center py-1.5 px-4 border border-blue-200 rounded-lg hover:text-white active:text-white transition-all duration-250'
       :to='previousProject.route'>
       <Arrow class="mr-2"/>
       <span>
@@ -13,13 +13,13 @@
     <div class='flex-grow'></div>
     <router-link
       v-if="nextProject.route"
-      class='next'
+      class='next flex items-center py-1.5 px-4 border border-blue-200 rounded-lg hover:text-white active:text-white transition-all duration-250'
       :to='nextProject.route'>
       <span>
         <span class="hidden md:inline-block">Next project:</span>
         {{ nextProject.name }}
       </span>
-      <Arrow class="ml-2"/>
+      <Arrow class="ml-2 rotate-180"/>
     </router-link>
   </div>
 </template>
@@ -47,36 +47,18 @@ onMounted(() => {
 </script>
 
 <style scoped>
-#projectArrows {
-  margin-top: 64px;
-  margin-bottom: 64px;
-  display: flex;
-}
-
-#projectArrows > a {
-  font-size: var(--size-h6);
-  color: var(--blue-200);
-  border-radius: var(--radius);
-  border: 1px solid var(--blue-200);
-  padding: 6px 16px;
-  background-size: 200% 100%;
-  transition: all .15s ease;
-  display: flex;
-  align-items: center;
-}
-
-#projectArrows > a:hover {
-  color: white;
-}
-
 svg >>> path {
   fill: var(--blue-200);
-  transition: all .15s ease;
 }
 
-.previous {
+a:hover svg >>> path {
+  fill: white;
+}
+
+.previous { 
   background: linear-gradient(to right, transparent 50%, var(--blue-200) 50%);
   background-position: left top;
+  background-size: 200% 100%;
 }
 
 .previous:hover {
@@ -87,10 +69,7 @@ svg >>> path {
   background: linear-gradient(to left, transparent 50%, var(--blue-200) 50%);
   background-position: right top;
   float: right;
-}
-
-.next > svg {
-  transform: rotate(180deg);
+  background-size: 200% 100%;
 }
 
 .next:hover {
@@ -100,13 +79,5 @@ svg >>> path {
 #projectArrows > a:active {
   background-color: var(--blue-200);
   color: white;
-}
-
-a:hover svg >>> path {
-  fill: white;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 </style>

@@ -3,8 +3,6 @@
 App.vue
 ├── elements
 │   ├── Button.vue
-│   ├── Header.vue
-│   ├── ProjectArrows.vue
 │   ├── ProjectHeader.vue
 │   ├── ProjectPreview.vue
 │   ├── StyledImage.vue
