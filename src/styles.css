@@ -189,19 +189,7 @@ body {
   line-height: 24px;
 }
 
-.button {
-  font-size: var(--size-sub1);
-}
 
-.button-lg {
-  font-size: var(--size-h6);
-}
-
-@media screen and (max-width: 768px) {
-  .button-lg {
-    font-size: var(--size-sub1);
-  }
-}
 
 
 /* General classes */

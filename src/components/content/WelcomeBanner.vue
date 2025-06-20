@@ -10,11 +10,16 @@
         <Button type="secondary" bg="light" size='lg' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
         </Button>
       </div>
-      <div class="flex gap-6 lg:mb-6 bg-dark-100 p-4">
+      <div class="*:mr-3 lg:mb-6 bg-dark-100 p-4">
       <Button type="primary" bg="dark" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>
           <SendIcon />
         </Button>
         <Button type="secondary" bg="dark" size='lg' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
+        </Button>
+      </div>
+      <div class="bg-dark-200 p-3">
+        <Button type="secondary" bg="grey" size='lg' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
+          <SendIcon />
         </Button>
       </div>
     </div>
