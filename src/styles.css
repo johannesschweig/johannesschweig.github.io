@@ -60,16 +60,16 @@
   --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   --shadow-light: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
   --shadow-light-hover: 0 14px 28px rgba(255, 255, 255, 0.12), 0 10px 10px rgba(255, 255, 255, 0.12);
-  --radius: 8px;
-  --radius-2: calc(8px * 2);
+  --radius: 8px; /* rounded-lg */
+  --radius-2: calc(8px * 2); /* rounded-2xl */
   /* Font sizes */
-  --size-h1: 96px;
-  --size-h2: 64px;
-  --size-h3: 48px;
-  --size-h4: 32px;
-  --size-h5: 24px;
-  --size-h6: 20px;
-  --size-sub1: 16px;
+  --size-h1: 96px; /* text-8xl */
+  --size-h2: 64px; /* text-6xl */
+  --size-h3: 48px; /* text-5xl */
+  --size-h4: 32px; /* text-3xl */
+  --size-h5: 24px; /* text-2xl */
+  --size-h6: 20px; /* text-xl */
+  --size-sub1: 16px; /* text-base */
   --size-sub2: 14px; /* text-sm */
 }
 
