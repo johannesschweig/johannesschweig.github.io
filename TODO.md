@@ -1,22 +1,15 @@
 ## Refactor css styles to tailwind
-- styles: responsive, body1-2, p, ul, li
+- remove legacy styles at the end: responsive, body1-2, p, ul, li
+  - class legacy to keep it working for now
 App.vue
 ├── elements
-│   ├── Button.vue
-│   ├── ProjectPreview.vue
-│   ├── StyledImage.vue
+│   ├── Button.vue (big, deep selectors)
+│   ├── ProjectPreview.vue (big)
+│   ├── StyledImage.vue (big)
 └── projects
     ├── Businesshub.vue
-    ├── CodeSnippets.vue
     ├── Dubai.vue
     ├── EsGehtLos.vue
-    ├── Greenbox.vue
-    ├── KnimeHub.vue
-    ├── Mechanics.vue
-    ├── Phoenix.vue
-    ├── QueryBuilder.vue
-    ├── ScenarioManager.vue
-    ├── Thesis.vue
     └── TrafficTicket.vue
 
 # DONE

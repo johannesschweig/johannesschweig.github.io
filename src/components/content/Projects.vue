@@ -2,9 +2,8 @@
   <!-- TODO: somehow the margin of the heading is not respected -->
   <div class="bg-dark-100 py-px">
     <div id='projects' class="responsive">
-      <h2 @click="clickProjects()" class="text-3xl font-medium mt-10 mb-8 text-white">
-        {{ projectsClicked > 2 ? "All " : "My" }}
-        projects
+      <h2 class="text-3xl font-medium mt-10 mb-8 text-white">
+        Recent projects
       </h2>
       <div class='general-grid'>
         <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />
@@ -15,7 +14,7 @@
 
 <script>
 import ProjectPreview from '@/components/elements/ProjectPreview.vue'
-import { activeRoutes, projData } from '@/utils/projects.js'
+import { projData } from '@/utils/projects.js'
 
 export default {
   components: {
@@ -28,15 +27,9 @@ export default {
     }
   },
   computed: {
-    // json with project data
     routes() {
-      return this.projectsClicked > 2 ? projData : activeRoutes
+      return projData
     },
-  },
-  methods: {
-    clickProjects() {
-      this.projectsClicked++
-    }
   }
 }
 </script>
