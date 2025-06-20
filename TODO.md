@@ -4,8 +4,6 @@
 App.vue
 ├── elements
 │   ├── Button.vue (big, deep selectors)
-│   ├── ProjectPreview.vue (big)
-│   ├── StyledImage.vue (big)
 └── projects
     ├── Businesshub.vue
     ├── Dubai.vue
