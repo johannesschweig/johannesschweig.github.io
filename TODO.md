@@ -3,12 +3,8 @@
 App.vue
 ├── elements
 │   ├── Button.vue
-│   ├── ProjectHeader.vue
 │   ├── ProjectPreview.vue
 │   ├── StyledImage.vue
-│   ├── Tag.vue
-│   ├── Testimonial.vue
-│   └── TextExpand.vue
 └── projects
     ├── Businesshub.vue
     ├── CodeSnippets.vue

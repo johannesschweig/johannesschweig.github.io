@@ -1,7 +1,6 @@
 <template>
   <div
-    class="tag button"
-    :style='getStyle'>
+    :class='"button inline-block px-3 py-1.5 rounded-lg " + getColors'>
     {{ text }}
   </div>
 </template>
@@ -23,43 +22,21 @@ export default {
     }
   },
   computed: {
-    getStyle() {
+    getColors() {
       if (this.bg === 'dark') {
         if (this.type === 'primary') {
-          return {
-            backgroundColor: "var(--blue-300)",
-            color: "var(--light-100)",
-          }
+          return 'bg-blue-300 text-light-100'
         } else if (this.type === 'secondary') {
-          return {
-            backgroundColor: "var(--light-200)",
-            color: "var(--dark-200)",
-          }
+          return 'bg-light-200 text-dark-200'
         }
       } else if (this.bg === 'light') {
         if (this.type === 'primary') {
-          return {
-            backgroundColor: "var(--blue-200)",
-            color: "var(--light-100)",
-          }
+          return 'bg-blue-200 text-light-100'
         } else if (this.type === 'secondary') {
-          return {
-            backgroundColor: "var(--light-200)",
-            color: "var(--dark-200)",
-          }
+          return 'bg-light-200 text-dark-200'
         }
       }
-      // backgroundColor: type === "primary" ? "var(--blue-300)" : "var(--dark-200)",
     }
   },
 }
 </script>
-
-<style scoped>
-.tag {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: var(--radius);
-}
-
-</style>
