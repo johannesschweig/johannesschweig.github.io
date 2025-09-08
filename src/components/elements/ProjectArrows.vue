@@ -26,21 +26,16 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { getPreviousNextProjects } from '@/utils/index.js'
 import Arrow from '@/assets/arrow.svg'
 
-const props = defineProps({
-  route: {
-    type: String,
-    required: true
-  }
-})
-
 const previousProject = ref({ route: null, name: null })
 const nextProject = ref({ route: null, name: null })
+const route = useRoute()
 
 onMounted(() => {
-  const { previous, next } = getPreviousNextProjects(props.route)
+  const { previous, next } = getPreviousNextProjects(route.path)
   previousProject.value = previous
   nextProject.value = next
 })

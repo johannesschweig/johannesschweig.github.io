@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { projData } from '../../utils/projects.js'
+import { projData } from '@/utils/projects.js'
 
 export default {
   data() {
@@ -31,15 +31,9 @@ export default {
       project: null
     }
   },
-  props: {
-    route: {
-      type: String,
-      required: true
-    }
-  },
   // check which project this ProjectHeader belongs to
   created() {
-    this.project = projData.filter((e) => e.route == this.$props.route)[0]
+    this.project = projData.filter((e) => e.route == this.$route.path)[0]
   }
 }
 </script>

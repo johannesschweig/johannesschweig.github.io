@@ -2,9 +2,9 @@
 	<div class="pt-3 mt-3 mb-6">
 		<img
       v-if='!isVideo'
-      :class='["mx-auto md:max-w-7/10", {
+      :class='[`mx-auto ${props.size}`, {
 				"md:drop-shadow-sm": shadow,
-				"rounded-2xl": rounded,
+				"rounded-xl": rounded,
 			}]'
       :src='src'
       :alt='alt' />
@@ -12,7 +12,7 @@
       v-if='isVideo'
       :class='["mx-auto md:max-w-7/10", {
 				"md:drop-shadow-sm": shadow,
-				"rounded-2xl": rounded,
+				"rounded-xl": rounded,
 			}]'
       autoplay
       muted
@@ -42,7 +42,11 @@ const props = defineProps({
 	rounded: {
 		type: Boolean,
 		default: false,
-	}
+	},
+  size: {
+    type: String,
+    default: 'md:max-w-7/10'
+  }
 })
 
 // Computed property to determine if the source is a video

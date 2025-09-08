@@ -1,13 +1,9 @@
-## Refactor css styles to tailwind
-- remove legacy styles at the end: p, ul, li
-  - ul
-  - li
-
-styles.css (replace background css style)
-packages
+# TODO
 
 # DONE
 see commit history for changes. Automatic deploy from main with github actions
+## 3.7.0
+- proptech project
 ## 3.7.0
 - migrated to tailwind
 ## 3.6.0

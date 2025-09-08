@@ -1,6 +1,19 @@
 // data for the projects
 export const projData = [
   {
+    route: '/proptech',
+    image: {
+      src: 'proptech/app-mockup.png',
+      alt: 'Design for a property management system',
+    },
+    name: 'Property Management Software',
+    slogan: 'Creating clear software for property management',
+    clients: ['N3XTUP', 'UG Phillipp GmbH'],
+    task: 'UX/UI Design',
+    industry: 'PropTech',
+    date: 'Feb-Sept 2025',
+  },
+  {
     route: '/businesshub',
     image: {
       src: 'businesshub/dashboard-mockup.jpg',
@@ -25,19 +38,6 @@ export const projData = [
     task: 'UI Design',
     industry: 'Real Estate',
     date: 'Jan 2024',
-  },
-  {
-    route: '/trafficticket',
-    image: {
-      src: 'trafficticket/ticket1.jpeg',
-      alt: 'A parking ticket on a windshield'
-    },
-    name: 'Traffic ticket',
-    slogan: 'Processing traffic tickets for a car rental',
-    clients: ['MaibornWolff', 'Car rental company'],
-    task: 'Product Management',
-    industry: 'Mobility',
-    date: 'Feb 2022-Jan 2023',
   },
   {
     route: '/esgehtlos',

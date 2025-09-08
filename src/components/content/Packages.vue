@@ -15,7 +15,7 @@
         </ul>
         <div class="h-px bg-light-200"></div>
         <div>
-          <div class="text-xl">2 000€ – 8 000€</div>
+          <div class="text-xl">4 000€ – 8 000€</div>
           <div class='text-dark-300 text-sm'>Depending on scope</div>
         </div>
       </div>

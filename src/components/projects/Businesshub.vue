@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectHeader :route='"/businesshub"' />
+    <ProjectHeader />
     <div id='dubai' class='responsive text-dark-200'>
       <h2 class="content-heading1">TL;DR</h2>
       <p>I designed the UI for a tender for a business hub in the middle east.</p>
@@ -11,7 +11,7 @@
       <StyledImage :src='buildURL("businesshub/4-busines-reg.jpg")' alt="Business registration with AI suggestions" :shadow="true"  :rounded="true"/>
       <StyledImage :src='buildURL("businesshub/5-commercial-registrations.jpg")' alt="Tracking of changes on the blockchain with AI helper" :shadow="true"  :rounded="true"/>
     </div>
-    <ProjectArrows :route='"/businesshub"' />
+    <ProjectArrows />
   </div>
 </template>
 

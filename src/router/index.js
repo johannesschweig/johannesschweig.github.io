@@ -5,11 +5,11 @@ const router = createRouter({
   routes: [
     { path: '/', component: () => import('@/components/content/LandingPage.vue') },
     { path: '/about', component: () => import('@/components/content/About.vue') },
+    { path: '/proptech', component: () => import('@/components/projects/PropTech.vue') },
     { path: '/businesshub', component: () => import('@/components/projects/Businesshub.vue') },
     { path: '/dubai', component: () => import('@/components/projects/Dubai.vue') },
     { path: '/esgehtlos', component: () => import('@/components/projects/EsGehtLos.vue') },
     { path: '/legal', component: () => import('@/components/content/Legal.vue') },
-    { path: '/trafficticket', component: () => import('@/components/projects/TrafficTicket.vue') },
     { path: '/:pathMatch(.*)', name: 'bad-not-found', component: () => import('@/components/content/PageNotFound.vue') },
   ],
   scrollBehavior(_to, _from, _savedPosition) {
