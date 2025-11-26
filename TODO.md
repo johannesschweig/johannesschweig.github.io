@@ -1,7 +1,10 @@
 # TODO
+- proptech: redo personas illustration and create mvp illustration
 
 # DONE
 see commit history for changes. Automatic deploy from main with github actions
+## 3.8.0
+- clients marquee view
 ## 3.7.0
 - proptech project
 ## 3.7.0

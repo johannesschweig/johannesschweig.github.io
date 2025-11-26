@@ -1,8 +1,8 @@
 <template>
   <!-- TODO: somehow the margin of the heading is not respected -->
-  <div class="bg-dark-100 py-px">
+  <div class="py-px">
     <div id='projects' class="responsive">
-      <h2 class="text-3xl font-medium mt-10 mb-8 text-white">
+      <h2 class="text-3xl font-medium mt-10 mb-8 text-dark-100">
         Recent projects
       </h2>
       <div class='general-grid'>
