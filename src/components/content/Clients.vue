@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import { markRaw } from 'vue'
 import BoschIcon from '@/assets/landingpage/bosch.svg'
 import KukaIcon from '@/assets/landingpage/kuka.svg'
 import MbIcon from '@/assets/landingpage/mb.svg'
@@ -23,11 +24,11 @@ export default {
   data() {
     return {
       clientIcons: [
-        KukaIcon,
-        MbIcon,
-        TuevIcon,
-        VwIcon,
-        BoschIcon,
+        markRaw(KukaIcon),
+        markRaw(MbIcon),
+        markRaw(TuevIcon),
+        markRaw(VwIcon),
+        markRaw(BoschIcon),
       ]
     }
   },
