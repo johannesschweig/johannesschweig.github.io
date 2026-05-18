@@ -272,6 +272,14 @@ export default {
 					licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
 					sourceLink: 'https://thenounproject.com/icon/add-2271513/',
 				},
+				{
+					title: 'Johannes Barcamp',
+					author: 'Dirk Murschall',
+					platform: 'Dirk Murschall',
+					licenseName: 'Creative Commons-BY 4.0',
+					licenseLink: 'https://creativecommons.org/licenses/by/4.0/deed.de',
+					sourceLink: 'https://wolke.dirkmurschall.de/',
+				}
 			]
 		}
 	}

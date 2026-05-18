@@ -1,10 +1,14 @@
 <template>
   <div>
     <div class='responsive pt-4 pb-12 md:py-12'>
-      <img class="w-full rounded-lg" :src="buildURL('bio/portrait.jpg')" />
+      <div>
+        <img class="w-full rounded-lg" :src="buildURL('bio/portrait.jpg')" />
+        <div class='pt-3 text-center text-xs text-dark-300' ><a href="https://dirkmurschall.de/">Image by Dirk Murschall</a></div>
+      </div>
       <div>
         <h1 class="text-3xl mb-4 font-medium mt-10 md:mt-0">About</h1>
-        <div class="text-lg leading-8">I help founders and product teams turn vague ideas into clear, buildable products. Using Figma, I shape early
+        <div class="text-lg leading-8">I help founders and product teams turn vague ideas into clear, buildable
+          products. Using Figma, I shape early
           concepts into prototypes you can show investors, test with users, and hand over to developers. I focus on
           scope, structure, and fast feedback loops—so everyone knows what to build, and why. Based in Berlin. Happy to
           jump in early and stay hands-on through delivery.</div>
@@ -31,7 +35,8 @@
         <div class="flex flex-wrap gap-2">
           <div v-for='skill in ["UX Design", "UI Design", "Conception", "Prototyping"
             , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
-            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]' class="px-3 py-1.5 bg-white rounded-lg">
+            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]'
+            class="px-3 py-1.5 bg-white rounded-lg">
             {{ skill }}
           </div>
         </div>
@@ -41,7 +46,8 @@
             href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
             <FreelancermapIcon />
           </Button>
-          <Button type="secondary" bg="light" size='sm' text='Junico' href='https://www.junico.de/freelancer/johannes-118'>
+          <Button type="secondary" bg="light" size='sm' text='Junico'
+            href='https://www.junico.de/freelancer/johannes-118'>
             <JunicoIcon />
           </Button>
           <Button type="secondary" bg="light" size='sm' text='Malt' href='https://www.malt.de/profile/johannesschweig'>
