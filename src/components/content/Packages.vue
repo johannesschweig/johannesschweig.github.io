@@ -15,7 +15,7 @@
         </ul>
         <div class="h-px bg-light-200"></div>
         <div>
-          <div class="text-xl">4 000€ – 8 000€</div>
+          <div class="text-xl">5k – 10k€</div>
           <div class='text-dark-300 text-sm'>Depending on scope</div>
         </div>
       </div>
@@ -30,7 +30,7 @@
           <li class="stopwatch">Part-time or full-time</li>
         </ul>
         <div class="h-px bg-light-200"></div>
-        <div class="text-xl">90€/h</div>
+        <div class="text-xl">100€/h</div>
       </div>
     </div>
   </div>
