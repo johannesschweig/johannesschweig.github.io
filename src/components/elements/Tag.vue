@@ -1,6 +1,6 @@
 <template>
   <div
-    :class='"button inline-block px-3 py-1.5 rounded-lg " + getColors'>
+    :class='"inline-block px-3 py-1 text-xs font-medium rounded-full " + getColors'>
     {{ text }}
   </div>
 </template>
@@ -31,9 +31,9 @@ export default {
         }
       } else if (this.bg === 'light') {
         if (this.type === 'primary') {
-          return 'bg-blue-200 text-light-100'
+          return 'bg-blue-500/10 text-blue-500'
         } else if (this.type === 'secondary') {
-          return 'bg-light-200 text-dark-200'
+          return 'bg-zinc-100 text-zinc-600'
         }
       }
     }

@@ -1,9 +1,10 @@
 <template>
-  <div class="bg-dark-100 py-8">
+  <div class="bg-zinc-100 py-10">
     <div class="responsive">
+      <div class="text-center text-xs font-medium tracking-widest text-zinc-500 uppercase mb-6">Trusted by delivery teams at</div>
       <div class="max-w-[90vw]">
-        <Vue3Marquee :gradient="true" :gradientColor="[26, 28, 33]" :pauseOnHover="true" class="">
-          <component :is="clientIcon" v-for="clientIcon in clientIcons" class="h-10 w-auto text-light-200 mx-8" />
+        <Vue3Marquee :gradient="true" :gradientColor="[244, 244, 245]" :pauseOnHover="true" class="">
+          <component :is="clientIcon" v-for="clientIcon in clientIcons" class="h-7 w-auto text-zinc-400 hover:text-zinc-600 transition-colors duration-150 mx-8" />
         </Vue3Marquee>
       </div>
     </div>

@@ -1,8 +1,15 @@
 # TODO
+- po content
+    - about page: styling and content
+    - pms case
+    - proptech case
+    - hero section: more design fidelity, smaller text leading, remove send icon
 - proptech: redo personas illustration and create mvp illustration
 
 # DONE
 see commit history for changes. Automatic deploy from main with github actions
+## 4.0.0
+- po content change & redesign
 ## 3.8.0
 - clients marquee view
 ## 3.7.0

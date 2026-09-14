@@ -82,14 +82,12 @@
         :rounded="true" />
 
     </div>
-    <ProjectArrows :route='"/proptech"' />
   </div>
 </template>
 
 <script setup>
 import ProjectHeader from '@/components/elements/ProjectHeader.vue'
 import StyledImage from '@/components/elements/StyledImage.vue'
-import ProjectArrows from '@/components/elements/ProjectArrows.vue'
 import { buildURL } from '@/utils'
 import Button from '@/components/elements/Button.vue'
 </script>

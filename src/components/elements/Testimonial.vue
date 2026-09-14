@@ -1,36 +1,30 @@
 <template>
-  <div class='bg-dark-200 rounded-2xl p-6 grid grid-rows-[1fr_64px] gap-6'>
+  <div class='bg-white border border-zinc-900/10 shadow-sm rounded-2xl p-6 grid grid-rows-[auto_1fr_auto] gap-4'>
+    <svg class="w-6 h-6 text-blue-500/40" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+    </svg>
     <TextExpand :text="testimonialProps.text" :limit="330" />
-    <div class='grid grid-cols-[1fr_48px] items-center'>
-      <a :href='testimonialProps.personLink' class="grid grid-cols-[64px_1fr] gap-3 items-center  hover:bg-linear-to-r from-dark-100 to-dark-200 rounded-l-full rounded-r-4xl group">
-        <img :src='buildURL(`landingpage/${testimonialProps.image}`)' :alt='testimonialProps.name' class="border-2 border-blue-200 group-hover:border-blue-300 w-[60px] h-[60px] rounded-full object-cover p-0.5"/>
-        <div>
-          <div class='text-white mb-1'>
-            {{ testimonialProps.name }}
-          </div>
-          <div class='text-light-200 text-sm'>
-            {{ testimonialProps.position }}
-            <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
-          </div>
+    <a :href='testimonialProps.personLink' class="flex items-center gap-3 group">
+      <img :src='buildURL(`landingpage/${testimonialProps.image}`)' :alt='testimonialProps.name' class="w-10 h-10 rounded-full object-cover"/>
+      <div>
+        <div class='text-zinc-900 font-medium text-sm group-hover:text-blue-500 transition-colors'>
+          {{ testimonialProps.name }}
         </div>
-      </a>
-      <Button type="secondary" bg="grey" size='sm' :href='testimonialProps.companyLink' class="h-12">
-        <ArrowUpIcon />
-      </Button>
-    </div>
+        <div class='text-zinc-500 text-xs'>
+          {{ testimonialProps.position }}
+          <template v-if='testimonialProps.company'>@ {{ testimonialProps.company }}</template>
+        </div>
+      </div>
+    </a>
   </div>
 </template>
 
 <script>
 import { buildURL } from '@/utils';
-import ArrowUpIcon from '@/assets/landingpage/arrow-up.svg'
-import Button from './Button.vue';
 import TextExpand from './TextExpand.vue';
 
 export default {
   components: {
-    ArrowUpIcon,
-    Button,
     TextExpand,
   },
   props: {

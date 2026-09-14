@@ -1,18 +1,26 @@
 <template>
   <div>
-    <div class='responsive pt-4 pb-12 md:py-12'>
+    <div class='responsive pt-12 pb-16 md:pt-20'>
       <div>
-        <img class="w-full rounded-lg" :src="buildURL('bio/portrait.jpg')" />
-        <div class='pt-3 text-center text-xs text-dark-300' ><a href="https://dirkmurschall.de/">Image by Dirk Murschall</a></div>
+        <div class="rounded-3xl overflow-hidden aspect-4/5">
+          <img class="w-full h-full object-cover" :src="buildURL('bio/portrait.jpg')" />
+        </div>
+        <div class='pt-3 text-center text-xs text-zinc-500'><a class="hover:text-zinc-900 transition-colors" href="https://dirkmurschall.de/">Image by Dirk Murschall</a></div>
       </div>
       <div>
-        <h1 class="text-3xl mb-4 font-medium mt-10 md:mt-0">About</h1>
-        <div class="text-lg leading-8">I help founders and product teams turn vague ideas into clear, buildable
-          products. Using Figma, I shape early
-          concepts into prototypes you can show investors, test with users, and hand over to developers. I focus on
-          scope, structure, and fast feedback loops—so everyone knows what to build, and why. Based in Berlin. Happy to
-          jump in early and stay hands-on through delivery.</div>
-        <h2 class="text-2xl mt-8 mb-3 font-medium">CV</h2>
+        <div class="flex items-center gap-3 mb-4 mt-10 md:mt-0">
+          <span class="w-6 h-px bg-blue-500"></span>
+          <span class="text-xs md:text-sm font-medium tracking-widest text-blue-500 uppercase">About me</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-6">About</h1>
+        <div class="text-lg leading-8 space-y-4">
+          <p class="m-0 text-xl font-semibold text-zinc-900">I help product teams turn complex requirements into clear, buildable products.</p>
+          <p class="m-0 text-zinc-500">As an IT Business Analyst and Product Owner, I work between business, engineering, and stakeholders — structuring requirements, defining scope, modeling processes, and turning ambiguous problems into functional concepts that teams can actually build.</p>
+          <p class="m-0 text-zinc-500">My background in UX research and product design helps me approach products from the user and workflow perspective. I use this when it matters: to understand complex processes, challenge assumptions, and make functional decisions tangible through flows, wireframes, and prototypes.</p>
+          <p class="m-0 text-zinc-500">I work best on complex B2B products where there are real constraints — legacy systems, hardware, regulated processes, data-heavy workflows, and many stakeholders.</p>
+          <p class="m-0 text-zinc-500">Based in Berlin. Available for freelance Business Analysis, Requirements Engineering, and Product Ownership.</p>
+        </div>
+        <h2 class="text-xl font-semibold text-zinc-900 mt-10 mb-4">CV</h2>
         <div class="flex flex-wrap gap-3">
           <Button type="primary" bg="light" size='sm' text='English CV'
             href='https://drive.google.com/file/d/19Fq8oCB_v1aAk957t-IXDm7rekfPUyf0/view?usp=drive_link'>
@@ -23,24 +31,20 @@
             <CvIcon />
           </Button>
         </div>
-        <h2 class="text-2xl mt-8 mb-3 font-medium">Industries</h2>
+        <h2 class="text-xl font-semibold text-zinc-900 mt-10 mb-4">Industries</h2>
         <div class="flex flex-wrap gap-2">
-          <div
-            v-for='industry in ["B2B SaaS", "Automotive", "Energy", "FinTech", "Manufacturing", "Consulting", "Startup", "Retail", "Construction", "Real Estate", "Sustainability", "Grants", "Crypto"]'
-            class="px-3 py-1.5 bg-white rounded-lg">
-            {{ industry }}
-          </div>
+          <Tag
+            v-for='industry in ["B2B SaaS", "Automotive", "Manufacturing", "Real Estate", "Energy", "FinTech", "Telecommunications", "Logistics", "Security Systems", "Data & Analytics"]'
+            :key='industry' :text='industry' type="secondary" bg="light" />
         </div>
-        <h2 class="text-2xl mt-8 mb-3 font-medium">Skills</h2>
+        <h2 class="text-xl font-semibold text-zinc-900 mt-10 mb-4">Skills</h2>
         <div class="flex flex-wrap gap-2">
-          <div v-for='skill in ["UX Design", "UI Design", "Conception", "Prototyping"
-            , "Mobile Design", "Responsive Design", "Figma", "User Research", "Scrum", "Adobe Creative Suite"
-            , "User-Centered Design", "Usability Testing", "Requirements Engineering"]'
-            class="px-3 py-1.5 bg-white rounded-lg">
-            {{ skill }}
-          </div>
+          <Tag v-for='skill in ["Business Analysis", "Product Ownership", "Requirements Engineering"
+            , "Requirements Management", "Functional Specification", "Process Modeling", "User Stories"
+            , "Backlog Management", "Roadmapping", "Stakeholder Management", "Product Management", "UX / Product Design"]'
+            :key='skill' :text='skill' type="primary" bg="light" />
         </div>
-        <h2 class="text-2xl mt-8 mb-3 font-medium">Networks</h2>
+        <h2 class="text-xl font-semibold text-zinc-900 mt-10 mb-4">Networks</h2>
         <div class='flex flex-wrap gap-3'>
           <Button type="secondary" bg="light" size='sm' text='Freelancermap'
             href='https://www.freelancermap.de/profil/ux-und-product-consultant'>
@@ -72,6 +76,7 @@
 
 <script>
 import Button from '@/components/elements/Button.vue'
+import Tag from '@/components/elements/Tag.vue'
 import UxIcon from '@/assets/bio/ux.svg'
 import CvIcon from '@/assets/bio/cv.svg'
 import GhIcon from '@/assets/bio/github.svg'
@@ -86,6 +91,7 @@ export default {
     CvIcon,
     GhIcon,
     Button,
+    Tag,
     UxIcon,
     UplinkIcon,
     FreelancermapIcon,

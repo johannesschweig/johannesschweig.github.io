@@ -62,6 +62,9 @@
   --color-dark-300: #525866;
   --color-light-100: #E6EAF2;
   --color-light-200: #C2C5CC;
+  --color-blue-500: #2563EB;
+  --color-zinc-900: #27272A;
+  --color-zinc-500: #71717A;
 }
 
 /* Headings */
@@ -102,7 +105,7 @@ ol li {
 }
 
 .greylink {
-  @apply block cursor-pointer hover:text-white active:text-white;
+  @apply block cursor-pointer text-zinc-500 hover:text-zinc-900 active:text-zinc-900 mb-2 transition-colors;
 }
 
 /* responsive content*/
@@ -113,35 +116,5 @@ ol li {
 /* grid */
 .general-grid {
   @apply grid grid-cols-1 md:grid-cols-2 gap-8 mb-24
-}
-
-.background {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-grow: 1;
-    z-index: -1;
-    background: var(--light-100);
-}
-
-.background div {
-    position: absolute;
-    border-radius: 100%;
-    height: 0;
-    filter: blur(8vw);
-    opacity: 0.2;
-}
-
-.background div:nth-child(1) {
-    background: linear-gradient(132deg, var(--blue-400) 0.00%, #f5834d 100.00%);
-    width: 80%;
-    padding-top: 80%;
-    left: 64%;
-    top: 52%;
-    transform: translateX(-50%) translateY(-50%);
 }
 

@@ -1,7 +1,7 @@
 <template>
-  <a :href='href' :class="'rounded-lg inline-grid gap-3 items-center transition ease ' + styleMap[type][bg]" :style="bgStyle">
+  <a :href='href' :class="'rounded-full inline-grid gap-3 items-center transition ease font-medium ' + styleMap[type][bg]" :style="bgStyle">
     <slot></slot> <!-- icon -->
-    <span v-if='text' :class='size === "lg" ? "text-base leading-6 md:text-xl md:leading-8" : "text-base leading-6"'>
+    <span v-if='text' :class='size === "lg" ? "text-base leading-6 md:text-lg md:leading-7" : "text-base leading-6"'>
       {{ text }}
     </span>
   </a>
@@ -10,13 +10,15 @@
 <script>
 const styleMap = {
   primary: {
-    light: 'bg-blue-200 hover:bg-blue-100 active:bg-blue-100 text-white fill-white',
-    dark: 'bg-blue-300 hover:bg-blue-400 active:bg-blue-400 text-dark-100 fill-dark-100',
+    light: 'bg-blue-500 hover:bg-blue-100 active:bg-blue-100 text-white fill-white',
+    dark: 'bg-blue-500 hover:bg-blue-100 active:bg-blue-100 text-white fill-white',
+    black: 'bg-zinc-900 hover:bg-black active:bg-black text-white fill-white',
+    white: 'bg-white hover:bg-zinc-100 active:bg-zinc-100 text-zinc-900 fill-zinc-900',
   },
   secondary: {
-    light: 'hover:bg-[#ffffff80] active:bg-[#ffffff80] border border-dark-200 text-dark-200 fill-dark-200',
+    light: 'hover:bg-zinc-900/5 active:bg-zinc-900/5 border border-zinc-900/15 text-zinc-900 fill-zinc-900',
     grey: 'hover:bg-dark-100 active:bg-dark-100 border border-light-200 text-light-200 fill-light-200',
-    dark: 'hover:bg-dark-200 active:bg-dark-200 border border-light-200 text-light-200 fill-light-200'
+    dark: 'hover:bg-white/10 active:bg-white/10 border border-white/20 text-white fill-white'
   },
 }
 
