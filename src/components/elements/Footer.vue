@@ -6,9 +6,13 @@
           <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Sounds interesting?</h2>
           <p class="text-zinc-400 m-0">Send me a message and let's talk about your project.</p>
         </div>
-        <div class="flex gap-4 shrink-0">
+        <div class="flex flex-col items-start sm:flex-row sm:items-center gap-3 sm:gap-4 shrink-0">
           <Button type="primary" bg="white" size='sm' text='Send me an email' href='mailto:hello@johannesschweig.de'>
-            <SendIcon />
+            <template #trailing>
+              <svg class="ml-1" style="width: 16px; height: 16px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </template>
           </Button>
           <Button type="secondary" bg="dark" size='sm' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
           </Button>

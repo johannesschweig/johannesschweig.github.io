@@ -1,9 +1,10 @@
 <template>
   <a :href='href' :class="'rounded-full inline-grid gap-3 items-center transition ease font-medium ' + styleMap[type][bg]" :style="bgStyle">
-    <slot></slot> <!-- icon -->
+    <slot></slot> <!-- leading icon -->
     <span v-if='text' :class='size === "lg" ? "text-base leading-6 md:text-lg md:leading-7" : "text-base leading-6"'>
       {{ text }}
     </span>
+    <slot name="trailing"></slot> <!-- trailing icon -->
   </a>
 </template>
 
@@ -50,10 +51,17 @@ export default {
     }
   },
   computed: {
+    columns() {
+      const cols = []
+      if (this.$slots.default) cols.push('var(--size)')
+      cols.push(this.text ? '1fr' : 'auto')
+      if (this.$slots.trailing) cols.push('var(--size)')
+      return cols.join(' ')
+    },
     bgStyle() {
       return {
         '--size': this.size === "lg" ? "32px" : "24px",
-        'grid-template-columns': this.$slots.default && this.text ? 'var(--size) 1fr' : '1fr',
+        'grid-template-columns': this.columns,
         'padding': this.text ? '12px 24px' : '11px 12px',
       }
     }

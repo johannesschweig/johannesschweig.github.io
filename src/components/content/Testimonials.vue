@@ -5,7 +5,7 @@
         <span class="w-6 h-px bg-blue-500"></span>
         <span class="text-xs md:text-sm font-medium tracking-widest text-blue-500 uppercase">Testimonials</span>
       </div>
-      <h2 class="text-3xl font-extrabold mb-8 text-zinc-900">What my clients say</h2>
+      <h2 class="text-3xl font-extrabold mb-8 text-zinc-900">What teams say after working together</h2>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-6 mb-24'>
         <Testimonial v-for='t in testimonials' :testimonialProps='t'/>
       </div>

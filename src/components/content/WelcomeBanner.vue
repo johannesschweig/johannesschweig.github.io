@@ -10,7 +10,11 @@
       <div class="text-zinc-500 mb-8 max-w-xl">With a background in UX research and product design, I translate ambiguous technical, regulatory, and business requirements into specs, roadmaps, and functional concepts that both engineering and stakeholders can act on. I work best in domains with real complexity and constraints — hardware, regulated processes, legacy systems, high-stakeholder environments.</div>
       <div class="flex gap-6 lg:mb-6">
         <Button type="primary" bg="black" size='lg' text='Send me an email' href='mailto:hello@johannesschweig.de'>
-          <SendIcon />
+          <template #trailing>
+            <svg class="ml-1" style="width: 16px; height: 16px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </template>
         </Button>
         <Button type="secondary" bg="light" size='lg' text="LinkedIn" href='https://linkedin.com/in/jschweig'>
         </Button>
@@ -25,7 +29,6 @@
 </template>
 
 <script>
-import SendIcon from '@/assets/landingpage/send.svg'
 import { buildURL } from '@/utils'
 import Button from '@/components/elements/Button.vue'
 
@@ -33,7 +36,6 @@ import Button from '@/components/elements/Button.vue'
 export default {
   components: {
     Button,
-    SendIcon,
   },
   methods: {
     buildURL(src) {

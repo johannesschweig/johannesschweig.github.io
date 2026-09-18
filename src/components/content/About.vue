@@ -5,7 +5,7 @@
         <div class="rounded-3xl overflow-hidden aspect-4/5">
           <img class="w-full h-full object-cover" :src="buildURL('bio/portrait.jpg')" />
         </div>
-        <div class='pt-3 text-center text-xs text-zinc-500'><a class="hover:text-zinc-900 transition-colors" href="https://dirkmurschall.de/">Image by Dirk Murschall</a></div>
+        <div class='pt-3 text-xs text-zinc-500'><a class="hover:text-zinc-900 transition-colors" href="https://dirkmurschall.de/">Image by Dirk Murschall</a></div>
       </div>
       <div>
         <div class="flex items-center gap-3 mb-4 mt-10 md:mt-0">
@@ -111,7 +111,7 @@ export default {
   .responsive {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 24px;
+    gap: 64px;
   }
 }
 </style>

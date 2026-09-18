@@ -1,6 +1,6 @@
 <template>
   <div
-    :class='"inline-block px-3 py-1 text-xs font-medium rounded-full " + getColors'>
+    :class='"inline-block px-4 py-2 text-sm font-medium rounded-full " + getColors'>
     {{ text }}
   </div>
 </template>

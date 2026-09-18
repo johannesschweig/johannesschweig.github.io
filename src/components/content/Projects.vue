@@ -6,8 +6,8 @@
         <span class="w-6 h-px bg-blue-500"></span>
         <span class="text-xs md:text-sm font-medium tracking-widest text-blue-500 uppercase">Selected work</span>
       </div>
-      <h2 class="text-3xl font-extrabold mb-8 text-zinc-900 max-w-2xl">
-        Recent projects
+      <h2 class="text-3xl font-extrabold mb-8 text-zinc-900">
+        Case studies in B2B SaaS, PropTech & Healthcare IT
       </h2>
       <div class='grid grid-cols-1 md:grid-cols-2 gap-8 mb-24'>
         <ProjectPreview v-for='e in routes' :key='e.id' :projProps='e' />

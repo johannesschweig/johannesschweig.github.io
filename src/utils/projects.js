@@ -24,7 +24,7 @@ export const projData = [
     clients: ['N3XTUP', 'UG Phillipp GmbH'],
     task: 'UX/UI Design',
     industry: 'PropTech',
-    date: 'Feb-Sept 2026',
+    date: '2025-2026',
   },
   {
     route: '/scenariomanager',
